@@ -1,0 +1,275 @@
+(
+'/home/will/.icons',
+['ATER-purple-inverted', 'images', 'Oxygen 07 Purple', 'oxy-neon-colours'],
+['gimp.png', 'irc.png', 'tens.png', 'grm-biggish.png', 'accessories-calculator.svg', 'treeline.png', 'litecoin.png',
+	'firestorm64.png', 'kokua_icon32.png', 'singularity_icon32.png', 'wss.svg', 'ts3.png', 'firestorm_48.xcf', 'convertall_lg.png',
+	'cvlv_icon32.png', 'mozicon128-M.png', 'secondlife_icon64a.png', 'convertall.svg', 'secondlife_icon64.png', 'deluge.png', 'cvlv_icon32a.png',
+	.exe_14_128.png', 'mozicon128.png', 'font-matrix.png', 'gnome-month.png', 'kokua_icon32test.png', 'firefox.xcf', 'singularity_icon32a.png',
+	'firefox-developer-edition.png', 'meld.png', 'googleearth-icon.png', 'fontforge.png', 'ripme-icon.ico', 'bitcoin.png', 'dt_logo_128x128.png',
+	'book-icon.png', 'singularity_icon.xcf', '64x64_newshosting.png', 'firefox-nightly.png', 'replex_icon64a.png', 'agent.png',
+	'application-x-wine-extension-WinMerge.xpm', 'web-browser.png', 'cvlv_icon64.png', 'Uud32.exe_14_130.png', 'xvst.png', 'hexchat.png',
+	'replex_icon32a.png', 'rapidsvn-logo.png', 'icon.bmp', 'ripme-icon.png', 'fontmatrix.png', 'firefox-developer-edition-p.png', 'pidgin-menu.xpm',
+	'treeline1.png', 'singularity_icon64a.png', 'wss.png', 'secondlife2_icon.png', 'Notion.png', 'EasyTAG_icon.xpm', 'qjackctl.png', 'galculator.xpm',
+	'singularity_icon64.png', 'torbrowser.png', 'fslint_icon.png', 'replex_icon32.png', 'replex_icon64.png', 'application-x-wine-extension-gtm.png',
+	'cdcat.png', 'hugin.png', 'treeline2.png', 'tens.svg', 'gimp-splash.png', 'galculator.svg', 'MultiPar.0.png', 'kid3.png', 'firefox-p.png',
+	'hi48-app-k9copy.png', 'firestorm32.png', 'alchemy_icon.png.tar.gz', 'firefox.png', 'winebrowser.0.png', 'application-x-wine-extension-taz.xpm',
+	'xchat.png', 'keepass.png', 'xscreensaver.xpm', 'shopping list.png', 'firefox-m.png', 'kokua_icon64.png', 'application-x-wine-extension-gtz.png',
+	'kokua_icon.xcf', 'replex_icon.xcf', 'agent.0.png', 'xscreensaver.svg', 'secondlife_icon32.png', 'grm-will.png', 'up_0001.png', 'turpial.png',
+	'cvlv_icon.xcf', 'grm.png', 'secondlife_icon32a.png', 'trackmaker.0.png', 'tor.png', 'fontforge-button-128.png.png', 'idjc.png', 'geotag-128.png',
+	'will-icon.png', 'stellarium.png', 'WinRAR.0.png', 'RT.png', 'rootdit.png', 'calc_lg.png', 'secondlife_icon.xcf', 'cvlv_icon64a.png', 'old icons.tar.gz'])
+
+
+export VIDS=(avi divx flv m2ts m4a m4v mkv mov mp4 mpeg mpg webm wmv)
+
+export PICS=(bmp gif jpeg jpg png)
+
+
+
+/usr/bin/python3.8 /home/will/PycharmProjects/fullMonty/junk/test04.py
+sha512               start 000167913.7354383250 end 000167913.7354944120 elapsed 000000000.0000560870 len of hexdigest 128
+sha512               start 000167913.7358771450 end 000167913.7359041500 elapsed 000000000.0000270050 len of hexdigest 128
+sha512               start 000167913.7362441930 end 000167913.7362687820 elapsed 000000000.0000245890 len of hexdigest 128
+sha512               start 000167913.7366100920 end 000167913.7366411860 elapsed 000000000.0000310940 len of hexdigest 128
+sha512               start 000167913.7369644460 end 000167913.7369870620 elapsed 000000000.0000226160 len of hexdigest 128
+sha512               start 000167913.7372774630 end 000167913.7373001660 elapsed 000000000.0000227030 len of hexdigest 128
+sha512               start 000167913.7376001330 end 000167913.7376224460 elapsed 000000000.0000223130 len of hexdigest 128
+sha512               start 000167913.7380400830 end 000167913.7380715800 elapsed 000000000.0000314970 len of hexdigest 128
+sha512               start 000167913.7385615630 end 000167913.7385942610 elapsed 000000000.0000326980 len of hexdigest 128
+sha512               start 000167913.7390131520 end 000167913.7390447060 elapsed 000000000.0000315540 len of hexdigest 128
+sha512               start 000167913.7394658800 end 000167913.7395054300 elapsed 000000000.0000395500 len of hexdigest 128
+sha512               start 000167913.7399304120 end 000167913.7399618640 elapsed 000000000.0000314520 len of hexdigest 128
+sha512               start 000167913.7403635940 end 000167913.7403943930 elapsed 000000000.0000307990 len of hexdigest 128
+sha512               start 000167913.7407972840 end 000167913.7408282800 elapsed 000000000.0000309960 len of hexdigest 128
+sha512               start 000167913.7412317780 end 000167913.7412645970 elapsed 000000000.0000328190 len of hexdigest 128
+sha512               start 000167913.7416652590 end 000167913.7416972540 elapsed 000000000.0000319950 len of hexdigest 128
+total elapsed         0.0004997670 averaging         0.0000312354
+sha3_512             start 000167913.7355034630 end 000167913.7355369490 elapsed 000000000.0000334860 len of hexdigest 128
+sha3_512             start 000167913.7359086050 end 000167913.7359355950 elapsed 000000000.0000269900 len of hexdigest 128
+sha3_512             start 000167913.7362731940 end 000167913.7362980780 elapsed 000000000.0000248840 len of hexdigest 128
+sha3_512             start 000167913.7366514750 end 000167913.7366893720 elapsed 000000000.0000378970 len of hexdigest 128
+sha3_512             start 000167913.7369908860 end 000167913.7370142220 elapsed 000000000.0000233360 len of hexdigest 128
+sha3_512             start 000167913.7373040620 end 000167913.7373268180 elapsed 000000000.0000227560 len of hexdigest 128
+sha3_512             start 000167913.7376262900 end 000167913.7376547480 elapsed 000000000.0000284580 len of hexdigest 128
+sha3_512             start 000167913.7380770190 end 000167913.7381092750 elapsed 000000000.0000322560 len of hexdigest 128
+sha3_512             start 000167913.7386000380 end 000167913.7386344920 elapsed 000000000.0000344540 len of hexdigest 128
+sha3_512             start 000167913.7390501120 end 000167913.7390818050 elapsed 000000000.0000316930 len of hexdigest 128
+sha3_512             start 000167913.7395117310 end 000167913.7395516730 elapsed 000000000.0000399420 len of hexdigest 128
+sha3_512             start 000167913.7399672040 end 000167913.7399994050 elapsed 000000000.0000322010 len of hexdigest 128
+sha3_512             start 000167913.7403998000 end 000167913.7404314380 elapsed 000000000.0000316380 len of hexdigest 128
+sha3_512             start 000167913.7408336020 end 000167913.7408657360 elapsed 000000000.0000321340 len of hexdigest 128
+sha3_512             start 000167913.7412700470 end 000167913.7413020720 elapsed 000000000.0000320250 len of hexdigest 128
+sha3_512             start 000167913.7417027210 end 000167913.7417346700 elapsed 000000000.0000319490 len of hexdigest 128
+total elapsed         0.0004960990 averaging         0.0000310062
+sha3_384             start 000167913.7355422170 end 000167913.7355701170 elapsed 000000000.0000279000 len of hexdigest 96
+sha3_384             start 000167913.7359401900 end 000167913.7359666900 elapsed 000000000.0000265000 len of hexdigest 96
+sha3_384             start 000167913.7363022100 end 000167913.7363274750 elapsed 000000000.0000252650 len of hexdigest 96
+sha3_384             start 000167913.7366939130 end 000167913.7367195160 elapsed 000000000.0000256030 len of hexdigest 96
+sha3_384             start 000167913.7370179400 end 000167913.7370401010 elapsed 000000000.0000221610 len of hexdigest 96
+sha3_384             start 000167913.7373305600 end 000167913.7373532570 elapsed 000000000.0000226970 len of hexdigest 96
+sha3_384             start 000167913.7376594060 end 000167913.7376980620 elapsed 000000000.0000386560 len of hexdigest 96
+sha3_384             start 000167913.7381146740 end 000167913.7381470760 elapsed 000000000.0000324020 len of hexdigest 96
+sha3_384             start 000167913.7386420320 end 000167913.7386774920 elapsed 000000000.0000354600 len of hexdigest 96
+sha3_384             start 000167913.7390872380 end 000167913.7391188910 elapsed 000000000.0000316530 len of hexdigest 96
+sha3_384             start 000167913.7395584830 end 000167913.7395975190 elapsed 000000000.0000390360 len of hexdigest 96
+sha3_384             start 000167913.7400045210 end 000167913.7400359210 elapsed 000000000.0000314000 len of hexdigest 96
+sha3_384             start 000167913.7404366840 end 000167913.7404685250 elapsed 000000000.0000318410 len of hexdigest 96
+sha3_384             start 000167913.7408709180 end 000167913.7409024410 elapsed 000000000.0000315230 len of hexdigest 96
+sha3_384             start 000167913.7413072190 end 000167913.7413387210 elapsed 000000000.0000315020 len of hexdigest 96
+sha3_384             start 000167913.7417399550 end 000167913.7417816090 elapsed 000000000.0000416540 len of hexdigest 96
+total elapsed         0.0004952529 averaging         0.0000309533
+sha3_224             start 000167913.7355747610 end 000167913.7356017640 elapsed 000000000.0000270030 len of hexdigest 56
+sha3_224             start 000167913.7359710810 end 000167913.7359969540 elapsed 000000000.0000258730 len of hexdigest 56
+sha3_224             start 000167913.7363316930 end 000167913.7363577870 elapsed 000000000.0000260940 len of hexdigest 56
+sha3_224             start 000167913.7367236690 end 000167913.7367480160 elapsed 000000000.0000243470 len of hexdigest 56
+sha3_224             start 000167913.7370440390 end 000167913.7370668580 elapsed 000000000.0000228190 len of hexdigest 56
+sha3_224             start 000167913.7373569730 end 000167913.7373830740 elapsed 000000000.0000261010 len of hexdigest 56
+sha3_224             start 000167913.7377053780 end 000167913.7377397080 elapsed 000000000.0000343300 len of hexdigest 56
+sha3_224             start 000167913.7381524440 end 000167913.7381846470 elapsed 000000000.0000322030 len of hexdigest 56
+sha3_224             start 000167913.7386828560 end 000167913.7387143190 elapsed 000000000.0000314630 len of hexdigest 56
+sha3_224             start 000167913.7391240770 end 000167913.7391552700 elapsed 000000000.0000311930 len of hexdigest 56
+sha3_224             start 000167913.7396031870 end 000167913.7396356080 elapsed 000000000.0000324210 len of hexdigest 56
+sha3_224             start 000167913.7400408500 end 000167913.7400719900 elapsed 000000000.0000311400 len of hexdigest 56
+sha3_224             start 000167913.7404737180 end 000167913.7405049790 elapsed 000000000.0000312610 len of hexdigest 56
+sha3_224             start 000167913.7409076110 end 000167913.7409389930 elapsed 000000000.0000313820 len of hexdigest 56
+sha3_224             start 000167913.7413439330 end 000167913.7413754040 elapsed 000000000.0000314710 len of hexdigest 56
+sha3_224             start 000167913.7417886070 end 000167913.7418311530 elapsed 000000000.0000425460 len of hexdigest 56
+total elapsed         0.0004816470 averaging         0.0000301029
+blake2b              start 000167913.7356072540 end 000167913.7356344990 elapsed 000000000.0000272450 len of hexdigest 128
+blake2b              start 000167913.7360015880 end 000167913.7360258060 elapsed 000000000.0000242180 len of hexdigest 128
+blake2b              start 000167913.7363624490 end 000167913.7363877520 elapsed 000000000.0000253030 len of hexdigest 128
+blake2b              start 000167913.7367522410 end 000167913.7367745290 elapsed 000000000.0000222880 len of hexdigest 128
+blake2b              start 000167913.7370706390 end 000167913.7370916770 elapsed 000000000.0000210380 len of hexdigest 128
+blake2b              start 000167913.7373877360 end 000167913.7374131230 elapsed 000000000.0000253870 len of hexdigest 128
+blake2b              start 000167913.7377451940 end 000167913.7377757280 elapsed 000000000.0000305340 len of hexdigest 128
+blake2b              start 000167913.7381904080 end 000167913.7382224900 elapsed 000000000.0000320820 len of hexdigest 128
+blake2b              start 000167913.7387197270 end 000167913.7387507820 elapsed 000000000.0000310550 len of hexdigest 128
+blake2b              start 000167913.7391606170 end 000167913.7392007780 elapsed 000000000.0000401610 len of hexdigest 128
+blake2b              start 000167913.7396411120 end 000167913.7396708080 elapsed 000000000.0000296960 len of hexdigest 128
+blake2b              start 000167913.7400772420 end 000167913.7401064300 elapsed 000000000.0000291880 len of hexdigest 128
+blake2b              start 000167913.7405104260 end 000167913.7405397220 elapsed 000000000.0000292960 len of hexdigest 128
+blake2b              start 000167913.7409442750 end 000167913.7409739640 elapsed 000000000.0000296890 len of hexdigest 128
+blake2b              start 000167913.7413807300 end 000167913.7414101110 elapsed 000000000.0000293810 len of hexdigest 128
+blake2b              start 000167913.7418384940 end 000167913.7418704640 elapsed 000000000.0000319700 len of hexdigest 128
+total elapsed         0.0004585310 averaging         0.0000286582
+sha1                 start 000167913.7356398450 end 000167913.7356668700 elapsed 000000000.0000270250 len of hexdigest 40
+sha1                 start 000167913.7360305630 end 000167913.7360553180 elapsed 000000000.0000247550 len of hexdigest 40
+sha1                 start 000167913.7363925170 end 000167913.7364189600 elapsed 000000000.0000264430 len of hexdigest 40
+sha1                 start 000167913.7367787380 end 000167913.7368018360 elapsed 000000000.0000230980 len of hexdigest 40
+sha1                 start 000167913.7370955000 end 000167913.7371171420 elapsed 000000000.0000216420 len of hexdigest 40
+sha1                 start 000167913.7374172920 end 000167913.7374402870 elapsed 000000000.0000229950 len of hexdigest 40
+sha1                 start 000167913.7377813900 end 000167913.7378122140 elapsed 000000000.0000308240 len of hexdigest 40
+sha1                 start 000167913.7382283370 end 000167913.7382592790 elapsed 000000000.0000309420 len of hexdigest 40
+sha1                 start 000167913.7387564760 end 000167913.7387872140 elapsed 000000000.0000307380 len of hexdigest 40
+sha1                 start 000167913.7392080050 end 000167913.7392402200 elapsed 000000000.0000322150 len of hexdigest 40
+sha1                 start 000167913.7396766280 end 000167913.7397078890 elapsed 000000000.0000312610 len of hexdigest 40
+sha1                 start 000167913.7401117890 end 000167913.7401428890 elapsed 000000000.0000311000 len of hexdigest 40
+sha1                 start 000167913.7405451430 end 000167913.7405754000 elapsed 000000000.0000302570 len of hexdigest 40
+sha1                 start 000167913.7409795410 end 000167913.7410100210 elapsed 000000000.0000304800 len of hexdigest 40
+sha1                 start 000167913.7414156150 end 000167913.7414460510 elapsed 000000000.0000304360 len of hexdigest 40
+sha1                 start 000167913.7418760880 end 000167913.7419075600 elapsed 000000000.0000314720 len of hexdigest 40
+total elapsed         0.0004556831 averaging         0.0000284802
+blake2s              start 000167913.7356724700 end 000167913.7356988950 elapsed 000000000.0000264250 len of hexdigest 64
+blake2s              start 000167913.7360599030 end 000167913.7360831770 elapsed 000000000.0000232740 len of hexdigest 64
+blake2s              start 000167913.7364237810 end 000167913.7364486510 elapsed 000000000.0000248700 len of hexdigest 64
+blake2s              start 000167913.7368060690 end 000167913.7368277480 elapsed 000000000.0000216790 len of hexdigest 64
+blake2s              start 000167913.7371210910 end 000167913.7371420490 elapsed 000000000.0000209580 len of hexdigest 64
+blake2s              start 000167913.7374441690 end 000167913.7374652700 elapsed 000000000.0000211010 len of hexdigest 64
+blake2s              start 000167913.7378179210 end 000167913.7378471350 elapsed 000000000.0000292140 len of hexdigest 64
+blake2s              start 000167913.7382649270 end 000167913.7382944310 elapsed 000000000.0000295040 len of hexdigest 64
+blake2s              start 000167913.7387927090 end 000167913.7388225280 elapsed 000000000.0000298190 len of hexdigest 64
+blake2s              start 000167913.7392457710 end 000167913.7392753580 elapsed 000000000.0000295870 len of hexdigest 64
+blake2s              start 000167913.7397136740 end 000167913.7397429540 elapsed 000000000.0000292800 len of hexdigest 64
+blake2s              start 000167913.7401481370 end 000167913.7401769380 elapsed 000000000.0000288010 len of hexdigest 64
+blake2s              start 000167913.7405810200 end 000167913.7406103620 elapsed 000000000.0000293420 len of hexdigest 64
+blake2s              start 000167913.7410153590 end 000167913.7410442010 elapsed 000000000.0000288420 len of hexdigest 64
+blake2s              start 000167913.7414513740 end 000167913.7414801020 elapsed 000000000.0000287280 len of hexdigest 64
+blake2s              start 000167913.7419130860 end 000167913.7419428880 elapsed 000000000.0000298020 len of hexdigest 64
+total elapsed         0.0004312260 averaging         0.0000269516
+sha3_256             start 000167913.7357036600 end 000167913.7357304250 elapsed 000000000.0000267650 len of hexdigest 64
+sha3_256             start 000167913.7360873140 end 000167913.7361181280 elapsed 000000000.0000308140 len of hexdigest 64
+sha3_256             start 000167913.7364531180 end 000167913.7364813150 elapsed 000000000.0000281970 len of hexdigest 64
+sha3_256             start 000167913.7368316520 end 000167913.7368546590 elapsed 000000000.0000230070 len of hexdigest 64
+sha3_256             start 000167913.7371457710 end 000167913.7371683080 elapsed 000000000.0000225370 len of hexdigest 64
+sha3_256             start 000167913.7374689770 end 000167913.7374920470 elapsed 000000000.0000230700 len of hexdigest 64
+sha3_256             start 000167913.7378525190 end 000167913.7378848190 elapsed 000000000.0000323000 len of hexdigest 64
+sha3_256             start 000167913.7382998730 end 000167913.7384006770 elapsed 000000000.0001008040 len of hexdigest 64
+sha3_256             start 000167913.7388277240 end 000167913.7388594030 elapsed 000000000.0000316790 len of hexdigest 64
+sha3_256             start 000167913.7392805360 end 000167913.7393125990 elapsed 000000000.0000320630 len of hexdigest 64
+sha3_256             start 000167913.7397482240 end 000167913.7397794640 elapsed 000000000.0000312400 len of hexdigest 64
+sha3_256             start 000167913.7401821730 end 000167913.7402135560 elapsed 000000000.0000313830 len of hexdigest 64
+sha3_256             start 000167913.7406156950 end 000167913.7406472930 elapsed 000000000.0000315980 len of hexdigest 64
+sha3_256             start 000167913.7410492900 end 000167913.7410803190 elapsed 000000000.0000310290 len of hexdigest 64
+sha3_256             start 000167913.7414852800 end 000167913.7415163310 elapsed 000000000.0000310510 len of hexdigest 64
+sha3_256             start 000167913.7419480950 end 000167913.7419794970 elapsed 000000000.0000314020 len of hexdigest 64
+total elapsed         0.0005389389 averaging         0.0000336837
+sha256               start 000167913.7357355370 end 000167913.7357635230 elapsed 000000000.0000279860 len of hexdigest 64
+sha256               start 000167913.7361242260 end 000167913.7361531000 elapsed 000000000.0000288740 len of hexdigest 64
+sha256               start 000167913.7364859770 end 000167913.7365120770 elapsed 000000000.0000261000 len of hexdigest 64
+sha256               start 000167913.7368586960 end 000167913.7368813560 elapsed 000000000.0000226600 len of hexdigest 64
+sha256               start 000167913.7371722140 end 000167913.7371944460 elapsed 000000000.0000222320 len of hexdigest 64
+sha256               start 000167913.7374960780 end 000167913.7375184640 elapsed 000000000.0000223860 len of hexdigest 64
+sha256               start 000167913.7378907510 end 000167913.7379227840 elapsed 000000000.0000320330 len of hexdigest 64
+sha256               start 000167913.7384092260 end 000167913.7384434480 elapsed 000000000.0000342220 len of hexdigest 64
+sha256               start 000167913.7388647780 end 000167913.7388962540 elapsed 000000000.0000314760 len of hexdigest 64
+sha256               start 000167913.7393181640 end 000167913.7393489450 elapsed 000000000.0000307810 len of hexdigest 64
+sha256               start 000167913.7397850730 end 000167913.7398157450 elapsed 000000000.0000306720 len of hexdigest 64
+sha256               start 000167913.7402190600 end 000167913.7402500520 elapsed 000000000.0000309920 len of hexdigest 64
+sha256               start 000167913.7406529540 end 000167913.7406834840 elapsed 000000000.0000305300 len of hexdigest 64
+sha256               start 000167913.7410860040 end 000167913.7411171230 elapsed 000000000.0000311190 len of hexdigest 64
+sha256               start 000167913.7415216720 end 000167913.7415522020 elapsed 000000000.0000305300 len of hexdigest 64
+sha256               start 000167913.7419852490 end 000167913.7420158040 elapsed 000000000.0000305550 len of hexdigest 64
+total elapsed         0.0004631480 averaging         0.0000289467
+sha384               start 000167913.7357686070 end 000167913.7357951150 elapsed 000000000.0000265080 len of hexdigest 96
+sha384               start 000167913.7361574610 end 000167913.7361830850 elapsed 000000000.0000256240 len of hexdigest 96
+sha384               start 000167913.7365169170 end 000167913.7365447540 elapsed 000000000.0000278370 len of hexdigest 96
+sha384               start 000167913.7368853320 end 000167913.7369080240 elapsed 000000000.0000226920 len of hexdigest 96
+sha384               start 000167913.7371983370 end 000167913.7372207460 elapsed 000000000.0000224090 len of hexdigest 96
+sha384               start 000167913.7375223990 end 000167913.7375446480 elapsed 000000000.0000222490 len of hexdigest 96
+sha384               start 000167913.7379286870 end 000167913.7379610830 elapsed 000000000.0000323960 len of hexdigest 96
+sha384               start 000167913.7384492180 end 000167913.7384820980 elapsed 000000000.0000328800 len of hexdigest 96
+sha384               start 000167913.7389019620 end 000167913.7389341840 elapsed 000000000.0000322220 len of hexdigest 96
+sha384               start 000167913.7393545250 end 000167913.7393852810 elapsed 000000000.0000307560 len of hexdigest 96
+sha384               start 000167913.7398212580 end 000167913.7398519220 elapsed 000000000.0000306640 len of hexdigest 96
+sha384               start 000167913.7402555930 end 000167913.7402868190 elapsed 000000000.0000312260 len of hexdigest 96
+sha384               start 000167913.7406888750 end 000167913.7407197120 elapsed 000000000.0000308370 len of hexdigest 96
+sha384               start 000167913.7411225600 end 000167913.7411545960 elapsed 000000000.0000320360 len of hexdigest 96
+sha384               start 000167913.7415575010 end 000167913.7415883380 elapsed 000000000.0000308370 len of hexdigest 96
+sha384               start 000167913.7420215100 end 000167913.7420533950 elapsed 000000000.0000318850 len of hexdigest 96
+total elapsed         0.0004630579 averaging         0.0000289411
+sha224               start 000167913.7358001280 end 000167913.7358257840 elapsed 000000000.0000256560 len of hexdigest 56
+sha224               start 000167913.7361873860 end 000167913.7362119470 elapsed 000000000.0000245610 len of hexdigest 56
+sha224               start 000167913.7365498640 end 000167913.7365735130 elapsed 000000000.0000236490 len of hexdigest 56
+sha224               start 000167913.7369120540 end 000167913.7369345450 elapsed 000000000.0000224910 len of hexdigest 56
+sha224               start 000167913.7372246010 end 000167913.7372469480 elapsed 000000000.0000223470 len of hexdigest 56
+sha224               start 000167913.7375485890 end 000167913.7375703060 elapsed 000000000.0000217170 len of hexdigest 56
+sha224               start 000167913.7379665190 end 000167913.7379978690 elapsed 000000000.0000313500 len of hexdigest 56
+sha224               start 000167913.7384879380 end 000167913.7385195030 elapsed 000000000.0000315650 len of hexdigest 56
+sha224               start 000167913.7389398030 end 000167913.7389715080 elapsed 000000000.0000317050 len of hexdigest 56
+sha224               start 000167913.7393906470 end 000167913.7394213990 elapsed 000000000.0000307520 len of hexdigest 56
+sha224               start 000167913.7398574150 end 000167913.7398877430 elapsed 000000000.0000303280 len of hexdigest 56
+sha224               start 000167913.7402923450 end 000167913.7403225730 elapsed 000000000.0000302280 len of hexdigest 56
+sha224               start 000167913.7407250450 end 000167913.7407568170 elapsed 000000000.0000317720 len of hexdigest 56
+sha224               start 000167913.7411599360 end 000167913.7411908690 elapsed 000000000.0000309330 len of hexdigest 56
+sha224               start 000167913.7415939560 end 000167913.7416244960 elapsed 000000000.0000305400 len of hexdigest 56
+sha224               start 000167913.7420590100 end 000167913.7420905050 elapsed 000000000.0000314950 len of hexdigest 56
+total elapsed         0.0004510889 averaging         0.0000281931
+md5                  start 000167913.7358309140 end 000167913.7358710260 elapsed 000000000.0000401120 len of hexdigest 32
+md5                  start 000167913.7362164800 end 000167913.7362395410 elapsed 000000000.0000230610 len of hexdigest 32
+md5                  start 000167913.7365777190 end 000167913.7366050120 elapsed 000000000.0000272930 len of hexdigest 32
+md5                  start 000167913.7369386410 end 000167913.7369602980 elapsed 000000000.0000216570 len of hexdigest 32
+md5                  start 000167913.7372507740 end 000167913.7372731510 elapsed 000000000.0000223770 len of hexdigest 32
+md5                  start 000167913.7375743140 end 000167913.7375958130 elapsed 000000000.0000214990 len of hexdigest 32
+md5                  start 000167913.7380036110 end 000167913.7380342710 elapsed 000000000.0000306600 len of hexdigest 32
+md5                  start 000167913.7385251380 end 000167913.7385556160 elapsed 000000000.0000304780 len of hexdigest 32
+md5                  start 000167913.7389771340 end 000167913.7390073230 elapsed 000000000.0000301890 len of hexdigest 32
+md5                  start 000167913.7394269560 end 000167913.7394581790 elapsed 000000000.0000312230 len of hexdigest 32
+md5                  start 000167913.7398933760 end 000167913.7399245650 elapsed 000000000.0000311890 len of hexdigest 32
+md5                  start 000167913.7403280360 end 000167913.7403579050 elapsed 000000000.0000298690 len of hexdigest 32
+md5                  start 000167913.7407621390 end 000167913.7407918760 elapsed 000000000.0000297370 len of hexdigest 32
+md5                  start 000167913.7411961860 end 000167913.7412262780 elapsed 000000000.0000300920 len of hexdigest 32
+md5                  start 000167913.7416300010 end 000167913.7416596720 elapsed 000000000.0000296710 len of hexdigest 32
+md5                  start 000167913.7420963060 end 000167913.7421266840 elapsed 000000000.0000303780 len of hexdigest 32
+total elapsed         0.0004594850 averaging         0.0000287178
+
+Process finished with exit cod
+
+
+
+
+destPath = {str} '/storage/media/'
+dirEntries = {ScandirIterator} <posix.ScandirIterator object at 0x7f9d3cf76490>
+entry = {DirEntry} <DirEntry '7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg.webp'>
+execSet = {list: 5} ['/wbin-extras/exiftool/exiftool', '-all=', '--icc_profile:all', '/rcr/1-ftp/7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg.webp', 'overwrite_original_in_place']
+result = {CompletedProcess} CompletedProcess(args=['/wbin-extras/exiftool/exiftool', '-all=', '--icc_profile:all', '/rcr/1-ftp/7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg.webp', 'overwrite_original_in_place'], returncode=1, stdout=b"    0 image files updated\n    2 files weren't updated due to errors\n", stderr=b'perl: warning: Setting locale failed.\nperl: warning: Please check that your locale settings:\n\tLANGUAGE = (unset),\n\tLC_ALL = (unset),\n\tLC_TIME = "cic_US.UTF-8",\n\tLANG = "en_US.UTF-8"\n    are supported and installed on your system.\nperl: warning: Falling back to a fallback locale ("en_US.UTF-8").\nError: Writing of WEBP files is not yet supported - /rcr/1-ftp/7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg.webp\nError: File not found - overwrite_original_in_place\n')
+ args = {list: 5} ['/wbin-extras/exiftool/exiftool', '-all=', '--icc_profile:all', '/rcr/1-ftp/7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg.webp', 'overwrite_original_in_place']
+ returncode = {int} 1
+ stderr = {bytes: 464} b'perl: warning: Setting locale failed.\nperl: warning: Please check that your locale settings:\n\tLANGUAGE = (unset),\n\tLC_ALL = (unset),\n\tLC_TIME = "cic_US.UTF-8",\n\tLANG = "en_US.UTF-8"\n    are supported and installed on your system.\nperl: warning
+ stdout = {bytes: 68} b"    0 image files updated\n    2 files weren't updated due to errors\n"
+rootPath = {str} '/rcr/1-ftp/'
+thisExtHead = {str} '/rcr/1-ftp/7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg'
+thisExtTail = {str} '.webp'
+thisIsAFile = {bool} True
+thisIsAGoodFile = {bool} True
+thisIsASymlink = {bool} False
+thisLowerExtTail = {str} '.webp'
+thisMode = {int} 33206
+thisModeOct3 = {str} '666'
+thisModeOct5 = {str} '100666'
+thisPath = {str} '/rcr/1-ftp/7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg.webp'
+thisPathHead = {str} '/rcr/1-ftp'
+thisPathTail = {str} '7eyeU8S8rL13DBhrIqbpAzE0LkOSAcgoOxu3XcAZWI8.jpg.webp'
+
+
+{
+0:THISPATH '/tz/z03/picSource/d203/10776c311bc8f16f8df056e1a9984bc6.jpg',
+1:THISPATHHEAD '/tz/z03/picSource/d203',
+2:THISPATHTAIL '10776c311bc8f16f8df056e1a9984bc6.jpg',
+3:THISISASYMLINK False,
+4:THISISADIR False,
+5:THISISAFILE True,
+6:THISEXTHEAD '/tz/z03/picSource/d203/10776c311bc8f16f8df056e1a9984bc6',
+7:THISEXTTAIL '.jpg',
+8:THISBLACKTAIL '',
+9:THISWHITEFULLPATH '/tz/z03/picSource/d203/10776c311bc8f16f8df056e1a9984bc6.jpg'}
+
+['/picSource/d100/', '/picSource/d101/', '/picSource/d102/', '/picSource/d103/', '/picSource/d104/', '/picSource/d105/', '/picSource/d106/', '/picSource/d107/', '/picSource/d108/', '/picSource/d109/', '/picSource/d110/', '/picSource/d111/', '/picSource/d112/', '/picSource/d113/', '/picSource/d114/', '/picSource/d115/', '/picSource/d116/', '/picSource/d117/', '/picSource/d118/', '/picSource/d119/', '/picSource/d120/', '/picSource/d121/', '/picSource/d122/', '/picSource/d123/', '/picSource/d124/', '/picSource/d125/', '/picSource/d126/', '/picSource/d127/', '/picSource/d128/', '/picSource/d129/', '/picSource/d130/', '/picSource/d131/', '/picSource/d132/', '/picSource/d133/', '/picSource/d134/', '/picSource/d135/', '/picSource/d136/', '/picSource/d137/', '/picSource/d138/', '/picSource/d139/', '/picSource/d140/', '/picSource/d141/', '/picSource/d142/', '/picSource/d143/', '/picSource/d144/', '/picSource/d145/', '/picSource/d146/', '/picSource/d147/', '/picSource/d148/', '/picSource/d149/', '/picSource/d150/', '/picSource/d151/', '/picSource/d152/', '/picSource/d153/', '/picSource/d154/', '/picSource/d155/', '/picSource/d156/', '/picSource/d157/', '/picSource/d158/', '/picSource/d159/', '/picSource/d160/', '/picSource/d161/', '/picSource/d162/', '/picSource/d163/', '/picSource/d164/', '/picSource/d165/', '/picSource/d166/', '/picSource/d167/', '/picSource/d168/', '/picSource/d169/', '/picSource/d170/', '/picSource/d171/', '/picSource/d172/', '/picSource/d173/', '/picSource/d174/', '/picSource/d175/', '/picSource/d176/', '/picSource/d177/', '/picSource/d178/', '/picSource/d179/', '/picSource/d180/', '/picSource/d181/', '/picSource/d182/', '/picSource/d183/', '/picSource/d184/', '/picSource/d185/', '/picSource/d186/', '/picSource/d187/', '/picSource/d188/', '/picSource/d189/', '/picSource/d190/', '/picSource/d191/', '/picSource/d192/', '/picSource/d193/', '/picSource/d194/', '/picSource/d195/', '/picSource/d196/', '/picSource/d197/', '/picSource/d198/', '/picSource/d199/'...

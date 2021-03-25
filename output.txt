@@ -1,0 +1,263 @@
+
+
+OPTIONSDICT:
+OPTIONS = {
+  -arc: {
+    ARCHIVEFILES: False,
+  },
+  -ARC: {
+    ARCHIVEFILES: True,
+  },
+  -dd=: {
+    OUTPUTDIR: /storage/media/picDest//**,
+  },
+  -docode: {
+    DOALLCODEFILES: False,
+  },
+  -DOCODE: {
+    DOALLCODEFILES: True,
+  },
+  -dodocs: {
+    DOALLDOCSFILES: False,
+  },
+  -DODOCS: {
+    DOALLDOCSFILES: True,
+  },
+  -doknown: {
+    DOALLKNOWNFILES: False,
+  },
+  -DOKNOWN: {
+    DOALLKNOWNFILES: True,
+  },
+  -domedia: {
+    DOALLMEDIAFILES: False,
+  },
+  -DOMEDIA: {
+    DOALLMEDIAFILES: True,
+  },
+  -dopics: {
+    DOALLPICSFILES: False,
+  },
+  -DOPICS: {
+    DOALLPICSFILES: True,
+  },
+  -dotext: {
+    DOALLTEXTFILES: False,
+  },
+  -DOTEXT: {
+    DOALLTEXTFILES: True,
+  },
+  -dounk: {
+    DOALLUNKNOWNFILES: False,
+  },
+  -DOUNK: {
+    DOALLUNKNOWNFILES: True,
+  },
+  -dovids: {
+    DOALLVIDSFILES: False,
+  },
+  -DOVIDS: {
+    DOALLVIDSFILES: True,
+  },
+  -h=: {
+    HASHER: <_blake2.blake2b object at 0x7f6d35dbfab0>,
+  },
+  -i: {
+    IDMEDIAFILES: False,
+  },
+  -I: {
+    IDMEDIAFILES: True,
+  },
+  -m: {
+    MOVEFILES: False,
+  },
+  -M: {
+    MOVEFILES: True,
+  },
+  -o=: {
+    OUTPUTDIR: /storage/media/picDest/**,
+  },
+  -o: {
+    OVERWRITEFILES: False,
+  },
+  -O: {
+    OVERWRITEFILES: True,
+  },
+  -rnd: {
+    RANDOM: False,
+  },
+  -RND: {
+    RANDOM: True,
+  },
+  -rn: {
+    RENAMEFILES: False,
+  },
+  -RN: {
+    RENAMEFILES: True,
+  },
+  --help: {
+    SHOWHELP: False,
+  },
+  -h: {
+    SHOWHELP: False,
+  },
+  -help: {
+    SHOWHELP: False,
+  },
+  -sd=: {
+    SOURCEDIR: .,
+  },
+  -sf: {
+    SPREADFILES: False,
+  },
+  -SF: {
+    SPREADFILES: True,
+  },
+  -sm: {
+    STRIPMEDIAFILES: False,
+  },
+  -SM: {
+    STRIPMEDIAFILES: True,
+  },
+  -tm: {
+    TESTMEDIAFILES: False,
+  },
+  -TM: {
+    TESTMEDIAFILES: True,
+  },
+  -t: {
+    TRIALRUN: False,
+  },
+  -T: {
+    TRIALRUN: True,
+  },
+}
+
+OPTIONSDICT = {
+  ARCHIVEFILES: False,
+  OUTPUTDIR: /storage/media/Source/**,
+  DOALLCODEFILES: False,
+  DOALLDOCSFILES: False,
+  DOALLKNOWNFILES: False,
+  DOALLMEDIAFILES: True,
+  DOALLPICSFILES: False,
+  DOALLTEXTFILES: False,
+  DOALLUNKNOWNFILES: False,
+  DOALLVIDSFILES: False,
+  HASHER: <_blake2.blake2b object at 0x7f6d35dbfab0>,
+  IDMEDIAFILES: True,
+  MOVEFILES: True,
+  OVERWRITEFILES: False,
+  RANDOM: False,
+  RENAMEFILES: False,
+  SHOWHELP: False,
+  SOURCEDIR: .,
+  SPREADFILES: False,
+  STRIPMEDIAFILES: True,
+  TESTMEDIAFILES: True,
+  TRIALRUN: False,
+}
+OPTIONSHELPDICT = {
+  "-arc": destination is a single or spread-spectrum directory (SPREADFILES; not currently implemented)
+  ,
+  "-ARC": destination is an archive file (not currently implemented)
+  ,
+  "-dd=": alias for OUTPUTDIR
+  ,
+  "-docode": don't process code filetypes
+select DOALLKNOWNFILES True first, then set this False to ignore code filetypes
+  ,
+  "-DOCODE": process code filetypes
+  ,
+  "-dodocs": don't process docs filetypes
+select DOALLKNOWNFILES True first, then set this False to ignore docs filetypes
+  ,
+  "-DODOCS": process docs filetypes
+  ,
+  "-doknown": don't process known filetypes
+select DOALLKNOWNFILES True first, then set this False to ignore known filetypes
+  ,
+  "-DOKNOWN": process known filetypes
+set this first, then deselect individual types to remove filetypes from the list of processed filetypes
+  ,
+  "-domedia": don't process media filetypes
+set DOALLKNOWNFILES True first, then set this False to ignore media filetypes
+select this True first, then set a media False type to ignore that filetype
+select this True first, then set a media False type to ignore that filetype
+  ,
+  "-DOMEDIA": process medial filetypes
+  ,
+  "-dopics": don't process pics filetypes
+  ,
+  "-DOPICS": process pics files
+  ,
+  "-dotext": don't process test filetypes
+  ,
+  "-DOTEXT": process text filetypes
+  ,
+  "-dounk": don't process unknown filetypes
+  ,
+  "-DOUNK": process unknown filetypes
+  ,
+  "-dovids": don't process vids filetypes
+  ,
+  "-DOVIDS": process vids filetypes
+  ,
+  "-h=": set the hasher to be used for random file renaming
+  ,
+  "-i": don't ID media files
+  ,
+  "-I": ID media files
+  ,
+  "-m": copy files
+  ,
+  "-M": move files; cross volume safe
+  ,
+  "-o=": set OUTPUTDIR and pattern (defaults to **)
+  ,
+  "-o": don't overwrite files of the same name, simple rename as needed
+  ,
+  "-O": overwrite files of the same name
+  ,
+  "-rnd": use the pattern specified in DESTDIR parameter, defaults to '*' which uses the same filename, if RENAMEFILES is True
+  ,
+  "-RND": use specified hasher to create a random filename to write/archive if RENAMEFILES is True
+  ,
+  "-rn": don't rename files in DESTDIR
+  ,
+  "-RN": rename files in DESTDIR
+  ,
+  "--help": show help for selected options, defaults to all, and exit without doing anything
+  ,
+  "-h": show help for selected options, defaults to all, and exit without doing anything
+  ,
+  "-help": show help for selected options, defaults to all, and exit without doing anything
+  ,
+  "-sd=": set SOURCEDIR and file pattern (defaults to **)
+  ,
+  "-sf": spread files among a numbered
+  ,
+  "-SF": spread files among a numbered directory structure at DESTDIR
+  ,
+  "-sm": don't strip media files of metadata
+  ,
+  "-SM": strip media files of metadata
+  ,
+  "-tm": don't test media files
+  ,
+  "-TM": test media files
+  ,
+  "-t": don't output to STDOUT the things that would happen to any files, DO THEM
+  ,
+  "-T": output to STDOUT the things that would happen to any files, without doing them
+  ,
+}
+
+|
+
+OPTIONSHELPDICT as returned by help entry for -h:
+show help for selected options, defaults to all, and exit without doing anything
+
+
+
+┌┌(will@willdesk)┌(32/pts/5:xinput1)┌(03:35:36:2021/03/24)┌-
