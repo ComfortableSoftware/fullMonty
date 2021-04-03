@@ -30,7 +30,7 @@
 
 
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * SCTN001 _CHR_ _CONST_
+# * SCTN0001 _CHR_ _CONST_
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 BKQT = "`"  # BACK TICK
 BKSLSH = "\\"  # BACKSLASH
@@ -55,12 +55,14 @@ TRIQT = f"""{DBLQT}{DBLQT}{DBLQT}"""
 
 #
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * SCTN002 value_ constants
+# * SCTN0002 value_ constants
 #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 #
 #
 
 
+AO_NAME = "newAO.py"
+AOTOP_NAME = f"""{CONFIGDIR}AOTOP.py"""
 BIN04 = lambda X: f"""{X:04b}"""
 BIN08 = lambda X: f"""{X:08b}"""
 BIN16 = lambda X: f"""{X:016b}"""
@@ -75,9 +77,9 @@ CMNTLINE = f"""# * {"#*" * (CMNTLEN // 2)}"""
 DBSQLT_NAME = "newDBSQLT.py"
 DICTMODE_KEYSTR = "DICTMODE_KEYSTR"  # define dictmode 'key':val
 DICTMODE_KEYVAL = "DICTMODE_KEYVAL"  # define dictmode key:val
-DOHBIBTM_NAME = f"""{CONFIGDIR}HBIBTM.py"""
-DOHBI_NAME = "newHBI.py"
-DOHBITOP_NAME = f"""{CONFIGDIR}HBITOP.py"""
+DOHBIBTM_NAME = f"""{CONFIGDIR}DO_HBIBTM.py"""
+DOHBI_NAME = "newDOHBI.py"
+DOHBITOP_NAME = f"""{CONFIGDIR}DO_HBITOP.py"""
 DO_NAME = "newDO.py"
 DOTOP_NAME = f"""{CONFIGDIR}DOTOP.py"""
 EEOL = f"""{ESC}[K"""
@@ -109,7 +111,9 @@ HEX64 = lambda X_: f"""{X_:016H}"""  # {thisComment_}
 IMPORTANTSTR = f"""# * {"!-" * (CMNTLEN // 2)}"""  # important line marker
 INDENTIN = " -=> "  # display arrow RIGHT
 INDENTOUT = " <=- "  # display arrow LEFT
-INFOSTR = f"""# * {"%_" * (CMNTLEN // 2)}"""  # INFO _STR_ line\
+INFOSTR = f"""# * {"%_" * (CMNTLEN // 2)}"""  # INFO _STR_ line
+IO_NAME = "newIO.py"
+IOTOP_NAME = f"""{CONFIGDIR}IOTOP.py"""
 LINESUP = lambda NUM_: f"""{ESC}[{NUM_}A"""
 MARK1END = lambda TAG_: f"""# {"⥣1 " * (CMNTLEN // 3)} {TAG_}"""
 MARK1ENDLN = lambda TAG_: f"""# {"⥣1 " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
@@ -166,6 +170,7 @@ MARK9MIDLN = lambda TAG_: f"""# {"⥣9⥥ " * (CMNTLEN // 4)} {TAG_}{NEWLINE}"""
 MARK9START = lambda TAG_: f"""# {"9⥥ " * (CMNTLEN // 3)} {TAG_}"""
 MARK9STARTLN = lambda TAG_: f"""# {"9⥥ " * (CMNTLEN // 3)} {TAG_}{NEWLINE}"""
 MARKLINES_NAME = f"""{CONFIGDIR}MARKLINES.py"""
+MOVELEFT = lambda NUM_: f"""{ESC}[{NUM_}D"""
 MOVETO = lambda LN_, COL_: f"""{ESC}[{LN_};{COL_}H"""
 NSPC = lambda NUM_: f"""{SPCSTR * NUM_}"""  # returns a string with NUM_ SPC
 NTAB = lambda NUM_: f"""{TABSTR * NUM_}"""  # returns a string with NUM_ TAB
@@ -175,7 +180,10 @@ SCTNSNAME = f"""{CONFIGDIR}SCTNS.py"""
 SP_NAME = "newSP.py"
 SPTOP_NAME = f"""{CONFIGDIR}SPTOP.py"""
 TBGLST_NAME = "TBGLST.py"
-
+VO_NAME = "newVO.py"
+VOTOP_NAME = f"""{CONFIGDIR}VOTOP.py"""
+WHIRLSTR = f"""-{BKSLSH}|/*"""
+WHIRLCOUNT = 0
 
 CODES2STRIP = [  # {'CODES2STRIP': "dict holding all of the things to strip from 'text' strings like color codes"}
 	f"{ESC}[0m",  # entry for ESC-[0m
@@ -187,13 +195,14 @@ CODES2STRIP = [  # {'CODES2STRIP': "dict holding all of the things to strip from
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * SCTN0003 TYPEs and lambda
+# * SCTN003 TYPEs and lambda
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * SCTN0101 FMAX _DEF_
+# * SCTN101 FMAX _DEF_
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+FMAX_NOP = "FMAX_NOP"  # skip this entry
 FMAXCF_SCTN0003_LAMBDADEF = "FMAXCF_SCTN0003_LAMBDADEF"  # define a lambda function <NAC><NAME><lambda str>
 FMAXCF_SCTN0003_TYPEDEF = "FMAXCF_SCTN0003_TYPEDEF"  # define a fake type used in the translation dict <NAC><NAME><TYPE>
 FMAXCF_SCTN0201_STRDEF = "FMAXCF_SCTN0201_STRDEF"  # define a STR in SCTN21 <NAC><NAME><str>
@@ -209,38 +218,6 @@ FMAXCF_SCTN0203_DICTVALADD = "FMAXCF_SCTN0203_DICTVALADD"  # define a dict VAL i
 FMAXCF_SCTN0204_LISTDEF = "FMAXCF_SCTN0204_LISTDEF"  # define a list in SCTN204 <NAC><LISTNAME>
 FMAXCF_SCTN0204_LISTSTRADD = "FMAXCF_SCTN0204_LISTSTRADD"  # define a list STR in SCTN204 <NAC><LISTNAME><STR>
 FMAXCF_SCTN0204_LISTVALADD = "FMAXCF_SCTN0204_LISTVALADD"  # define a VAL in a list in SCTN204 <NAC><LISTNAME><VAL>
-FMAXDO_SCTN0401_DEVICEDEF = "FMAXDO_SCTN0401_DEVICEDEF"  # define a device in PROF <NAC><MYNAME><DEV_NAME>
-FMAXDO_SCTN0401_DICTKEYDEF = "FMAXDO_SCTN0401_DICTKEYDEF"  # define a profile dict key <NAC><KEY>
-FMAXDO_SCTN0401_LAMBDADEF = "FMAXDO_SCTN0401_LAMBDADEF"  # define a profile lambda <NAC><NAME><LAMBDA>
-FMAXDO_SCTN0401_STRDEF = "FMAXDO_SCTN0401_STRDEF"  # define a profile STR <NAC><NAME><VAL>
-FMAXDO_SCTN0401_VALDEF = "FMAXDO_SCTN0401_VALDEF"  # define a profile value <NAC><NAME><VAL>
-FMAXDO_SCTN0402_LDIEABSDEF = "FMAXDO_SCTN0402_LDIEABSDEF"  # define an IE entry (3) <NAC><IESTR><VAL>
-FMAXDO_SCTN0402_LDIEBTNDEF = "FMAXDO_SCTN0402_LDIEBTNDEF"  # define an IE entry (3) <NAC><IESTR><VAL>
-FMAXDO_SCTN0402_LDIEFUNCDEF = "FMAXDO_SCTN0402_LDIEFUNCDEF"  # define an IE entry (3) <NAC><IESTR><VAL>
-FMAXDO_SCTN0402_LDIEKEYDEF = "FMAXDO_SCTN0402_LDIEKEYDEF"  # define an IE entry (3) <NAC><IESTR><VAL>
-FMAXDO_SCTN0402_LDIERELDEF = "FMAXDO_SCTN0402_LDIERELDEF"  # define an IE entry (3) <NAC><IESTR><VAL>
-FMAXDO_SCTN0402_LDIESPCLDEF = "FMAXDO_SCTN0402_LDIESPCLDEF"  # define IE psuedo entry for special events
-FMAXDO_SCTN0402_LDIESYNDEF = "FMAXDO_SCTN0402_LDIESYNDEF"  # define an IE entry (3) <NAC><IESTR><VAL>
-FMAXDO_SCTN0403_AXDEF = "FMAXDO_SCTN0403_AXDEF"  # define a profile action <NAC>
-FMAXDO_SCTN0403_AXVALADD = "FMAXDO_SCTN0403_AXVALADD"  # add an item to an action <NAC><AX><VAL>
-FMAXDO_SCTN0404_DEVICEENTRYSTRADD = "FMAXDO_SCTN0404_DEVICEENTRYSTRADD"  # define an entry in a device <NAC><MYNAME><ENTRYKEY><STR>
-FMAXDO_SCTN0404_DEVICEENTRYVALADD = "FMAXDO_SCTN0404_DEVICEENTRYVALADD"  # define an entry in a device <NAC><MYNAME><ENTRYKEY><VAL>
-FMAXDO_SCTN0405_HOLDABLEADD1 = "FMAXDO_SCTN0405_HOLDABLEADD1"  # define holdable items in profile <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><HOLDABLE><NOTHOLDABLE><Ax>
-FMAXDO_SCTN0405_HOLDABLEADD2 = "FMAXDO_SCTN0405_HOLDABLEADD2"  # define holdable items in profile <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><HOLDABLE1><HOLDABLE2><NOTHOLDABLE><Ax>
-FMAXDO_SCTN0405_NOTHOLDABLEADD1 = "FMAXDO_SCTN0405_NOTHOLDABLEADD1"  # not holdable PROF items <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><NOTHOLDABLE><Ax>
-FMAXDO_SCTN0405_NOTHOLDABLEMODEDADD1 = "FMAXDO_SCTN0405_NOTHOLDABLEMODEDADD1"  # not holdable PROF items with a mode <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><MODENAME><NOTHOLDABLE><Ax>
-FMAXDO_SCTN0406_XLATEADD = "FMAXDO_SCTN0406_XLATEADD"  # add an item to an XLATE entry <NAC><DEV_MYNAME><DEVBTN><COMMONBTN>
-FMAXDO_SCTN0407_BTNSDEF = "FMAXDO_SCTN0407_BTNSDEF"  # define buttons all around <NAC><BTNNAME><HOLDABLE>
-FMAXDO_SCTN0408_EVTYPEDEF = "FMAXDO_SCTN0408_EVTYPEDEF"  # define a device type list type<NAC>
-FMAXDO_SCTN0408_EVTYPELST = "FMAXDO_SCTN0408_EVTYPELST"  # add a device list entry<NAC>
-FMAXDO_SCTN0409_DIRTRANSDEVDEF = "FMAXDO_SCTN0409_DIRTRANSDEVDEF"  # add a dict to DO.py <NAV><DEVNAME>
-FMAXDO_SCTN0409_DIRTRANSSTRADD = "FMAXDO_SCTN0409_DIRTRANSSTRADD"  # add a dict to DO.py <NAV><DEVNAME><KEY><VAL>
-FMAXDO_SCTN0409_DIRTRANSVALADD = "FMAXDO_SCTN0409_DIRTRANSVALADD"  # add a dict to DO.py <NAV><DEVNAME><KEY><VAL>
-FMAXDO_SCTN040A_HBIABSADD = "FMAXDO_SCTN040A_HBIABSADD"  # enable ABS entry for IDB
-FMAXDO_SCTN040A_HBIBTNADD = "FMAXDO_SCTN040A_HBIBTNADD"  # enable BTN entry for IDB
-FMAXDO_SCTN040A_HBIKEYADD = "FMAXDO_SCTN040A_HBIKEYADD"  # enable KEY entry for IDB
-FMAXDO_SCTN040A_HBIRELADD = "FMAXDO_SCTN040A_HBIRELADD"  # enable REL entry for IDB
-FMAXDO_SCTN040B_DICTDEF = "FMAXDO_SCTN040B_DICTDEF"  # define a dict in DO.py
 FMAXFM_SCTN0101_AXDEF = "FMAXFM_SCTN0101_AXDEF"  # define a new FM action <NAC>
 FMAXFM_SCTN0102_STRDEF = "FMAXFM_SCTN0102_STRDEF"  # define a FM string <NAC><VALNAME><STR>
 FMAXFM_SCTN0102_VALDEF = "FMAXFM_SCTN0102_VALDEF"  # define a FM value_ <NAC><VALNAME><VAL>
@@ -257,12 +234,16 @@ FMAXFO_SCTN0302_LISTDEF = "FMAXFO_SCTN0302_LISTDEF"  # define a list in FO.py <N
 FMAXFO_SCTN0302_LISTSTRADD = "FMAXFO_SCTN0302_LISTSTRADD"  # add a string to a list <NAC><LISTNAME><STR>
 FMAXFO_SCTN0302_LISTVALADD = "FMAXFO_SCTN0302_LISTVALADD"  # add a string to a list <NAC><LISTNAME><VAL>
 FMAXFO_SCTN0303_TUPDICTDEF = "FMAXFO_SCTN0303_TUPDICTDEF"  # define a TUPDICT <NAC><TUPDICTNAME>
+FMAXFO_SCTN0303_TUPDICTLISTDEF = "FMAXFO_SCTN0303_TUPDICTLISTDEF"  # define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>
+FMAXFO_SCTN0303_TUPDICTLISTSTRADD = "FMAXFO_SCTN0303_TUPDICTLISTSTRADD"  # define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>
+FMAXFO_SCTN0303_TUPDICTLISTVALADD = "FMAXFO_SCTN0303_TUPDICTLISTVALADD"  # define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>
 FMAXFO_SCTN0303_TUPDICTSTRADD = "FMAXFO_SCTN0303_TUPDICTSTRADD"  # add a string to a dict <NAC><DICTNAME><STRNAME><STR>
 FMAXFO_SCTN0303_TUPDICTSTRSTRADD = "FMAXFO_SCTN0303_TUPDICTSTRSTRADD"  # add a STR string to a dict <NAC><DICTNAME><STR><STR>
 FMAXFO_SCTN0303_TUPDICTSTRVALADD = "FMAXFO_SCTN0303_TUPDICTSTRVALADD"  # add a STR val to a dict <NAC><DICTNAME><STR><VAL>
 FMAXFO_SCTN0303_TUPDICTVALADD = "FMAXFO_SCTN0303_TUPDICTVALADD"  # add a string to a dict <NAC><DICTNAME><VALNAME><VAL>
 FMAXFO_SCTN0304_EXTENSIONADD = "FMAXFO_SCTN0304_EXTENSIONADD"  # add an extension <NAC><TYPE><EXTENSION>
-FMAXFO_SCTN0304_EXTENSIONTYPEDEF = "FMAXFO_SCTN0304_EXTENSIONTYPEDEF"  # add an extension type <NAC><TYPE><MEDIABOOL>
+FMAXFO_SCTN0304_EXTENSIONGROUPDEF = "FMAXFO_SCTN0304_EXTENSIONGROUPDEF"  # add an extension type <NAC><GROUP><GROUPFLAG>
+FMAXFO_SCTN0304_EXTENSIONTYPEDEF = "FMAXFO_SCTN0304_EXTENSIONTYPEDEF"  # add an extension type <NAC><TYPE><GROUPFLAG(+S)>
 FMAXSP_SCTN0600_STRDEF = "FMAXSP_SCTN0600_STRDEF"  # define a SP str <NAC><STRNAME><STR>
 FMAXSP_SCTN0600_VALDEF = "FMAXSP_SCTN0600_VALDEF"  # define a SP val <NAC><VAL>
 FMAXSP_SCTN0601_DICTDEF = "FMAXSP_SCTN0601_DICTDEF"  # define a dict for SP <NAC><DICTNAME>
@@ -275,12 +256,14 @@ FMAXSP_SCTN0603_TUPDICTDEF = "FMAXSP_SCTN0603_TUPDICTDEF"  # define a (tuple dic
 FMAXSP_SCTN0603_TUPDICTLISTDEF = "FMAXSP_SCTN0603_TUPDICTLISTDEF"  # define a list entry in a tupdict <NAC><TUPDICTNAME><KEY>
 FMAXSP_SCTN0603_TUPDICTLISTSTRADD = "FMAXSP_SCTN0603_TUPDICTLISTSTRADD"  # define a list STR entry in a tupdict <NAC><TUPDICTNAME><KEY><STR>
 FMAXSP_SCTN0603_TUPDICTLISTVALADD = "FMAXSP_SCTN0603_TUPDICTLISTVALADD"  # define a list VAL entry in a tupdict <NAC><TUPDICTNAME><KEY><VAL>
+FMAXSP_SCTN0603_TUPDICTPARMSADD = "FMAXSP_SCTN0603_TUPDICTPARMSADD"  # define a list entry in a tupdict <NAC><TUPDICTNAME><SUBSTR><SUBNAME>
+FMAXSP_SCTN0603_TUPDICTPARMSDEF = "FMAXSP_SCTN0603_TUPDICTPARMSDEF"  # define a parm entry in a tupdict <NAC><TUPDICTNAME> (must precede FMAXSP_SCTN0603_TUPDICTPARMSADD in TBGLST)
 FMAXSP_SCTN0603_TUPDICTSTRADD = "FMAXSP_SCTN0603_TUPDICTSTRADD"  # define a tuple dict str <NAC><TUPDICTNAME><KEY><VAL>
 FMAXSP_SCTN0603_TUPDICTVALADD = "FMAXSP_SCTN0603_TUPDICTVALADD"  # define a tuple dict str <NAC><TUPDICTNAME><KEY><VAL>
-FMAX_NOP = "FMAX_NOP"  # skip this entry
 
 
 FMAXFM_AXLST = [
+	FMAX_NOP,  # skip this entry
 	FMAXCF_SCTN0003_LAMBDADEF,  # define a lambda function <NAC><NAME><lambda str>
 	FMAXCF_SCTN0003_TYPEDEF,  # define a fake type used in the translation dict <NAC><NAME><TYPE>
 	FMAXCF_SCTN0201_STRDEF,  # define a STR in SCTN21 <NAC><NAME><str>
@@ -296,44 +279,11 @@ FMAXFM_AXLST = [
 	FMAXCF_SCTN0204_LISTDEF,  # define a list in SCTN204 <NAC><LISTNAME>
 	FMAXCF_SCTN0204_LISTSTRADD,  # define a list STR in SCTN204 <NAC><LISTNAME><STR>
 	FMAXCF_SCTN0204_LISTVALADD,  # define a VAL in a list in SCTN204 <NAC><LISTNAME><VAL>
-	FMAXDO_SCTN0401_DEVICEDEF,  # define a device in PROF <NAC><MYNAME><DEV_NAME>
-	FMAXDO_SCTN0401_DICTKEYDEF,  # define a profile dict key <NAC><KEY>
-	FMAXDO_SCTN0401_LAMBDADEF,  # define a profile lambda <NAC><NAME><LAMBDA>
-	FMAXDO_SCTN0401_STRDEF,  # define a profile STR <NAC><NAME><VAL>
-	FMAXDO_SCTN0401_VALDEF,  # define a profile value <NAC><NAME><VAL>
-	FMAXDO_SCTN0402_LDIEABSDEF,  # define an IE entry (3) <NAC><IESTR><VAL>
-	FMAXDO_SCTN0402_LDIEBTNDEF,  # define an IE entry (3) <NAC><IESTR><VAL>
-	FMAXDO_SCTN0402_LDIEFUNCDEF,  # define an IE entry (3) <NAC><IESTR><VAL>
-	FMAXDO_SCTN0402_LDIEKEYDEF,  # define an IE entry (3) <NAC><IESTR><VAL>
-	FMAXDO_SCTN0402_LDIERELDEF,  # define an IE entry (3) <NAC><IESTR><VAL>
-	FMAXDO_SCTN0402_LDIESPCLDEF,  # define IE psuedo entry for special events
-	FMAXDO_SCTN0402_LDIESYNDEF,  # define an IE entry (3) <NAC><IESTR><VAL>
-	FMAXDO_SCTN0403_AXDEF,  # define a profile action <NAC>
-	FMAXDO_SCTN0403_AXVALADD,  # add an item to an action <NAC><AX><VAL>
-	FMAXDO_SCTN0404_DEVICEENTRYSTRADD,  # define an entry in a device <NAC><MYNAME><ENTRYKEY><STR>
-	FMAXDO_SCTN0404_DEVICEENTRYVALADD,  # define an entry in a device <NAC><MYNAME><ENTRYKEY><VAL>
-	FMAXDO_SCTN0405_HOLDABLEADD1,  # define holdable items in profile <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><HOLDABLE><NOTHOLDABLE><Ax>
-	FMAXDO_SCTN0405_HOLDABLEADD2,  # define holdable items in profile <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><HOLDABLE1><HOLDABLE2><NOTHOLDABLE><Ax>
-	FMAXDO_SCTN0405_NOTHOLDABLEADD1,  # not holdable PROF items <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><NOTHOLDABLE><Ax>
-	FMAXDO_SCTN0405_NOTHOLDABLEMODEDADD1,  # not holdable PROF items with a mode <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><MODENAME><NOTHOLDABLE><Ax>
-	FMAXDO_SCTN0406_XLATEADD,  # add an item to an XLATE entry <NAC><DEV_MYNAME><DEVBTN><COMMONBTN>
-	FMAXDO_SCTN0407_BTNSDEF,  # define buttons all around <NAC><BTNNAME><HOLDABLE>
-	FMAXDO_SCTN0408_EVTYPEDEF,  # define a device type list type<NAC>
-	FMAXDO_SCTN0408_EVTYPELST,  # add a device list entry<NAC>
-	FMAXDO_SCTN0409_DIRTRANSDEVDEF,  # add a dict to DO.py <NAV><DEVNAME>
-	FMAXDO_SCTN0409_DIRTRANSSTRADD,  # add a dict to DO.py <NAV><DEVNAME><KEY><VAL>
-	FMAXDO_SCTN0409_DIRTRANSVALADD,  # add a dict to DO.py <NAV><DEVNAME><KEY><VAL>
-	FMAXDO_SCTN040A_HBIABSADD,  # enable ABS entry for IDB
-	FMAXDO_SCTN040A_HBIBTNADD,  # enable BTN entry for IDB
-	FMAXDO_SCTN040A_HBIKEYADD,  # enable KEY entry for IDB
-	FMAXDO_SCTN040A_HBIRELADD,  # enable REL entry for IDB
-	FMAXDO_SCTN040B_DICTDEF,  # define a dict in DO.py
 	FMAXFM_SCTN0101_AXDEF,  # define a new FM action <NAC>
 	FMAXFM_SCTN0102_STRDEF,  # define a FM string <NAC><VALNAME><STR>
 	FMAXFM_SCTN0102_VALDEF,  # define a FM value_ <NAC><VALNAME><VAL>
 	FMAXFM_SCTN0103_DICTDEF,  # define a dict for FM <NAC>
 	FMAXFM_SCTN0104_LISTDEF,  # define a list in FM <NAC>
-	FMAXFO_SCTN0301_DICTDEF,  # define a dict in FO.py <NAC>
 	FMAXFO_SCTN0300_STRDEF,  # add a string <NAC><STRNAME><STR>
 	FMAXFO_SCTN0300_VALDEF,  # add a value to a dict <NAC><VALNAME><VAL>
 	FMAXFO_SCTN0301_DICTDEF,  # define a dict in FO.py <NAC><DICTNAME>
@@ -345,12 +295,16 @@ FMAXFM_AXLST = [
 	FMAXFO_SCTN0302_LISTSTRADD,  # add a string to a list <NAC><LISTNAME><STR>
 	FMAXFO_SCTN0302_LISTVALADD,  # add a string to a list <NAC><LISTNAME><VAL>
 	FMAXFO_SCTN0303_TUPDICTDEF,  # define a TUPDICT <NAC><TUPDICTNAME>
+	FMAXFO_SCTN0303_TUPDICTLISTDEF,  # define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>
+	FMAXFO_SCTN0303_TUPDICTLISTSTRADD,  # define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>
+	FMAXFO_SCTN0303_TUPDICTLISTVALADD,  # define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>
 	FMAXFO_SCTN0303_TUPDICTSTRADD,  # add a string to a dict <NAC><DICTNAME><STRNAME><STR>
 	FMAXFO_SCTN0303_TUPDICTSTRSTRADD,  # add a STR string to a dict <NAC><DICTNAME><STR><STR>
 	FMAXFO_SCTN0303_TUPDICTSTRVALADD,  # add a STR val to a dict <NAC><DICTNAME><STR><VAL>
 	FMAXFO_SCTN0303_TUPDICTVALADD,  # add a string to a dict <NAC><DICTNAME><VALNAME><VAL>
 	FMAXFO_SCTN0304_EXTENSIONADD,  # add an extension <NAC><TYPE><EXTENSION>
-	FMAXFO_SCTN0304_EXTENSIONTYPEDEF,  # add an extension type <NAC><TYPE><MEDIABOOL>
+	FMAXFO_SCTN0304_EXTENSIONGROUPDEF,  # add an extension type <NAC><GROUP><GROUPFLAG>
+	FMAXFO_SCTN0304_EXTENSIONTYPEDEF,  # add an extension type <NAC><TYPE><GROUPFLAG(+S)>
 	FMAXSP_SCTN0600_STRDEF,  # define a SP str <NAC><STRNAME><STR>
 	FMAXSP_SCTN0600_VALDEF,  # define a SP val <NAC><VAL>
 	FMAXSP_SCTN0601_DICTDEF,  # define a dict for SP <NAC><DICTNAME>
@@ -363,20 +317,20 @@ FMAXFM_AXLST = [
 	FMAXSP_SCTN0603_TUPDICTLISTDEF,  # define a list entry in a tupdict <NAC><TUPDICTNAME><KEY>
 	FMAXSP_SCTN0603_TUPDICTLISTSTRADD,  # define a list STR entry in a tupdict <NAC><TUPDICTNAME><KEY><STR>
 	FMAXSP_SCTN0603_TUPDICTLISTVALADD,  # define a list VAL entry in a tupdict <NAC><TUPDICTNAME><KEY><VAL>
+	FMAXSP_SCTN0603_TUPDICTPARMSADD,  # define a list entry in a tupdict <NAC><TUPDICTNAME><SUBSTR><SUBNAME>
+	FMAXSP_SCTN0603_TUPDICTPARMSDEF,  # define a parm entry in a tupdict <NAC><TUPDICTNAME> (must precede FMAXSP_SCTN0603_TUPDICTPARMSADD in TBGLST)
 	FMAXSP_SCTN0603_TUPDICTSTRADD,  # define a tuple dict str <NAC><TUPDICTNAME><KEY><VAL>
 	FMAXSP_SCTN0603_TUPDICTVALADD,  # define a tuple dict str <NAC><TUPDICTNAME><KEY><VAL>
-	FMAX_NOP,  # skip this entry
 ]
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * SCTN0102 VAL _DEF_
+# * SCTN102 VAL _DEF_
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-FMFO_SCTN0304_MEDIAFILELSTSTR = ""  # SCTN304 FO.py EXTENSIONS media filetypes list in FM.py while parsing
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * SCTN0103 _DICT_ _DEF_
+# * SCTN103 _DICT_ _DEF_
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
 FMCF_SCTN0003_TYPECMNTDICT = {}  # SCTN009 types comments
 FMCF_SCTN0003_TYPEDICT = {}  # SCTN003 types
@@ -391,28 +345,6 @@ FMCF_SCTN0203_DICTCMNTDICT = {}  # SCTN203 dict comments dict
 FMCF_SCTN0203_DICTDICT = {}  # SCTN203 dict dict
 FMCF_SCTN0204_LISTCMNTDICT = {}  # SCTN204 list comments dict
 FMCF_SCTN0204_LISTDICT = {}  # SCTN204 list dict
-FMDO_SCTN0401_DEVICEDEFCMNTDICT = {}  # SCTN21 device defines
-FMDO_SCTN0401_DEVICEDEFDICT = {}  # SCTN21 device defines
-FMDO_SCTN0402_LDIECMNTDICT = {}  # SCTN22 LDIE defined
-FMDO_SCTN0402_LDIEDICT = {}  # SCTN22 LDIE defined
-FMDO_SCTN0403_AXDEFCMNTDICT = {}  # SCTN23 output actions AX comments
-FMDO_SCTN0403_AXDEFDICT = {}  # SCTN23 output actions AX
-FMDO_SCTN0404_DEVICESCMNTDICT = {}  # SCTN24 device comments
-FMDO_SCTN0404_DEVICESDICT = {}  # SCTN24 devices dict
-FMDO_SCTN0405_BTNNDXDICT = {}  # SCTN45 device BTNTYPE dict
-FMDO_SCTN0405_BTNTYPEDICT = {}  # SCTN45 device BTNTYPE dict
-FMDO_SCTN0405_PROFDICT = {}  # SCTN45 device profile dict
-FMDO_SCTN0405_RPTDICT = {}  # SCTN45 device RPT dict
-FMDO_SCTN0406_XLATECMNTDICT = {}  # SCTN26 XLATE dict
-FMDO_SCTN0406_XLATEDICT = {}  # SCTN26 XLATE dict
-FMDO_SCTN0407_BTNSCMNTDICT = {}  # SCTN04 buttons
-FMDO_SCTN0407_BTNSDICT = {}  # SCTN04 buttons
-FMDO_SCTN0408_DEFCMNTDICT = {}  # define a device types list type
-FMDO_SCTN0408_DEFDICT = {}  # define a device types list type
-FMDO_SCTN0408_TYPESCMNTDICT = {}  # define a device types list type
-FMDO_SCTN0408_TYPESDICT = {}  # define a device types list type
-FMDO_SCTN0409_DIRTRANSCMNTDICT = {}  # holds dict for DO.py
-FMDO_SCTN0409_DIRTRANSDICT = {}  # holds dict for DO.py
 FMFM_SCTN0101_AXCMNTDICT = {}  # SCTN101 FMAX defined
 FMFM_SCTN0101_AXDICT = {}  # SCTN101 FMAX defined
 FMFM_SCTN0102_VALCMNTDICT = {}  # SCTN102 val
@@ -429,6 +361,9 @@ FMFO_SCTN0302_LISTCMNTDICT = {}  # SCTN302 FO.py comment
 FMFO_SCTN0302_LISTDICT = {}  # SCTN302 FO.py list values
 FMFO_SCTN0303_TUPDICTCMNTDICT = {}  # SCTN303 FO.py TUPDICT comment
 FMFO_SCTN0303_TUPDICTDICT = {}  # SCTN303 FO.py TUPDICT values
+FMFO_SCTN0303_TUPDICTLISTDICT = {}  # SCTN303 FO.py TUPDICT list values
+FMFO_SCTN0304_EXTENSIONGROUPCMNTDICT = {}  # SCTN304 FO.py EXTENSIONGROUP values
+FMFO_SCTN0304_EXTENSIONGROUPDICT = {}  # SCTN304 FO.py EXTENSIONGROUP values
 FMFO_SCTN0304_EXTENSIONLOOKUPDICT = {}  # SCTN304 FO.py EXTENSIONLOOKUP values
 FMFO_SCTN0304_EXTENSIONSCMNTDICT = {}  # SCTN304 FO.py EXTENSIONS comment
 FMFO_SCTN0304_EXTENSIONSTYPESDICT = {}  # SCTN304 FO.py EXTENSIONSTYPES values
@@ -442,19 +377,13 @@ FMSP_SCTN0603_TUPDICTCMNTDICT = {}  # SCTN603 defines
 FMSP_SCTN0603_TUPDICTDICT = {}  # SCTN603 defines
 FMSP_SCTN0603_TUPDICTLISTCMNTDICT = {}  # SCTN600 defines
 FMSP_SCTN0603_TUPDICTLISTDICT = {}  # SCTN603 defines
+FMSP_SCTN0603_TUPDICTPARMSDICT = {}  # holds parameters to tupDict if any
 
 
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-# * SCTN0104 _LIST_ _DEF_
+# * SCTN104 _LIST_ _DEF_
 # * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
-FMDO_SCTN0402_LDIERELLIST = []  # SCTN22 LDIE relative evdev actions defined
-FMDO_SCTN0402_LDIESPCLLIST = []  # SCTN22 LDIE defined
-FMDO_SCTN0407_BTNSHOLDABLELIST = []  # buttons holdable list
-FMDO_SCTN040A_HBIABSLIST = []  # SCTN50 list
-FMDO_SCTN040A_HBIBTNLIST = []  # SCTN51 list
-FMDO_SCTN040A_HBIKEYLIST = []  # SCTN52 list
-FMDO_SCTN040A_HBIRELLIST = []  # SCTN53 list
-FMFO_SCTN0303_TUPDICTLIST = []  # SCTN0303 FO.py TUPDICT list values
+FMFM_SCTN0004_BTNSHOLDABLELIST = []  # buttons holdable list
 
 
 #
@@ -498,6 +427,9 @@ TBGLST = [
 	("CFVAL_DOALLPICSFILES", FMAXCF_SCTN0201_STRDEF, "DOALLPICSFILES", "DOALLPICSFILES", "do all pics files bool",),
 	("CFVAL_DOALLTEXTFILES", FMAXCF_SCTN0201_STRDEF, "DOALLTEXTFILES", "DOALLTEXTFILES", "do all text files bool",),
 	("CFVAL_DOALLUNKNOWNFILES", FMAXCF_SCTN0201_STRDEF, "DOALLUNKNOWNFILES", "DOALLUNKNOWNFILES", "do all unknown files bool",),
+	("CFVAL_ERRORDEST", FMAXCF_SCTN0201_STRDEF, "ERRORDEST", "ERRORDEST", "where to move files that can't be repaired easily",),
+	("CFVAL_NUMSPREADDIRS", FMAXCF_SCTN0201_STRDEF, "NUMSPREADDIRS", "NUMSPREADDIRS", "number of directories to spread each filetype into",),
+	("CFVAL_NOTINCLUDEDDEST", FMAXCF_SCTN0201_STRDEF, "NOTINCLUDEDDEST", "NOTINCLUDEDDEST", "where to move files not otherwise processed when moving is enabled",),
 	("CFVAL_DOALLVIDSFILES", FMAXCF_SCTN0201_STRDEF, "DOALLVIDSFILES", "DOALLVIDSFILES", "do all video files bool",),
 	("CFVAL_HASHER", FMAXCF_SCTN0201_STRDEF, "HASHER", "HASHER", "the hasher to use for random file names",),
 	("CFVAL_IDMEDIAFILES", FMAXCF_SCTN0201_STRDEF, "IDMEDIAFILES", "IDMEDIAFILES", "ID media files bool",),
@@ -510,8 +442,11 @@ TBGLST = [
 	("CFVAL_SOURCEDIR", FMAXCF_SCTN0201_STRDEF, "SOURCEDIR", "SOURCEDIR", "source directory default '.'",),
 	("CFVAL_SPREADFILES", FMAXCF_SCTN0201_STRDEF, "SPREADFILES", "SPREADFILES", "SPREAD/one-destDir for files bool",),
 	("CFVAL_STRIPMEDIAFILES", FMAXCF_SCTN0201_STRDEF, "STRIPMEDIAFILES", "STRIPMEDIAFILES", "strip media files bool",),
+	("CFVAL_RECURSE", FMAXCF_SCTN0201_STRDEF, "RECURSE", "RECURSE", "master RECURSE flag only checked in __main__, so if you are using this module remotely, you will need to insure all of your lists are correct going in to FO.py",),
 	("CFVAL_TESTMEDIAFILES", FMAXCF_SCTN0201_STRDEF, "TESTMEDIAFILES", "TESTMEDIAFILES", "test media files bool",),
 	("CFVAL_TRIALRUN", FMAXCF_SCTN0201_STRDEF, "TRIALRUN", "TRIALRUN", "trial run bool",),
+	("CFVAL_DEFUXTHINGS", FMAXCF_SCTN0201_STRDEF, "DEFUXTHINGS", "DEFUXTHINGS", "defux directories and files bool",),
+	("CFVAL_FIXEXTENSIONS", FMAXCF_SCTN0201_STRDEF, "FIXEXTENSIONS", "FIXEXTENSIONS", "trial run bool",),
 	("CFVAL__OPT_ARCHIVEFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "ARCHIVEFILES", "False", "archive files bool False default",),
 	("CFVAL__OPT_DESTDIR", FMAXCF_SCTN0202_OPTIONSDICTSTRADD, "DESTDIR", "/storage/media/source/**", "default output directory '/storage/media/source/**'",),
 	("CFVAL__OPT_DOALLCODEFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "DOALLCODEFILES", "False", "do all code files bool False default",),
@@ -523,6 +458,9 @@ TBGLST = [
 	("CFVAL__OPT_DOALLUNKNOWNFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "DOALLUNKNOWNFILES", "False", "do all unknown files False default",),
 	("CFVAL__OPT_DOALLVIDSFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "DOALLVIDSFILES", "False", "do all known vids files True default (because DOALLMEDIAFILES defaults to True)",),
 	("CFVAL__OPT_HASHER", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "HASHER", "HASH_blake2b", "hash used to make random file names RANDOM=True + RENAMEFILES=True",),
+	("CFVAL__OPT_ERRORDEST", FMAXCF_SCTN0202_OPTIONSDICTSTRADD, "ERRORDEST", "/storage/media/errors", "where to move files that can't be repaired easily",),
+	("CFVAL__OPT_NUMSPREADDIRS", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "NUMSPREADDIRS", "200", "number of directories to spread each filetype into",),
+	("CFVAL__OPT_NOTINCLUDEDDEST", FMAXCF_SCTN0202_OPTIONSDICTSTRADD, "NOTINCLUDEDDEST", "/storage/misfits", "where to move files not otherwise processed when moving is enabled",),
 	("CFVAL__OPT_IDMEDIAFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "IDMEDIAFILES", "True", "ID or not media filetypes bool default True",),
 	("CFVAL__OPT_MOVEFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "MOVEFILES", "True", "Move/copy files bool",),
 	("CFVAL__OPT_OUTPUTDIR", FMAXCF_SCTN0202_OPTIONSDICTSTRADD, "OUTPUTDIR", "/storage/media/Source/**", "default output directory '/storage/media/source/**'",),
@@ -530,17 +468,23 @@ TBGLST = [
 	("CFVAL__OPT_RANDOM", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "RANDOM", "False", "RANDOM/pattern renam bool",),
 	("CFVAL__OPT_RENAMEFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "RENAMEFILES", "False", "RENAME/as-is file naming bool",),
 	("CFVAL__OPT_SHOWHELP", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "SHOWHELP", "False", "print help (defaults to all) for all selected options and exit without processing any files",),
-	("CFVAL__OPT_SOURCEDIR", FMAXCF_SCTN0202_OPTIONSDICTSTRADD, "SOURCEDIR", ".", "source directory, defaults to '.' or the current directory when invoked",),
+	("CFVAL__OPT_SOURCEDIR", FMAXCF_SCTN0202_OPTIONSDICTSTRADD, "SOURCEDIR", "/tz/allInOne/errors/test", "source directory, defaults to '.' or the current directory when invoked",),
 	("CFVAL__OPT_SPREADFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "SPREADFILES", "False", "SPREAD/allInOne files bool",),
 	("CFVAL__OPT_STRIPMEDIAFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "STRIPMEDIAFILES", "True", "STRIP/dont media filetypes",),
 	("CFVAL__OPT_TESTMEDIAFILES", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "TESTMEDIAFILES", "True", "test media filetypes bool default True",),
+	("CFVAL__OPT_FIXEXTENSIONS", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "FIXEXTENSIONS", "True", "add extensions, correct errant extensions",),
+	("CFVAL__OPT_DEFUXTHINGS", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "DEFUXTHINGS", "True", "remove all not a..z A..Z 0..9 characters from filenames and directories",),
 	("CFVAL__OPT_TRIALRUN", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "TRIALRUN", "False", "OUTPUT what would be done/execute as configured",),
-
+	("CFVAL__OPT_RECURSE", FMAXCF_SCTN0202_OPTIONSDICTVALADD, "RECURSE", "True", "master RECURSE flag only checked in __main__, so if you are using this module remotely, you will need to insure all of your lists are correct going in to FO.py",),
+	("CFVAL__PARM_RECURSE", FMAXCF_SCTN0202_OPTIONSVALADD, "-r", "RECURSE", "True", "master RECURSE flag only checked in __main__, so if you are using this module remotely, you will need to insure all of your lists are correct going in to FO.py",),
 	("CFVAL__PARM_ARCHIVEFILESF", FMAXCF_SCTN0202_OPTIONSVALADD, "-arc", "ARCHIVEFILES", "False", "destination is a single or spread directory-root (SPREADFILES; not currently implemented)",),
 	("CFVAL__PARM_ARCHIVEFILEST", FMAXCF_SCTN0202_OPTIONSVALADD, "-ARC", "ARCHIVEFILES", "True", "destination is an archive file (not currently implemented)",),
 	("CFVAL__PARM_DESTDIR00", FMAXCF_SCTN0202_OPTIONSSTRADD, "-dd=", "DESTDIR", "/storage/media/picDest//**", "set DESTDIR and pattern (defaults to **)",),
 	("CFVAL__PARM_DESTDIR01", FMAXCF_SCTN0202_OPTIONSSTRADD, "-dd=", "OUTPUTDIR", "/storage/media/picDest//**", "set OUTPUTDIR and pattern (defaults to **)",),
 	("CFVAL__PARM_DOALLCODEFILESF", FMAXCF_SCTN0202_OPTIONSVALADD, "-docode", "DOALLCODEFILES", "False", "don't process code filetypes",),
+	("CFVAL__PARM_ERRORDEST", FMAXCF_SCTN0202_OPTIONSSTRADD, "-e=", "ERRORDEST", "/storage/media/errors", "where to move files that can't be repaired easily",),
+	("CFVAL__PARM_NUMSPREADDIRS", FMAXCF_SCTN0202_OPTIONSVALADD, "-ns=", "NUMSPREADDIRS", "200", "number of directories to spread each filetype into",),
+	("CFVAL__PARM_NOTINCLUDEDDEST", FMAXCF_SCTN0202_OPTIONSSTRADD, "-ni", "NOTINCLUDEDDEST", "/storage/misfits", "where to move files not otherwise processed when moving is enabled",),
 	("CFVAL__PARM_DOALLCODEFILESF01", FMAXCF_SCTN0202_OPTIONSADDHELPLINE, "-docode", "select DOALLKNOWNFILES True first, then set this False to ignore code filetypes",),
 	("CFVAL__PARM_DOALLCODEFILEST", FMAXCF_SCTN0202_OPTIONSVALADD, "-DOCODE", "DOALLCODEFILES", "True", "process code filetypes",),
 	("CFVAL__PARM_DOALLDOCSFILESF", FMAXCF_SCTN0202_OPTIONSVALADD, "-dodocs", "DOALLDOCSFILES", "False", "don't process docs filetypes",),
@@ -589,7 +533,7 @@ TBGLST = [
 	("CFVAL__PARM_TRIALRUNF", FMAXCF_SCTN0202_OPTIONSVALADD, "-t", "TRIALRUN", "False", "don't output to STDOUT the things that would happen to any files, DO THEM",),
 	("CFVAL__PARM_TRIALRUNT", FMAXCF_SCTN0202_OPTIONSVALADD, "-T", "TRIALRUN", "True", "output to STDOUT the things that would happen to any files, without doing them",),
 	("CFVAL_____", FMAX_NOP, "CFVAL_ENDS",),
-	("FMAXCF", FMAX_NOP, "FMAX_TBGLST_CF_BEGINS",),
+	("FMAXCF", FMAX_NOP, "FMAXCF_BEGINS",),
 	("FMAXCF_SCTN0003_LAMBDADEF", FMAXFM_SCTN0101_AXDEF, "define a lambda function <NAC><NAME><lambda str>",),
 	("FMAXCF_SCTN0003_TYPEDEF", FMAXFM_SCTN0101_AXDEF, "define a fake type used in the translation dict <NAC><NAME><TYPE>",),
 	("FMAXCF_SCTN0201_STRDEF", FMAXFM_SCTN0101_AXDEF, "define a STR in SCTN21 <NAC><NAME><str>",),
@@ -605,49 +549,15 @@ TBGLST = [
 	("FMAXCF_SCTN0204_LISTDEF", FMAXFM_SCTN0101_AXDEF, "define a list in SCTN204 <NAC><LISTNAME>",),
 	("FMAXCF_SCTN0204_LISTSTRADD", FMAXFM_SCTN0101_AXDEF, "define a list STR in SCTN204 <NAC><LISTNAME><STR>",),
 	("FMAXCF_SCTN0204_LISTVALADD", FMAXFM_SCTN0101_AXDEF, "define a VAL in a list in SCTN204 <NAC><LISTNAME><VAL>",),
-	("FMAXCF_____", FMAX_NOP, "FMAX_TBGLST_CF_ENDS",),
-	("FMAXDO", FMAX_NOP, "FMAX_TBGLST_DO_BEGINS",),
-	("FMAXDO_SCTN0401_DEVICEDEF", FMAXFM_SCTN0101_AXDEF, "define a device in PROF <NAC><MYNAME><DEV_NAME>",),
-	("FMAXDO_SCTN0401_DICTKEYDEF", FMAXFM_SCTN0101_AXDEF, "define a profile dict key <NAC><KEY>",),
-	("FMAXDO_SCTN0401_LAMBDADEF", FMAXFM_SCTN0101_AXDEF, "define a profile lambda <NAC><NAME><LAMBDA>",),
-	("FMAXDO_SCTN0401_STRDEF", FMAXFM_SCTN0101_AXDEF, "define a profile STR <NAC><NAME><VAL>",),
-	("FMAXDO_SCTN0401_VALDEF", FMAXFM_SCTN0101_AXDEF, "define a profile value <NAC><NAME><VAL>",),
-	("FMAXDO_SCTN0402_LDIEABSDEF", FMAXFM_SCTN0101_AXDEF, "define an IE entry (3) <NAC><IESTR><VAL>",),
-	("FMAXDO_SCTN0402_LDIEBTNDEF", FMAXFM_SCTN0101_AXDEF, "define an IE entry (3) <NAC><IESTR><VAL>",),
-	("FMAXDO_SCTN0402_LDIEFUNCDEF", FMAXFM_SCTN0101_AXDEF, "define an IE entry (3) <NAC><IESTR><VAL>",),
-	("FMAXDO_SCTN0402_LDIEKEYDEF", FMAXFM_SCTN0101_AXDEF, "define an IE entry (3) <NAC><IESTR><VAL>",),
-	("FMAXDO_SCTN0402_LDIERELDEF", FMAXFM_SCTN0101_AXDEF, "define an IE entry (3) <NAC><IESTR><VAL>",),
-	("FMAXDO_SCTN0402_LDIESPCLDEF", FMAXFM_SCTN0101_AXDEF, "define IE psuedo entry for special events",),
-	("FMAXDO_SCTN0402_LDIESYNDEF", FMAXFM_SCTN0101_AXDEF, "define an IE entry (3) <NAC><IESTR><VAL>",),
-	("FMAXDO_SCTN0403_AXDEF", FMAXFM_SCTN0101_AXDEF, "define a profile action <NAC>",),
-	("FMAXDO_SCTN0403_AXVALADD", FMAXFM_SCTN0101_AXDEF, "add an item to an action <NAC><AX><VAL>",),
-	("FMAXDO_SCTN0404_DEVICEENTRYSTRADD", FMAXFM_SCTN0101_AXDEF, "define an entry in a device <NAC><MYNAME><ENTRYKEY><STR>",),
-	("FMAXDO_SCTN0404_DEVICEENTRYVALADD", FMAXFM_SCTN0101_AXDEF, "define an entry in a device <NAC><MYNAME><ENTRYKEY><VAL>",),
-	("FMAXDO_SCTN0405_HOLDABLEADD1", FMAXFM_SCTN0101_AXDEF, "define holdable items in profile <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><HOLDABLE><NOTHOLDABLE><Ax>",),
-	("FMAXDO_SCTN0405_HOLDABLEADD2", FMAXFM_SCTN0101_AXDEF, "define holdable items in profile <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><HOLDABLE1><HOLDABLE2><NOTHOLDABLE><Ax>",),
-	("FMAXDO_SCTN0405_NOTHOLDABLEADD1", FMAXFM_SCTN0101_AXDEF, "not holdable PROF items <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><NOTHOLDABLE><Ax>",),
-	("FMAXDO_SCTN0405_NOTHOLDABLEMODEDADD1", FMAXFM_SCTN0101_AXDEF, "not holdable PROF items with a mode <NAC><DEV_MYNAME><BTNTYPE><REPEATRATE><MODENAME><NOTHOLDABLE><Ax>",),
-	("FMAXDO_SCTN0406_XLATEADD", FMAXFM_SCTN0101_AXDEF, "add an item to an XLATE entry <NAC><DEV_MYNAME><DEVBTN><COMMONBTN>",),
-	("FMAXDO_SCTN0407_BTNSDEF", FMAXFM_SCTN0101_AXDEF, "define buttons all around <NAC><BTNNAME><HOLDABLE>",),
-	("FMAXDO_SCTN0408_EVTYPEDEF", FMAXFM_SCTN0101_AXDEF, "define a device type list type<NAC>",),
-	("FMAXDO_SCTN0408_EVTYPELST", FMAXFM_SCTN0101_AXDEF, "add a device list entry<NAC>",),
-	("FMAXDO_SCTN0409_DIRTRANSDEVDEF", FMAXFM_SCTN0101_AXDEF, "add a dict to DO.py <NAV><DEVNAME>",),
-	("FMAXDO_SCTN0409_DIRTRANSSTRADD", FMAXFM_SCTN0101_AXDEF, "add a dict to DO.py <NAV><DEVNAME><KEY><VAL>",),
-	("FMAXDO_SCTN0409_DIRTRANSVALADD", FMAXFM_SCTN0101_AXDEF, "add a dict to DO.py <NAV><DEVNAME><KEY><VAL>",),
-	("FMAXDO_SCTN040A_HBIABSADD", FMAXFM_SCTN0101_AXDEF, "enable ABS entry for IDB",),
-	("FMAXDO_SCTN040A_HBIBTNADD", FMAXFM_SCTN0101_AXDEF, "enable BTN entry for IDB",),
-	("FMAXDO_SCTN040A_HBIKEYADD", FMAXFM_SCTN0101_AXDEF, "enable KEY entry for IDB",),
-	("FMAXDO_SCTN040A_HBIRELADD", FMAXFM_SCTN0101_AXDEF, "enable REL entry for IDB",),
-	("FMAXDO_SCTN040B_DICTDEF", FMAXFM_SCTN0101_AXDEF, "define a dict in DO.py",),
-	("FMAXDO_____", FMAX_NOP, "FMAX_TBGLST_DO_ENDS",),
-	("FMAXFM", FMAX_NOP, "FMAX_TBGLST_FM_BEGINS",),
+	("FMAXCF_____", FMAX_NOP, "FMAXCF_ENDS",),
+	("FMAXFM", FMAX_NOP, "FMAXFM_BEGINS",),
 	("FMAXFM_SCTN0101_AXDEF", FMAXFM_SCTN0101_AXDEF, "define a new FM action <NAC>",),
 	("FMAXFM_SCTN0102_STRDEF", FMAXFM_SCTN0101_AXDEF, "define a FM string <NAC><VALNAME><STR>",),
 	("FMAXFM_SCTN0102_VALDEF", FMAXFM_SCTN0101_AXDEF, "define a FM value_ <NAC><VALNAME><VAL>",),
 	("FMAXFM_SCTN0103_DICTDEF", FMAXFM_SCTN0101_AXDEF, "define a dict for FM <NAC>",),
 	("FMAXFM_SCTN0104_LISTDEF", FMAXFM_SCTN0101_AXDEF, "define a list in FM <NAC>",),
-	("FMAXFM_____", FMAX_NOP, "FMAX_TBGLST_FM_ENDS",),
-	("FMAXFO", FMAX_NOP, "FMAX_TBGLST_FO_BEGINS",),
+	("FMAXFM_____", FMAX_NOP, "FMAXFM_ENDS",),
+	("FMAXFO", FMAX_NOP, "FMAXFO_BEGINS",),
 	("FMAXFO_SCTN0300_STRDEF", FMAXFM_SCTN0101_AXDEF, "add a string <NAC><STRNAME><STR>",),
 	("FMAXFO_SCTN0300_VALDEF", FMAXFM_SCTN0101_AXDEF, "add a value to a dict <NAC><VALNAME><VAL>",),
 	("FMAXFO_SCTN0301_DICTDEF", FMAXFM_SCTN0101_AXDEF, "define a dict in FO.py <NAC>",),
@@ -660,14 +570,18 @@ TBGLST = [
 	("FMAXFO_SCTN0302_LISTSTRADD", FMAXFM_SCTN0101_AXDEF, "add a string to a list <NAC><LISTNAME><STR>",),
 	("FMAXFO_SCTN0302_LISTVALADD", FMAXFM_SCTN0101_AXDEF, "add a string to a list <NAC><LISTNAME><VAL>",),
 	("FMAXFO_SCTN0303_TUPDICTDEF", FMAXFM_SCTN0101_AXDEF, "define a TUPDICT <NAC><TUPDICTNAME>",),
+	("FMAXFO_SCTN0303_TUPDICTLISTDEF", FMAXFM_SCTN0101_AXDEF, "define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>",),
+	("FMAXFO_SCTN0303_TUPDICTLISTSTRADD", FMAXFM_SCTN0101_AXDEF, "define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>",),
+	("FMAXFO_SCTN0303_TUPDICTLISTVALADD", FMAXFM_SCTN0101_AXDEF, "define a TUPDICT list entry <NAC><TUPDICTNAME><LISTNAME>",),
 	("FMAXFO_SCTN0303_TUPDICTSTRADD", FMAXFM_SCTN0101_AXDEF, "add a string to a dict <NAC><DICTNAME><STRNAME><STR>",),
 	("FMAXFO_SCTN0303_TUPDICTSTRSTRADD", FMAXFM_SCTN0101_AXDEF, "add a STR string to a dict <NAC><DICTNAME><STR><STR>",),
 	("FMAXFO_SCTN0303_TUPDICTSTRVALADD", FMAXFM_SCTN0101_AXDEF, "add a STR val to a dict <NAC><DICTNAME><STR><VAL>",),
 	("FMAXFO_SCTN0303_TUPDICTVALADD", FMAXFM_SCTN0101_AXDEF, "add a string to a dict <NAC><DICTNAME><VALNAME><VAL>",),
 	("FMAXFO_SCTN0304_EXTENSIONADD", FMAXFM_SCTN0101_AXDEF, "add an extension <NAC><TYPE><EXTENSION>",),
-	("FMAXFO_SCTN0304_EXTENSIONTYPEDEF", FMAXFM_SCTN0101_AXDEF, "add an extension type <NAC><TYPE><MEDIABOOL>",),
-	("FMAXFO_____", FMAX_NOP, "FMAX_TBGLST_FO_ENDS",),
-	("FMAXSP", FMAX_NOP, "FMAX_TBGLST_SP_BEGINS",),
+	("FMAXFO_SCTN0304_EXTENSIONGROUPDEF", FMAXFM_SCTN0101_AXDEF, "add an extension type <NAC><GROUP><GROUPFLAG>",),
+	("FMAXFO_SCTN0304_EXTENSIONTYPEDEF", FMAXFM_SCTN0101_AXDEF, "add an extension type <NAC><TYPE><GROUPFLAG(+S)>",),
+	("FMAXFO_____", FMAX_NOP, "FMAXFO_ENDS",),
+	("FMAXSP", FMAX_NOP, "FMAXSP_BEGINS",),
 	("FMAXSP_SCTN0600_STRDEF", FMAXFM_SCTN0101_AXDEF, "define a SP str <NAC><STRNAME><STR>",),
 	("FMAXSP_SCTN0600_VALDEF", FMAXFM_SCTN0101_AXDEF, "define a SP val <NAC><VAL>",),
 	("FMAXSP_SCTN0601_DICTDEF", FMAXFM_SCTN0101_AXDEF, "define a dict for SP <NAC><DICTNAME>",),
@@ -680,11 +594,13 @@ TBGLST = [
 	("FMAXSP_SCTN0603_TUPDICTLISTDEF", FMAXFM_SCTN0101_AXDEF, "define a list entry in a tupdict <NAC><TUPDICTNAME><KEY>",),
 	("FMAXSP_SCTN0603_TUPDICTLISTSTRADD", FMAXFM_SCTN0101_AXDEF, "define a list STR entry in a tupdict <NAC><TUPDICTNAME><KEY><STR>",),
 	("FMAXSP_SCTN0603_TUPDICTLISTVALADD", FMAXFM_SCTN0101_AXDEF, "define a list VAL entry in a tupdict <NAC><TUPDICTNAME><KEY><VAL>",),
+	("FMAXSP_SCTN0603_TUPDICTPARMSADD", FMAXFM_SCTN0101_AXDEF, "define a list entry in a tupdict <NAC><TUPDICTNAME><SUBSTR><SUBNAME>",),
+	("FMAXSP_SCTN0603_TUPDICTPARMSDEF", FMAXFM_SCTN0101_AXDEF, "define a parm entry in a tupdict <NAC><TUPDICTNAME> (must precede FMAXSP_SCTN0603_TUPDICTPARMSADD in TBGLST)",),
 	("FMAXSP_SCTN0603_TUPDICTSTRADD", FMAXFM_SCTN0101_AXDEF, "define a tuple dict str <NAC><TUPDICTNAME><KEY><VAL>",),
 	("FMAXSP_SCTN0603_TUPDICTVALADD", FMAXFM_SCTN0101_AXDEF, "define a tuple dict str <NAC><TUPDICTNAME><KEY><VAL>",),
-	("FMAXSP_____", FMAX_NOP, "FMAX_TBGLST_SP_ENDS",),
+	("FMAXSP_____", FMAX_NOP, "FMAXSP_ENDS",),
 	("FMAX_NOP", FMAXFM_SCTN0101_AXDEF, "skip this entry",),
-	("FMCF", FMAX_NOP, "FMCF_TBGLST_BEGINS",),
+	("FMCF", FMAX_NOP, "FMCF_BEGINS",),
 	("FMCF_SCTN0003_TYPECMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN009 types comments",),
 	("FMCF_SCTN0003_TYPEDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN003 types",),
 	("FMCF_SCTN0201_DEFCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN201 defines comments dict",),
@@ -698,39 +614,9 @@ TBGLST = [
 	("FMCF_SCTN0203_DICTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN203 dict dict",),
 	("FMCF_SCTN0204_LISTCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN204 list comments dict",),
 	("FMCF_SCTN0204_LISTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN204 list dict",),
-	("FMCF_____", FMAX_NOP, "FMCF_TBGLST_ENDS",),
-	("FMDO", FMAX_NOP, "FMDO_TBGLST_BEGINS",),
-	("FMDO_SCTN0401_DEVICEDEFCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN21 device defines",),
-	("FMDO_SCTN0401_DEVICEDEFDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN21 device defines",),
-	("FMDO_SCTN0402_LDIECMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN22 LDIE defined",),
-	("FMDO_SCTN0402_LDIEDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN22 LDIE defined",),
-	("FMDO_SCTN0402_LDIERELLIST", FMAXFM_SCTN0104_LISTDEF, "SCTN22 LDIE relative evdev actions defined",),
-	("FMDO_SCTN0402_LDIESPCLLIST", FMAXFM_SCTN0104_LISTDEF, "SCTN22 LDIE defined",),
-	("FMDO_SCTN0403_AXDEFCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN23 output actions AX comments",),
-	("FMDO_SCTN0403_AXDEFDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN23 output actions AX",),
-	("FMDO_SCTN0404_DEVICESCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN24 device comments",),
-	("FMDO_SCTN0404_DEVICESDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN24 devices dict",),
-	("FMDO_SCTN0405_BTNNDXDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN45 device BTNTYPE dict",),
-	("FMDO_SCTN0405_BTNTYPEDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN45 device BTNTYPE dict",),
-	("FMDO_SCTN0405_PROFDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN45 device profile dict",),
-	("FMDO_SCTN0405_RPTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN45 device RPT dict",),
-	("FMDO_SCTN0406_XLATECMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN26 XLATE dict",),
-	("FMDO_SCTN0406_XLATEDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN26 XLATE dict",),
-	("FMDO_SCTN0407_BTNSCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN04 buttons",),
-	("FMDO_SCTN0407_BTNSDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN04 buttons",),
-	("FMDO_SCTN0407_BTNSHOLDABLELIST", FMAXFM_SCTN0104_LISTDEF, "buttons holdable list",),
-	("FMDO_SCTN0408_DEFCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "define a device types list type",),
-	("FMDO_SCTN0408_DEFDICT", FMAXFM_SCTN0103_DICTDEF, "define a device types list type",),
-	("FMDO_SCTN0408_TYPESCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "define a device types list type",),
-	("FMDO_SCTN0408_TYPESDICT", FMAXFM_SCTN0103_DICTDEF, "define a device types list type",),
-	("FMDO_SCTN0409_DIRTRANSCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "holds dict for DO.py",),
-	("FMDO_SCTN0409_DIRTRANSDICT", FMAXFM_SCTN0103_DICTDEF, "holds dict for DO.py",),
-	("FMDO_SCTN040A_HBIABSLIST", FMAXFM_SCTN0104_LISTDEF, "SCTN50 list",),
-	("FMDO_SCTN040A_HBIBTNLIST", FMAXFM_SCTN0104_LISTDEF, "SCTN51 list",),
-	("FMDO_SCTN040A_HBIKEYLIST", FMAXFM_SCTN0104_LISTDEF, "SCTN52 list",),
-	("FMDO_SCTN040A_HBIRELLIST", FMAXFM_SCTN0104_LISTDEF, "SCTN53 list",),
-	("FMDO_____", FMAX_NOP, "FMDO_TBGLST_ENDS",),
-	("FMFM", FMAX_NOP, "FMFM_TBGLST_BEGINS",),
+	("FMCF_____", FMAX_NOP, "FMCF_ENDS",),
+	("FMFM", FMAX_NOP, "FMFM_BEGINS",),
+	("FMFM_SCTN0004_BTNSHOLDABLELIST", FMAXFM_SCTN0104_LISTDEF, "buttons holdable list",),
 	("FMFM_SCTN0101_AXCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN003 types",),
 	("FMFM_SCTN0101_AXCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN101 FMAX defined",),
 	("FMFM_SCTN0101_AXDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN101 FMAX defined",),
@@ -740,8 +626,8 @@ TBGLST = [
 	("FMFM_SCTN0103_DICTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN103 dict defined",),
 	("FMFM_SCTN0104_LISTCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN201 device defines",),
 	("FMFM_SCTN0104_LISTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN201 device defines",),
-	("FMFM_____", FMAX_NOP, "FMFM_TBGLST_ENDS",),
-	("FMFO", FMAX_NOP, "FMFO_TBGLST_BEGINS",),
+	("FMFM_____", FMAX_NOP, "FMFM_ENDS",),
+	("FMFO", FMAX_NOP, "FMFO_BEGINS",),
 	("FMFO_SCTN0300_VALCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN300 FO.py comment",),
 	("FMFO_SCTN0300_VALDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN300 FO.py values",),
 	("FMFO_SCTN0301_DICTCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN301 FO.py comment",),
@@ -750,13 +636,14 @@ TBGLST = [
 	("FMFO_SCTN0302_LISTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN302 FO.py list values",),
 	("FMFO_SCTN0303_TUPDICTCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN303 FO.py TUPDICT comment",),
 	("FMFO_SCTN0303_TUPDICTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN303 FO.py TUPDICT values",),
-	("FMFO_SCTN0303_TUPDICTLIST", FMAXFM_SCTN0104_LISTDEF, "SCTN303 FO.py TUPDICT list values",),
+	("FMFO_SCTN0303_TUPDICTLISTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN303 FO.py TUPDICT list values",),
+	("FMFO_SCTN0304_EXTENSIONGROUPCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN304 FO.py EXTENSIONGROUP values",),
+	("FMFO_SCTN0304_EXTENSIONGROUPDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN304 FO.py EXTENSIONGROUP values",),
 	("FMFO_SCTN0304_EXTENSIONLOOKUPDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN304 FO.py EXTENSIONLOOKUP values",),
 	("FMFO_SCTN0304_EXTENSIONSCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN304 FO.py EXTENSIONS comment",),
 	("FMFO_SCTN0304_EXTENSIONSTYPESDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN304 FO.py EXTENSIONSTYPES values",),
-	("FMFO_SCTN0304_MEDIAFILELSTSTR", FMAXFM_SCTN0102_STRDEF, "FMFO_SCTN0304_MEDIAFILELSTSTR", "", "SCTN304 FO.py EXTENSIONS media filetypes list in FM.py while parsing",),
-	("FMFO_____", FMAX_NOP, "FMFO_TBGLST_ENDS",),
-	("FMSP", FMAX_NOP, "FMSP_TBGLST_BEGINS",),
+	("FMFO_____", FMAX_NOP, "FMFO_ENDS",),
+	("FMSP", FMAX_NOP, "FMSP_BEGINS",),
 	("FMSP_SCTN0600_DEFCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN600 defines",),
 	("FMSP_SCTN0600_DEFCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN600 defines",),
 	("FMSP_SCTN0600_DEFCMNTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN600 defines",),
@@ -785,108 +672,137 @@ TBGLST = [
 	("FMSP_SCTN0603_TUPDICTLISTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN600 defines",),
 	("FMSP_SCTN0603_TUPDICTLISTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN603 defines",),
 	("FMSP_SCTN0603_TUPDICTLISTDICT", FMAXFM_SCTN0103_DICTDEF, "SCTN603 defines",),
-	("FMSP_____", FMAX_NOP, "FMSP_TBGLST_ENDS",),
+	("FMSP_SCTN0603_TUPDICTPARMSDICT", FMAXFM_SCTN0103_DICTDEF, "holds parameters to tupDict if any",),
+	("FMSP_____", FMAX_NOP, "FMSP_ENDS",),
 	("FOVAL", FMAX_NOP, "FOVAL_BEGINS",),
-	("FOVAL_BLACKTAIL", FMAXFO_SCTN0300_STRDEF, "BLACKTAIL", "BLACKTAIL", "",),
-	("FOVAL_CODE", FMAXFO_SCTN0300_STRDEF, "CODE", "CODE", "",),
-	("FOVAL_CODEFILES", FMAXFO_SCTN0300_STRDEF, "CODEFILES", "CODEFILES", "",),
-	("FOVAL_DIRBLACKLIST", FMAXFO_SCTN0300_STRDEF, "DIRBLACKLIST", "[a-zA-Z0-9./]+", "",),
-	("FOVAL_DIRWHITELIST", FMAXFO_SCTN0300_STRDEF, "DIRWHITELIST", "[^a-zA-Z0-9./]+", "",),
-	("FOVAL_DOCS", FMAXFO_SCTN0300_STRDEF, "DOCS", "DOCS", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTDEF, "EMPTYENTRY", "an empty entry tupdict+function for each file/directory",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "BLACKTAIL", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "EXTHEAD", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "EXTTAIL", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "PATH", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "PATHHEAD", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "PATHTAIL", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "WHITEFILENAME", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "WHITEFULLPATH", "", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ENTRYMODE", "0", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISADIR", "False", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISAFILE", "False", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISAKNOWNFILETYPE", "False", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISAMEDIAFILETYPE", "False", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISASYMLINK", "False", "",),
-	("FOVAL_EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISUNKNOWNFILETYPE", "False", "",),
-	("FOVAL_ENTRYMODE", FMAXFO_SCTN0300_STRDEF, "ENTRYMODE", "ENTRYMODE", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "CODE", ".c", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "CODE", ".php", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "CODE", ".py", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".bmp", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".gif", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".jpeg", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".jpg", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".png", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".webp", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "TEXT", ".lst", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "TEXT", ".lst.txt", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".avi", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".divx", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".flv", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".gifv", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".m2ts", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".m4a", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".m4v", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mkv", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mov", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mp4", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mpeg", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mpg", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".webm", "",),
-	("FOVAL_EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".wmv", "",),
-	("FOVAL_EXTENSIONTYPES", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "CODE", "False", "define CODE file extension",),
-	("FOVAL_EXTENSIONTYPES", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "DOCS", "False", "define DOCS file extension",),
-	("FOVAL_EXTENSIONTYPES", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "PICS", "True", "define PICS file extension",),
-	("FOVAL_EXTENSIONTYPES", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "TEXT", "False", "define TEXT file extension",),
-	("FOVAL_EXTENSIONTYPES", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "VIDS", "True", "define VIDS file extension",),
-	("FOVAL_EXTHEAD", FMAXFO_SCTN0300_STRDEF, "EXTHEAD", "EXTHEAD", "",),
-	("FOVAL_EXTTAIL", FMAXFO_SCTN0300_STRDEF, "EXTTAIL", "EXTTAIL", "",),
+	("FOVAL_DIRBLACKLIST", FMAXFO_SCTN0300_STRDEF, "DIRBLACKLIST", "[a-zA-Z0-9./]+", "PCRE for directory characters to blacklist as it's result",),
+	("FOVAL_DIRWHITELIST", FMAXFO_SCTN0300_STRDEF, "DIRWHITELIST", "[^a-zA-Z0-9./]+", "PCRE for directory characters to whitelist as it's result",),
+	("FOVAL_CACHEDIR", FMAXFO_SCTN0300_STRDEF, "CACHEDIR", "/home/will/.config/fullMonty", "holds the .ndx files for a destination spread",),
+	("FOVAL_FILEBLACKLIST", FMAXFO_SCTN0300_STRDEF, "FILEBLACKLIST", "[a-zA-Z0-9.]+", "",),
 	("FOVAL_FILEWHITELIST", FMAXFO_SCTN0300_STRDEF, "FILEWHITELIST", "[^a-zA-Z0-9.]+", "",),
-	("FOVAL_ILLEGALPATHS", FMAXFO_SCTN0302_LISTDEF, "ILLEGALPATHS", "list of absolute paths to be completely ignored if used",),
-	("FOVAL_ILLEGALPATHS01", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALPATHS", "/", "do not operate on / ever",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTDEF, "ILLEGALWILDCARDS", "list all of the portions of a filename which will result in an error [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/bin/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/boot/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/dev/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/efi/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/etc/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/home/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/lib/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/lib64/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/media/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/opt/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/proc/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/root/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/run/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/sbin/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/srv/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/sys/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/tmp/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/usr/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/var/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
-	("FOVAL_ISADIR", FMAXFO_SCTN0300_STRDEF, "ISADIR", "ISADIR", "",),
-	("FOVAL_ISAFILE", FMAXFO_SCTN0300_STRDEF, "ISAFILE", "ISAFILE", "",),
-	("FOVAL_ISASYMLINK", FMAXFO_SCTN0300_STRDEF, "ISASYMLINK", "ISASYMLINK", "",),
-	("FOVAL_ISMEDIAFILETYPE", FMAXFO_SCTN0300_STRDEF, "ISMEDIAFILETYPE", "ISMEDIAFILETYPE", "",),
-	("FOVAL_ISUNKNOWNFILETYPE", FMAXFO_SCTN0300_STRDEF, "ISUNKNOWNFILETYPE", "ISUNKNOWNFILETYPE", "",),
-	("FOVAL_KNOWNFILES", FMAXFO_SCTN0300_STRDEF, "KNOWNFILES", "KNOWNFILES", "",),
-	("FOVAL_KNOWNFILETYPE", FMAXFO_SCTN0300_STRDEF, "KNOWNFILETYPE", "KNOWNFILETYPE", "",),
-	("FOVAL_MEDIAFILES", FMAXFO_SCTN0300_STRDEF, "MEDIAFILES", "MEDIAFILES", "",),
-	("FOVAL_NOTKNOWNFILES", FMAXFO_SCTN0300_STRDEF, "NOTKNOWNFILES", "NOTKNOWNFILES", "",),
-	("FOVAL_NOTMEDIAFILES", FMAXFO_SCTN0300_STRDEF, "NOTMEDIAFILES", "NOTMEDIAFILES", "",),
-	("FOVAL_NOTUNKNOWNFILES", FMAXFO_SCTN0300_STRDEF, "NOTUNKNOWNFILES", "NOTUNKNOWNFILES", "",),
-	("FOVAL_PATH", FMAXFO_SCTN0300_STRDEF, "PATH", "PATH", "",),
-	("FOVAL_PATHHEAD", FMAXFO_SCTN0300_STRDEF, "PATHHEAD", "PATHHEAD", "",),
-	("FOVAL_PATHTAIL", FMAXFO_SCTN0300_STRDEF, "PATHTAIL", "PATHTAIL", "",),
-	("FOVAL_PICS", FMAXFO_SCTN0300_STRDEF, "PICS", "PICS", "",),
-	("FOVAL_RECURSE", FMAXFO_SCTN0300_STRDEF, "RECURSE", "RECURSE", "",),
-	("FOVAL_SOURCEDIR", FMAXFO_SCTN0300_STRDEF, "SOURCEDIR", "SOURCEDIR", "",),
-	("FOVAL_TEXT", FMAXFO_SCTN0300_STRDEF, "TEXT", "TEXT", "",),
-	("FOVAL_UNKNOWNFILES", FMAXFO_SCTN0300_STRDEF, "UNKNOWNFILES", "UNKNOWNFILES", "",),
-	("FOVAL_VIDS", FMAXFO_SCTN0300_STRDEF, "VIDS", "VIDS", "",),
-	("FOVAL_WHITEFILENAME", FMAXFO_SCTN0300_STRDEF, "WHITEFILENAME", "WHITEFILENAME", "",),
-	("FOVAL_WHITEFULLPATH", FMAXFO_SCTN0300_STRDEF, "WHITEFULLPATH", "WHITEFULLPATH", "",),
+	("FOVAL_CHMODDIR", FMAXFO_SCTN0300_VALDEF, "CHMODDIR", "0o755", "default mode for directories this program needs to oerate in",),
+	("FOVAL_CHMODFILE", FMAXFO_SCTN0300_VALDEF, "CHMODFILE", "0o655", "default mode for files this program needs to oerate in",),
+	("FOVAL__EQUIVEXTENSIONS", FMAXFO_SCTN0301_DICTDEF, "EQUIVEXTENSIONS", "an empty entry tupdict+function for each file/directory",),
+	("FOVAL__EQUIVEXTENSIONS", FMAXFO_SCTN0301_STRDICTSTRADD, "EQUIVEXTENSIONS", ".jpeg", ".jpg", "holds the blacklisted filename tail",),
+	("FOVAL__EQUIVEXTENSIONS", FMAXFO_SCTN0301_STRDICTSTRADD, "EQUIVEXTENSIONS", ".jpg", ".jpeg", "holds the blacklisted filename tail",),
+	("FOVAL__EQUIVEXTENSIONS", FMAXFO_SCTN0301_STRDICTSTRADD, "EQUIVEXTENSIONS", ".mpeg", ".mpg", "holds the blacklisted filename tail",),
+	("FOVAL__EQUIVEXTENSIONS", FMAXFO_SCTN0301_STRDICTSTRADD, "EQUIVEXTENSIONS", ".mpg", ".mpeg", "holds the blacklisted filename tail",),
+	("FOVAL__EMPTYENTRY", FMAXFO_SCTN0303_TUPDICTDEF, "EMPTYENTRY", "an empty entry tupdict+function for each file/directory",),
+	("FOVAL__EMPTYENTRY_BLACKHEAD", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "BLACKHEAD", "", "holds the blacklisted filename tail",),
+	("FOVAL__EMPTYENTRY_BLACKTAIL", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "BLACKTAIL", "", "holds the blacklisted filename tail",),
+	("FOVAL__EMPTYENTRY_EXTENSIONGUESSED", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "EXTENSIONGUESSED", "", "whole extension",),
+	("FOVAL__EMPTYENTRY_EXTHEAD", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "EXTHEAD", "", "whole FILENAME",),
+	("FOVAL__EMPTYENTRY_EXTTAIL", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "EXTTAIL", "", "whole FILENAME",),
+	("FOVAL__EMPTYENTRY_FILENAME", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "FILENAME", "", "whole FILENAME",),
+	("FOVAL__EMPTYENTRY_FILETYPEEXT", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "FILETYPEEXT", "EXTENSIONTYPES_UNKNOWN", "filetype group flag",),
+	("FOVAL__EMPTYENTRY_FILETYPEFILE", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "FILETYPEFILE", "EXTENSIONTYPES_UNKNOWN", "filetype group flag",),
+	("FOVAL__EMPTYENTRY_FILETYPEID", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "FILETYPEID", "EXTENSIONTYPES_UNKNOWN", "filetype group flag",),
+	("FOVAL__EMPTYENTRY_GID", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "GID", "", "path tail",),
+	("FOVAL__EMPTYENTRY_ICANEXECUTE", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "ICANEXECUTE", "", "path tail",),
+	("FOVAL__EMPTYENTRY_ICANREAD", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "ICANREAD", "", "path tail",),
+	("FOVAL__EMPTYENTRY_ICANWRITE", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "ICANWRITE", "", "path tail",),
+	("FOVAL__EMPTYENTRY_ISADIR", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISADIR", "False", "entry is a directory",),
+	("FOVAL__EMPTYENTRY_ISAFILE", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISAFILE", "False", "entry is a file",),
+	("FOVAL__EMPTYENTRY_ISAKNOWNFILETYPE", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISAKNOWNFILETYPE", "False", "in an unknown filetype",),
+	("FOVAL__EMPTYENTRY_ISASYMLINK", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "ISASYMLINK", "False", "is a synlink",),
+	("FOVAL__EMPTYENTRY_MODE", FMAXFO_SCTN0303_TUPDICTVALADD, "EMPTYENTRY", "MODE", "0", "mode bits",),
+	("FOVAL__EMPTYENTRY_PATH", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "PATH", "", "whole path",),
+	("FOVAL__EMPTYENTRY_PATHHEAD", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "PATHHEAD", "", "path head",),
+	("FOVAL__EMPTYENTRY_PATHTAIL", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "PATHTAIL", "", "path tail",),
+	("FOVAL__EMPTYENTRY_RAWENTRY", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "RAWENTRY", "", "path tail",),
+	("FOVAL__EMPTYENTRY_UID", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "UID", "", "path tail",),
+	("FOVAL__EMPTYENTRY_WHITEFILENAME", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "WHITEFILENAME", "", "white filename",),
+	("FOVAL__EMPTYENTRY_WHITEFULLNAME", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "WHITEFULLNAME", "", "white path+filename",),
+	("FOVAL__EMPTYENTRY_WHITEFULLPATH", FMAXFO_SCTN0303_TUPDICTSTRADD, "EMPTYENTRY", "WHITEFULLPATH", "", "white full path",),
+	("FOVAL__EXTENSIONGROUPTYPES00", FMAXFO_SCTN0300_VALDEF, "GROUPFLAG_NONE", "0X00", "flag for ungrouped files",),
+	("FOVAL__EXTENSIONGROUPTYPES01", FMAXFO_SCTN0300_VALDEF, "GROUPFLAG_ARCHIVE", "0X01", "flag for archive group files",),
+	("FOVAL__EXTENSIONGROUPTYPES02", FMAXFO_SCTN0300_VALDEF, "GROUPFLAG_MEDIA", "0X02", "flag for media group files",),
+	("FOVAL__EXTENSIONGROUPTYPES03", FMAXFO_SCTN0300_VALDEF, "GROUPFLAG_TEXT", "0X04", "flag for text group files",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "CODE", ".c", "c code file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "CODE", ".php", "php code file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "CODE", ".py", "python code file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".bmp", "bmp image file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".gif", "gif image file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".jpeg", "jpeg image file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".jpg", "jpg image file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".png", "png image file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "PICS", ".webp", "webp image file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "TEXT", ".lst", "text file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "TEXT", ".lst.txt", "text file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".asx", "asx/wmv video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".avi", "avi video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".divx", "divx video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".flv", "flv video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".gifv", "gifv video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".m2ts", "m2ts video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".m4a", "m4a video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".m4v", "m4v video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mkv", "mkv video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mov", "mov video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mp4", "mp4 video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mpeg", "mpeg video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".mpg", "mpg video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".webm", "webm video file",),
+	("FOVAL__EXTENSIONS", FMAXFO_SCTN0304_EXTENSIONADD, "VIDS", ".wmv", "wmv video file",),
+	("FOVAL__EXTENSIONTYPES00", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "EXTENSIONTYPES_UNKNOWN", "0X00", "GROUPFLAG_NONE", "define CODE file extension",),
+	("FOVAL__EXTENSIONTYPES01", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "EXTENSIONTYPES_CODE", "0X01", "GROUPFLAG_TEXT", "define CODE file extension",),
+	("FOVAL__EXTENSIONTYPES02", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "EXTENSIONTYPES_DOCS", "0X02", "GROUPFLAG_NONE", "define DOCS file extension",),
+	("FOVAL__EXTENSIONTYPES03", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "EXTENSIONTYPES_PICS", "0X04", "GROUPFLAG_MEDIA", "define PICS file extension",),
+	("FOVAL__EXTENSIONTYPES04", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "EXTENSIONTYPES_TEXT", "0X08", "GROUPFLAG_TEXT", "define TEXT file extension",),
+	("FOVAL__EXTENSIONTYPES05", FMAXFO_SCTN0304_EXTENSIONTYPEDEF, "EXTENSIONTYPES_VIDS", "0X10", "GROUPFLAG_MEDIA", "define VIDS file extension",),
+	("FOVAL__FILETYPE_CODE", FMAXFO_SCTN0300_STRDEF, "CODE", "CODE", "source code files subset of text filetype",),
+	("FOVAL__FILETYPE_DOCS", FMAXFO_SCTN0300_STRDEF, "DOCS", "DOCS", "documents filetype",),
+	("FOVAL__FILETYPE_PICS", FMAXFO_SCTN0300_STRDEF, "PICS", "PICS", "",),
+	("FOVAL__FILETYPE_TEXT", FMAXFO_SCTN0300_STRDEF, "TEXT", "TEXT", "",),
+	("FOVAL__FILETYPE_VIDS", FMAXFO_SCTN0300_STRDEF, "VIDS", "VIDS", "",),
+	("FOVAL__ILLEGALPATHS", FMAXFO_SCTN0302_LISTDEF, "ILLEGALPATHS", "list of absolute paths to be completely ignored if used",),
+	("FOVAL__ILLEGALPATHS01", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALPATHS", "/", "do not operate on / ever",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTDEF, "ILLEGALWILDCARDS", "list all of the portions of a filename which will result in an error [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/bin/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/boot/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/dev/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/efi/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/etc/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/home/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/lib/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/lib64/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/media/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/opt/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/proc/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/root/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/run/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/sbin/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/srv/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/sys/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/tmp/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/usr/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL__ILLEGALWILDCARDS", FMAXFO_SCTN0302_LISTSTRADD, "ILLEGALWILDCARDS", "/var/", "illegal wildcards, these are most often /path/ and will be [0:] based",),
+	("FOVAL___BLACKHEAD", FMAXFO_SCTN0300_STRDEF, "BLACKHEAD", "BLACKHEAD", "filename part that has all illegal characters included",),
+	("FOVAL___BLACKTAIL", FMAXFO_SCTN0300_STRDEF, "BLACKTAIL", "BLACKTAIL", "only contains ilegal characters",),
+	("FOVAL___EXTENSIONGUESSED", FMAXFO_SCTN0300_STRDEF, "EXTENSIONGUESSED", "EXTENSIONGUESSED", "",),
+	("FOVAL___EXTHEAD", FMAXFO_SCTN0300_STRDEF, "EXTHEAD", "EXTHEAD", "",),
+	("FOVAL___EXTTAIL", FMAXFO_SCTN0300_STRDEF, "EXTTAIL", "EXTTAIL", "",),
+	("FOVAL___FILENAME", FMAXFO_SCTN0300_STRDEF, "FILENAME", "FILENAME", "",),
+	("FOVAL___FILETYPEEXT", FMAXFO_SCTN0300_STRDEF, "FILETYPEEXT", "FILETYPEEXT", "",),
+	("FOVAL___FILETYPEFILE", FMAXFO_SCTN0300_STRDEF, "FILETYPEFILE", "FILETYPEFILE", "",),
+	("FOVAL___FILETYPEID", FMAXFO_SCTN0300_STRDEF, "FILETYPEID", "FILETYPEID", "",),
+	("FOVAL___GID", FMAXFO_SCTN0300_STRDEF, "GID", "GID", "path tail",),
+	("FOVAL___ICANEXECUTE", FMAXFO_SCTN0300_STRDEF, "ICANEXECUTE", "ICANEXECUTE", "path tail",),
+	("FOVAL___ICANREAD", FMAXFO_SCTN0300_STRDEF, "ICANREAD", "ICANREAD", "path tail",),
+	("FOVAL___ICANWRITE", FMAXFO_SCTN0300_STRDEF, "ICANWRITE", "ICANWRITE", "path tail",),
+	("FOVAL___ISADIR", FMAXFO_SCTN0300_STRDEF, "ISADIR", "ISADIR", "",),
+	("FOVAL___ISAFILE", FMAXFO_SCTN0300_STRDEF, "ISAFILE", "ISAFILE", "",),
+	("FOVAL___ISAKNOWNFILETYPE", FMAXFO_SCTN0300_STRDEF, "ISAKNOWNFILETYPE", "ISAKNOWNFILETYPE", "",),
+	("FOVAL___ISASYMLINK", FMAXFO_SCTN0300_STRDEF, "ISASYMLINK", "ISASYMLINK", "",),
+	("FOVAL___MODE", FMAXFO_SCTN0300_STRDEF, "MODE", "MODE", "entry's chmod mode",),
+	("FOVAL___PATH", FMAXFO_SCTN0300_STRDEF, "PATH", "PATH", "",),
+	("FOVAL___PATHHEAD", FMAXFO_SCTN0300_STRDEF, "PATHHEAD", "PATHHEAD", "",),
+	("FOVAL___PATHTAIL", FMAXFO_SCTN0300_STRDEF, "PATHTAIL", "PATHTAIL", "",),
+	("FOVAL___RAWENTRY", FMAXFO_SCTN0300_STRDEF, "RAWENTRY", "RAWENTRY", "path tail",),
+	("FOVAL___UID", FMAXFO_SCTN0300_STRDEF, "UID", "UID", "path tail",),
+	("FOVAL___WHITEFILENAME", FMAXFO_SCTN0300_STRDEF, "WHITEFILENAME", "WHITEFILENAME", "",),
+	("FOVAL___WHITEFULLNAME", FMAXFO_SCTN0300_STRDEF, "WHITEFULLNAME", "WHITEFULLNAME", "",),
+	("FOVAL___WHITEFULLPATH", FMAXFO_SCTN0300_STRDEF, "WHITEFULLPATH", "WHITEFULLPATH", "",),
 	("FOVAL_____", FMAX_NOP, "FOVAL_ENDS",),
 	("SPVAL", FMAX_NOP, "SPVAL_BEGINS",),
 	("SPVAL_BUFSIZE", FMAXSP_SCTN0600_STRDEF, "BUFSIZE", "bufsize", "ARG keys",),
@@ -900,30 +816,6 @@ TBGLST = [
 	("SPVAL_ERRORS", FMAXSP_SCTN0600_STRDEF, "ERRORS", "errors", "errors key",),
 	("SPVAL_EXECUTABLE", FMAXSP_SCTN0600_STRDEF, "EXECUTABLE", "executable", "ARG key",),
 	("SPVAL_EXTRA_GROUPS", FMAXSP_SCTN0600_STRDEF, "EXTRA_GROUPS", "extra_groups", "ARG key",),
-	("SPVAL_GETDEPS", FMAXSP_SCTN0603_TUPDICTDEF, "ARGS_GETDEPS", "define empty ARGS_GETDEPS structures",),
-	("SPVAL_GETDEPS_CAPOUT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETDEPS", "CAPOUT", "True", "default CAPOUT True",),
-	("SPVAL_GETDEPS_POPENARGS_00", FMAXSP_SCTN0603_TUPDICTLISTDEF, "ARGS_GETDEPS", "POPENARGS", "default POPENARGS for getting deps",),
-	("SPVAL_GETDEPS_POPENARGS_01", FMAXSP_SCTN0603_TUPDICTLISTSTRADD, "ARGS_GETDEPS", "POPENARGS", "trizen -Qi", "call trizen",),
-	("SPVAL_GETDEPS_SHELL", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETDEPS", "SHELL", "True", "default SHELL False",),
-	("SPVAL_GETDEPS_TEXT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETDEPS", "TEXT", "True", "default SHELL False",),
-	("SPVAL_GETFRGN", FMAXSP_SCTN0603_TUPDICTDEF, "ARGS_GETFRGN", "define empty ARGS_GETFRGN structures",),
-	("SPVAL_GETFRGN_CAPOUT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETFRGN", "CAPOUT", "True", "default CAPOUT True",),
-	("SPVAL_GETFRGN_POPENARGS_00", FMAXSP_SCTN0603_TUPDICTLISTDEF, "ARGS_GETFRGN", "POPENARGS", "define POPENARGS",),
-	("SPVAL_GETFRGN_POPENARGS_01", FMAXSP_SCTN0603_TUPDICTLISTSTRADD, "ARGS_GETFRGN", "POPENARGS", "trizen -Qm", "call trizen",),
-	("SPVAL_GETFRGN_SHELL", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETFRGN", "SHELL", "True", "default SHELL False",),
-	("SPVAL_GETFRGN_TEXT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETFRGN", "TEXT", "True", "default text True",),
-	("SPVAL_GETQI", FMAXSP_SCTN0603_TUPDICTDEF, "ARGS_GETQI", "define empty ARGS_GETQI structures",),
-	("SPVAL_GETQI_CAPOUT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETQI", "CAPOUT", "True", "default CAPOUT True",),
-	("SPVAL_GETQI_POPENARGS_00", FMAXSP_SCTN0603_TUPDICTLISTDEF, "ARGS_GETQI", "POPENARGS", "default POPENARGS for getting deps",),
-	("SPVAL_GETQI_POPENARGS_01", FMAXSP_SCTN0603_TUPDICTLISTSTRADD, "ARGS_GETQI", "POPENARGS", "trizen -Qi", "call trizen",),
-	("SPVAL_GETQI_SHELL", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETQI", "SHELL", "True", "default SHELL False",),
-	("SPVAL_GETQI_TEXT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETQI", "TEXT", "True", "default SHELL False",),
-	("SPVAL_GETSI", FMAXSP_SCTN0603_TUPDICTDEF, "ARGS_GETSI", "define empty ARGS_GETSI structures",),
-	("SPVAL_GETSI_CAPOUT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETSI", "CAPOUT", "True", "default CAPOUT True",),
-	("SPVAL_GETSI_POPENARGS_00", FMAXSP_SCTN0603_TUPDICTLISTDEF, "ARGS_GETSI", "POPENARGS", "default POPENARGS for getting deps",),
-	("SPVAL_GETSI_POPENARGS_01", FMAXSP_SCTN0603_TUPDICTLISTSTRADD, "ARGS_GETSI", "POPENARGS", "trizen -Si", "call trizen",),
-	("SPVAL_GETSI_SHELL", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETSI", "SHELL", "True", "default SHELL False",),
-	("SPVAL_GETSI_TEXT", FMAXSP_SCTN0603_TUPDICTVALADD, "ARGS_GETSI", "TEXT", "True", "default SHELL False",),
 	("SPVAL_GROUP", FMAXSP_SCTN0600_STRDEF, "GROUP", "group", "ARG key",),
 	("SPVAL_INPUT", FMAXSP_SCTN0600_STRDEF, "INPUT", "input", "input key",),
 	("SPVAL_PASS_FDS", FMAXSP_SCTN0600_STRDEF, "PASS_FDS", "pass_fds", "ARG key",),
@@ -941,7 +833,15 @@ TBGLST = [
 	("SPVAL_UMASK", FMAXSP_SCTN0600_STRDEF, "UMASK", "umask", "ARG key",),
 	("SPVAL_UNIVERSAL_NEWLINES", FMAXSP_SCTN0600_STRDEF, "UNIVERSAL_NEWLINES", "universal_newlines", "ARG key",),
 	("SPVAL_USER", FMAXSP_SCTN0600_STRDEF, "USER", "user", "ARG key",),
-	("SPVAL_____", FMAX_NOP, "SPVAL section starts",),
+	("SPVAL__FILE", FMAXSP_SCTN0603_TUPDICTDEF, "FILE", "use linux 'file' command to identify files",),
+	("SPVAL__FILE_CAPOUT", FMAXSP_SCTN0603_TUPDICTVALADD, "FILE", "CAPOUT", "True", "capture output",),
+	("SPVAL__FILE_SHELL", FMAXSP_SCTN0603_TUPDICTVALADD, "FILE", "SHELL", "True", "use a normal shell to execute this command",),
+	("SPVAL__FILE_TEXT", FMAXSP_SCTN0603_TUPDICTVALADD, "FILE", "TEXT", "True", "return text rather than bytes",),
+	("SPVAL__FILE__PARMS_00", FMAXSP_SCTN0603_TUPDICTPARMSDEF, "FILE", "add a file name replacement to the function",),
+	("SPVAL__FILE__PARMS_01", FMAXSP_SCTN0603_TUPDICTPARMSADD, "FILE", "&F&", "fileName_", "add a file name replacement to the function",),
+	("SPVAL__FILE__POPENARGS_00", FMAXSP_SCTN0603_TUPDICTLISTDEF, "FILE", "POPENARGS", "POPENARGS for file identification using 'file' command",),
+	("SPVAL__FILE__POPENARGS_01", FMAXSP_SCTN0603_TUPDICTLISTSTRADD, "FILE", "POPENARGS", "/usr/bin/file -i '&F&'", "POPENARGS entry for 'file' command",),
+	("SPVAL_____", FMAX_NOP, "SPVAL_ENDS",),
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
 ]
 TBGLST.sort()
@@ -993,13 +893,30 @@ def makeADict(dictName_, dictComment_, dictItems_):
 
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+# sortADict
+# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
+def sortADict(dictToSort_):
+	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	dictToRtn_ = {}
+	for thisKey_ in sorted(dictToSort_.keys(), key=lambda KEY_: KEY_.lower()):
+		dictToRtn_[thisKey_] = dictToSort_[thisKey_]
+	return dictToRtn_
+	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+
+
+# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeAList
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-def makeAList(listName_, listComment_, listItems_):
+def makeAList(listName_, listComment_, listItems_, listItemCmntDict_, addQuotes_=False):
 	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
 	strToRtn_ = ""
-	strToRtn_ += f"""{listName_} = {OBRKT}  # {listComment_}
-{listItems_}{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
+	strToRtn_ += f"""{listName_} = {OBRKT}  # {listComment_}{NEWLINE}"""
+	for thisItem_ in listItems_:
+		if addQuotes_ is True:
+			strToRtn_ += f"""{NTAB(1)}{DBLQT}{thisItem_}{DBLQT},  # {listItemCmntDict_[thisItem_]}{NEWLINE}"""
+		else:
+			strToRtn_ += f"""{NTAB(1)}{thisItem_},  # {listItemCmntDict_[thisItem_]}{NEWLINE}"""
+	strToRtn_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
 	return strToRtn_
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
 
@@ -1007,30 +924,81 @@ def makeAList(listName_, listComment_, listItems_):
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeATupDict
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-def makeATupDict(tupDictName_, tupDictItems_, tupDictSidecar_):
+def makeANormalTupDict(tupDictName_, tupDictItems_):
 	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
 	strToRtn_ = ""
 	strToRtn1_ = ""
 
 	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
-	if tupDictSidecar_ is None:
-		strToRtn_ += f"""{makeAComment(f"start of {tupDictName_} structures")}
+	strToRtn_ += f"""{makeAComment(f"start of {tupDictName_} structures")}
 {tupDictName_}TUP = {OPAREN}
 {tupDictItems_}{CPAREN}{NEWLINE}{NEWLINE}def {tupDictName_}DICT{OPAREN}{CPAREN}:
 {NTAB(1)}return dict{OPAREN}{OPAREN}x, y{CPAREN} for x, y in {tupDictName_}TUP{CPAREN}{NEWLINE}{NEWLINE}{NEWLINE}"""
+	return strToRtn_
+	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
 
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
-	else:
-		strToRtn_ += f"""{makeAComment(f"start of {tupDictName_} structures")}{NEWLINE}"""
-		for key_, items_ in tupDictSidecar_.items():
-			strToRtn_ += f"""{tupDictName_}_{key_}TUP = {OPAREN}{NEWLINE}{items_}{CPAREN}{NEWLINE}{NEWLINE}"""
-			strToRtn1_ += f"""{NTAB(1)}listToRtn_ = list((x) for x in {tupDictName_}_{key_}TUP){NEWLINE}"""
-		strToRtn_ += f"""{tupDictName_}TUP = {OPAREN}
+
+# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+# makeASidecarTupDic
+# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+def makeASidecarTupDic(tupDictName_, tupDictItems_, tupDictSidecars_):
+	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+	strToRtn_ = ""
+	strToRtn1_ = ""
+	strToRtn_ += f"""{makeAComment(f"start of {tupDictName_} structures")}{NEWLINE}"""
+	for key_, items_ in tupDictSidecars_.items():
+		strToRtn_ += f"""{tupDictName_}_{key_}TUP = {OPAREN}{NEWLINE}{items_}{CPAREN}{NEWLINE}{NEWLINE}"""
+		strToRtn1_ += f"""{NTAB(1)}listToRtn_ = list((x) for x in {tupDictName_}_{key_}TUP){NEWLINE}"""
+	strToRtn_ += f"""{tupDictName_}TUP = {OPAREN}
 {tupDictItems_}{CPAREN}{NEWLINE}{NEWLINE}def {tupDictName_}DICT{OPAREN}{CPAREN}:
 {NTAB(1)}dictToRtn_ = dict{OPAREN}{OPAREN}x, y{CPAREN} for x, y in {tupDictName_}TUP{CPAREN}{NEWLINE}{strToRtn1_}{NTAB(1)}return listToRtn_, dictToRtn_{NEWLINE}{NEWLINE}{NEWLINE}"""
+	return strToRtn_
+	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+
+
+# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+# makeAFullTupDict (sidecar is a single item list, or alist of strings that will be concatenated before substitution)
+# * #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*
+def makeAFullTupDict(tupDictName_, tupDictItems_, tupDictSidecars_, tupDictParms_):
+	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+
+	subParmsStr_ = f"""{NTAB(1)}def {tupDictName_}_subParms(listIn_, tupDictParms_):
+{NTAB(2)}listToRtn_ = []
+{NTAB(2)}for thisStr_ in listIn_:
+{NTAB(3)}for subParm_, replaceStr_ in tupDictParms_:
+{NTAB(4)}thisStr_ = thisStr_.replace(subParm_, replaceStr_)
+{NTAB(3)}listToRtn_.append(thisStr_)
+{NTAB(2)}return listToRtn_{NEWLINE}{NEWLINE}"""
+
+	strToRtn1_ = ""
+	strToRtn2_ = ""
+	sideCarToRtn = {}
+	parmsNames_ = ""
+	sideCar_ = {}
+
+	for subParm_, replaceStr_ in tupDictParms_:
+		parmsNames_ += f"""{replaceStr_}, """
+	parmsNames_ = parmsNames_[:-2]
+
+	strToRtn1_ += f"""{makeAComment(f"start of {tupDictName_} structures")}{NEWLINE}"""
+
+	strToRtn3_ = f"""{NTAB(1)}{tupDictName_}_PARMS = {OBRKT}{NEWLINE}"""
+	for subParm_, replaceStr_ in tupDictParms_:
+		strToRtn3_ += f"""{NTAB(2)}{OPAREN}{DBLQT}{subParm_}{DBLQT}, {replaceStr_}{CPAREN},{NEWLINE}"""
+	strToRtn3_ = strToRtn3_[:-1] + f"""{NEWLINE}{NTAB(1)}{CBRKT}{NEWLINE}"""
+
+	for key_, items_ in tupDictSidecars_.items():
+		strToRtn1_ += f"""{tupDictName_}_{key_}TUP = {OPAREN}{NEWLINE}{items_}{CPAREN}{NEWLINE}{NEWLINE}"""
+		strToRtn2_ += f"""{NTAB(1)}listToRtn_ = list((x) for x in {tupDictName_}_{key_}TUP){NEWLINE}"""
+		strToRtn2_ += f"""{NTAB(1)}listToRtn_ = CF.subParms(listToRtn_, {tupDictName_}_PARMS)"""
+	strToRtn1_ += f"""{tupDictName_}TUP = {OPAREN}
+{tupDictItems_}{CPAREN}{NEWLINE}{NEWLINE}def {tupDictName_}DICT{OPAREN}{parmsNames_}{CPAREN}:{NEWLINE}{strToRtn3_}
+{NTAB(1)}dictToRtn_ = dict{OPAREN}{OPAREN}x, y{CPAREN} for x, y in {tupDictName_}TUP{CPAREN}{NEWLINE}"""
+
+	strToRtn1_ += f"""{strToRtn2_}{NEWLINE}{NTAB(1)}return listToRtn_, dictToRtn_{NEWLINE}{NEWLINE}{NEWLINE}"""
 
 	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
-	return strToRtn_
+	return strToRtn1_
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
 
 
@@ -1069,7 +1037,7 @@ def explodeItem(itemToExplode_):
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
 
 
-# FM_MAKE_CF_BEGINS
+# FMCF_MAKE_BEGINS
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeCF
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -1080,8 +1048,9 @@ def makeCF():
 
 	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
 	strToRtn_ += f"""{makeAComment("SCTN0201 CF defines")}"""
-	for name_, value_ in FMCF_SCTN0201_DEFDICT.items():
-		strToRtn_ += f"""{name_} = {value_}  # {FMCF_SCTN0201_DEFCMNTDICT[name_]}{NEWLINE}"""
+	dictToUse_ = sortADict(FMCF_SCTN0201_DEFDICT)
+	for thisName_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{thisName_} = {value_}  # {FMCF_SCTN0201_DEFCMNTDICT[thisName_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
 
@@ -1091,16 +1060,18 @@ def makeCF():
 	strToRtn2_ = ""
 	strToRtn1_ += f"""OPTIONS = {OBRCE}{NEWLINE}{FOLD1STARTHERELN}"""
 	strToRtn2_ += f"""OPTIONSHELPDICT = {OBRCE}{NEWLINE}{FOLD1STARTHERELN}"""
-	for name_, values_ in FMCF_SCTN0202_OPTIONSDICT.items():
-		strToRtn1_ += f"""{NTAB(1)}{DBLQT}{name_}{DBLQT}: {OBRCE}{NEWLINE}{NTAB(1)}{FOLD2STARTHERELN}{values_}{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(1)}{FOLD2ENDHERELN}"""
-		strToRtn2_ += f"""{NTAB(1)}{DBLQT}{name_}{DBLQT}: \{NEWLINE}{NTAB(1)}{FOLD2STARTHERELN}{TRIQT}{FMCF_SCTN0202_OPTIONSHELPDICT[name_]}{NTAB(1)}{TRIQT},{NEWLINE}{NTAB(1)}{FOLD2ENDHERELN}"""
+	dictToUse_ = sortADict(FMCF_SCTN0202_OPTIONSDICT)
+	for thisName_, values_ in dictToUse_.items():
+		strToRtn1_ += f"""{NTAB(1)}{DBLQT}{thisName_}{DBLQT}: {OBRCE}{NEWLINE}{NTAB(1)}{FOLD2STARTHERELN}{values_}{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(1)}{FOLD2ENDHERELN}"""
+		strToRtn2_ += f"""{NTAB(1)}{DBLQT}{thisName_}{DBLQT}: {NEWLINE}{NTAB(1)}{FOLD2STARTHERELN}{TRIQT}{FMCF_SCTN0202_OPTIONSHELPDICT[thisName_]}{NTAB(1)}{TRIQT},{NEWLINE}{NTAB(1)}{FOLD2ENDHERELN}"""
 	strToRtn1_ += f"""{CBRCE}{NEWLINE}{FOLD1ENDHERELN}{NEWLINE}"""
 	strToRtn2_ += f"""{CBRCE}{NEWLINE}{FOLD1ENDHERELN}{NEWLINE}"""
 	strToRtn_ += f"""{strToRtn1_}{strToRtn2_}"""
 
 	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
 	strToRtn_ += f"""OPTIONSDICT = {OBRCE}{NEWLINE}"""
-	for name_, value_ in FMCF_SCTN0202_OPTIONSDICTDICT.items():
+	dictToUse_ = sortADict(FMCF_SCTN0202_OPTIONSDICTDICT)
+	for thisName_, value_ in dictToUse_.items():
 		strToRtn_ += f"""{value_}"""
 	strToRtn_ += f"""{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
 	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
@@ -1109,10 +1080,10 @@ def makeCF():
 	return strToRtn_
 
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# FM_MAKE_CF_ENDS
+# FMCF_MAKE_ENDS
 
 
-# FM_MAKE_FM_BEGINS
+# FMFM_MAKE_BEGINS
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeFM
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -1124,14 +1095,17 @@ def makeFM():
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN003 TYPEs and lambda")}"""
-	for thisName_, value_ in FMCF_SCTN0003_TYPEDICT.items():
+	dictToUse_ = sortADict(FMCF_SCTN0003_TYPEDICT)
+	for thisName_, value_ in dictToUse_.items():
+		value_ = FMCF_SCTN0003_TYPEDICT[thisName_]
 		strToRtn_ += f"""{thisName_} = {value_}  # {FMCF_SCTN0003_TYPECMNTDICT[thisName_]}{NEWLINE}"""
 	strToRtn_ += NEWLINE + NEWLINE
 
 	## ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN101 FMAX _DEF_")}"""
 	strToRtn01_ = ""
-	for thisName_, value_ in FMFM_SCTN0101_AXDICT.items():
+	dictToUse_ = sortADict(FMFM_SCTN0101_AXDICT)
+	for thisName_, value_ in dictToUse_.items():
 		strToRtn_ += f"""{thisName_} = {value_}  # {FMFM_SCTN0101_AXCMNTDICT[thisName_]}{NEWLINE}"""
 		strToRtn01_ += f"""{NTAB(1)}{thisName_},  # {FMFM_SCTN0101_AXCMNTDICT[thisName_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}FMAXFM_AXLST = {OBRKT}{NEWLINE}{strToRtn01_}{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
@@ -1139,343 +1113,124 @@ def makeFM():
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN102 VAL _DEF_")}"""
 	strToRtn01_ = ""
-	for thisName_, value_ in FMFM_SCTN0102_VALDICT.items():
+	dictToUse_ = sortADict(FMFM_SCTN0102_VALDICT)
+	for thisName_, value_ in dictToUse_.items():
 		strToRtn_ += f"""{thisName_} = {value_}  # {FMFM_SCTN0102_VALCMNTDICT[thisName_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN103 _DICT_ _DEF_")}"""
 	strToRtn01_ = ""
-	for thisName_, value_ in FMFM_SCTN0103_DICTDICT.items():
+	dictToUse_ = sortADict(FMFM_SCTN0103_DICTDICT)
+	for thisName_, value_ in dictToUse_.items():
 		strToRtn_ += f"""{thisName_} = {OBRCE}{CBRCE}  # {FMFM_SCTN0103_DICTCMNTDICT[thisName_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN104 _LIST_ _DEF_")}"""
-	for thisName_, value_ in FMFM_SCTN0104_LISTDICT.items():
+	dictToUse_ = sortADict(FMFM_SCTN0104_LISTDICT)
+	for thisName_, value_ in dictToUse_.items():
 		strToRtn_ += f"""{thisName_} = {value_}  # {FMFM_SCTN0104_LISTCMNTDICT[thisName_]}{NEWLINE}"""
 	strToRtn_ += f"""{NEWLINE}{NEWLINE}{makeAWideComment("end of managed portions of FM.py")}{NEWLINE}{NEWLINE}"""
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{NTAB(1)}global {BKSLSH}{NEWLINE}"""
-	for key_ in FMFM_SCTN0102_VALDICT:
-		strToRtn_ += f"""{NTAB(2)}{key_}, {BKSLSH}{NEWLINE}"""
-	for key_ in FMFM_SCTN0103_DICTDICT:
-		strToRtn_ += f"""{NTAB(2)}{key_}, {BKSLSH}{NEWLINE}"""
-	for key_ in FMFM_SCTN0104_LISTDICT:
-		strToRtn_ += f"""{NTAB(2)}{key_}, {BKSLSH}{NEWLINE}"""
+
+	dictToUse_ = sortADict(FMFM_SCTN0102_VALDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{NTAB(2)}{name_}, {BKSLSH}{NEWLINE}"""
+
+	dictToUse_ = sortADict(FMFM_SCTN0103_DICTDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{NTAB(2)}{name_}, {BKSLSH}{NEWLINE}"""
+
+	dictToUse_ = sortADict(FMFM_SCTN0104_LISTDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{NTAB(2)}{name_}, {BKSLSH}{NEWLINE}"""
+
 	strToRtn_ = f"""{strToRtn_[:-4]}{NEWLINE}"""
 
 	return strToRtn_
 	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
 
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# FM_MAKE_FM_ENDS
+# FMFM_MAKE_ENDS
 
 
-# FM_MAKE_FO_BEGINS
+# FMFO_MAKE_BEGINS
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-# makeFM
+# makeFO
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 def makeFO():
 	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
 	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
 	strToRtn_ = ""
-	strToRtn_ += f"""{readFileToStr(FOTOP_NAME)}{readFileToStr(SCTN0102NAME)}"""
+	strToRtn_ += f"""{readFileToStr(FOTOP_NAME)}"""
 
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""{makeAComment("SCTN0300 FO.py defines")}"""
+	dictToUse_ = sortADict(FMFO_SCTN0300_VALDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{name_} = {value_}  # {FMFO_SCTN0300_VALCMNTDICT[name_]}{NEWLINE}"""
+	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""{makeAComment("SCTN0301 FO.py dictionaries")}"""
+	dictToUse_ = sortADict(FMFO_SCTN0301_DICTDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{makeADict(name_, FMFO_SCTN0301_DICTCMNTDICT[name_], value_)}"""
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""{makeAComment("SCTN0302 FO.py lists")}"""
+	dictToUse_ = sortADict(FMFO_SCTN0302_LISTDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{name_} = {OBRCE}  # {FMFO_SCTN0302_LISTCMNTDICT[name_]}{NEWLINE}{value_}{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""{makeAComment("SCTN0303 FO.py tupdicts")}"""
+	dictToUse_ = sortADict(FMFO_SCTN0303_TUPDICTDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{makeANormalTupDict(name_, value_)}"""
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""{makeAComment("SCTN0304 FO.py extension management structures")}{NEWLINE}{NEWLINE}"""
+	# print(f"""FMFO_SCTN0304_EXTENSIONGROUPDICT {FMFO_SCTN0304_EXTENSIONGROUPDICT}{NEWLINE}FMFO_SCTN0304_EXTENSIONSCMNTDICT {FMFO_SCTN0304_EXTENSIONSCMNTDICT}{NEWLINE}FMFO_SCTN0304_KNOWNFILETYPESLIST {FMFO_SCTN0304_KNOWNFILETYPESLIST}{NEWLINE}FMFO_SCTN0304_EXTENSIONLOOKUPDICT {FMFO_SCTN0304_EXTENSIONLOOKUPDICT}{NEWLINE}FMFO_SCTN0304_EXTENSIONSTYPESDICT {FMFO_SCTN0304_EXTENSIONSTYPESDICT}{NEWLINE}FMFO_SCTN0304_EXTENSIONGROUPCMNTDICT {FMFO_SCTN0304_EXTENSIONGROUPCMNTDICT}{NEWLINE}""")
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""EXTENSIONSTYPES = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERELN}"""
+	dictToUse_ = sortADict(FMFO_SCTN0304_EXTENSIONSTYPESDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{NTAB(1)}{name_}:  {OBRKT}# {FMFO_SCTN0300_VALCMNTDICT[name_]}{NEWLINE}{NTAB(1)}{FOLD2STARTHERELN}{value_}{NTAB(1)}{CBRKT},{NEWLINE}{NTAB(1)}{FOLD2ENDHERELN}{NEWLINE}"""
+	strToRtn_ += f"""{CBRCE}{NEWLINE}{FOLD1ENDHERELN}{NEWLINE}{NEWLINE}"""
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""EXTENSIONLOOKUP = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERELN}"""
+	dictToUse_ = sortADict(FMFO_SCTN0304_EXTENSIONLOOKUPDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{value_}"""
+	strToRtn_ += f"""{CBRCE}{NEWLINE}{FOLD1ENDHERELN}{NEWLINE}{NEWLINE}"""
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""EXTENSIONGROUPS = {OBRCE}{NEWLINE}"""
+	dictToUse_ = sortADict(FMFO_SCTN0304_EXTENSIONGROUPDICT)
+	for name_, value_ in dictToUse_.items():
+		strToRtn_ += f"""{NTAB(1)}{name_}: {value_},  # {FMFO_SCTN0300_VALCMNTDICT[name_]}{NEWLINE}"""
+	strToRtn_ += f"""{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	# FMFO_SCTN0304_KNOWNFILETYPESLIST.sort(key=lambda KEY_: KEY_.lower())
+	# strToRtn_ += f"""{makeAList("KNOWNEXTENSIONSLIST", "list of all file extensions known to this code", FMFO_SCTN0304_KNOWNFILETYPESLIST, FMFO_SCTN0304_EXTENSIONSCMNTDICT, True)}"""
+
+	# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
+	strToRtn_ += f"""{makeAWideComment("end of managed sections of FO.py")}{NEWLINE}{NEWLINE}"""
 	return strToRtn_
 	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
 
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# FM_MAKE_FO_ENDS
+# FMFO_MAKE_ENDS
 
 
-# FM_MAKE_DBSQLT_BEGINS
-# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-# makeDBSQLT
-# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-def makeDBSQLT():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
-	strToRtn_ = ""
-
-	strToRtn_ += f"""{DB_TOP_SQLT}{makeAComment("SCTN70 DB defines")}{NEWLINE}{NEWLINE}"""
-	for name_, val_ in FMDBSQLT_SCTN70DEFDICT.items():
-		strToRtn_ += f"""{name_} = {val_}  # {FMDBSQLT_SCTN70DEFCMNTDICT[name_]}{NEWLINE}"""
-	strToRtn_ += f"{NEWLINE}{NEWLINE}"
-
-	strToRtn_ += f"""{makeAComment("SCTN71 DB dicts defines")}{NEWLINE}{NEWLINE}"""
-	for name_, val_ in FMDBSQLT_SCTN71DICTDICT.items():
-		strToRtn_ += f"""{name_} = {OBRCE}  # {FMDBSQLT_SCTN71DICTCMNTDICT[name_]}{NEWLINE}{val_}"""
-	strToRtn_ += f"{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"
-
-	strToRtn_ += f"""{makeAComment("SCTN72 DB lists defines")}{NEWLINE}{NEWLINE}"""
-	for name_, val_ in FMDBSQLT_SCTN72LISTDICT.items():
-		strToRtn_ += f"""{name_} = {OBRKT}  # {FMDBSQLT_SCTN72LISTCMNTDICT[name_]}{NEWLINE}{val_}{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-
-	strToRtn_ += f"""{makeAComment("SCTN73 DB tupdict defines")}{NEWLINE}{NEWLINE}"""
-	for name_, items_ in FMDBSQLT_SCTN73TUPDICTDICT.items():
-		strToRtn_ += f"""{makeATupDict(name_, items_, None)}"""
-
-	strToRtn_ += f"""{DB_BTM_SQLT}"""
-
-	return strToRtn_
-
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# FM_MAKE_DBSQLT_ENDS
-
-
-# FM_MAKE_DO_BEGINS
-# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-# makeDOHBI
-# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-def makeDOHBI():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
-	strToRtn_ = ""
-	strToRtn_ += f"""{readFileToStr(DOHBITOP_NAME)}"""
-	for item_ in FMDO_SCTN040A_HBIABSLIST:
-		strToRtn_ += f"""{NTAB(1)}devHBI.enable{OPAREN}LD.EV_ABS.{item_}{NEWLINE}"""
-	strToRtn_ += f"""{NEWLINE}"""
-	for item_ in FMDO_SCTN040A_HBIBTNLIST:
-		strToRtn_ += f"""{NTAB(1)}devHBI.enable{OPAREN}LD.EV_KEY.{item_}{NEWLINE}"""
-	strToRtn_ += f"""{NEWLINE}"""
-	for item_ in FMDO_SCTN040A_HBIKEYLIST:
-		strToRtn_ += f"""{NTAB(1)}devHBI.enable{OPAREN}LD.EV_KEY.{item_}{NEWLINE}"""
-	strToRtn_ += f"""{NEWLINE}"""
-	for item_ in FMDO_SCTN040A_HBIRELLIST:
-		strToRtn_ += f"""{NTAB(1)}devHBI.enable{OPAREN}LD.EV_REL.{item_}{NEWLINE}"""
-	strToRtn_ += f"""{readFileToStr(DOHBIBTM_NAME)}"""
-	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥ ⥣1⥥
-# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-# makeDO
-# #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
-def makeDO():
-	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
-	strToRtn_ = ""
-	strToRtn_ += f"""{readFileToStr(DOTOP_NAME)}"""
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN41 device defines
-	strToRtn_ += f"""{makeAComment("SCTN0401 device defines")}"""
-	for name_, value_ in FMDO_SCTN0401_DEVICEDEFDICT.items():
-		strToRtn_ += f"""{value_}  # {FMDO_SCTN0401_DEVICEDEFCMNTDICT[name_]}{NEWLINE}"""
-	strToRtn_ += f"""{NEWLINE}{NEWLINE}{makeAComment("SCTN47 buttons lists")}BTNSHOLDABLELIST = {OBRKT}{NEWLINE}"""
-	for item_ in BTNSHOLDABLELIST:
-		strToRtn_ += f"""{NTAB(1)}{item_},{NEWLINE}"""
-	strToRtn_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN41 device defines
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN42 LDIE entries
-	strToRtn_ += f"""{makeAComment("SCTN0402 LDIE entries")}{FOLD1STARTHERE}{NEWLINE}"""
-	for name_, value_ in FMDO_SCTN0402_LDIEDICT.items():
-		strToRtn_ += f"""{name_} = {value_}  # {FMDO_SCTN0402_LDIECMNTDICT[name_]}{NEWLINE}"""
-	strToRtn_ += f"""{FOLD1ENDHERE}{NEWLINE}{NEWLINE}"""
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN42 LDIE entries
-	strToRtn_ += f"""SPCLAXLIST = {OBRKT}{NEWLINE}"""
-	for thisItem_ in FMDO_SCTN0402_LDIESPCLLIST:
-		strToRtn_ += f"""{NTAB(1)}{thisItem_},  # {FMDO_SCTN0402_LDIECMNTDICT[thisItem_]}{NEWLINE}"""
-	strToRtn_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN42 LDIE entries
-	strToRtn_ += f"""RELAXLIST = {OBRKT}{NEWLINE}"""
-	for thisItem_ in FMDO_SCTN0402_LDIERELLIST:
-		strToRtn_ += f"""{NTAB(1)}{thisItem_},  # {FMDO_SCTN0402_LDIECMNTDICT[thisItem_]}{NEWLINE}"""
-	strToRtn_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN42 LDIE entries
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN43 actions to output entries
-	strToRtn_ += f"""{makeAComment("SCTN0403 actions to output entries")}"""
-	strToRtn_ += f"""ACTIONS = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}{NEWLINE}"""
-	for name_, value_ in FMDO_SCTN0403_AXDEFDICT.items():
-		strToRtn_ += f"""{NTAB(1)}{name_}: {OBRKT}  # {FMDO_SCTN0403_AXDEFCMNTDICT[name_]}{NEWLINE}{NTAB(1)}{FOLD2STARTHERE}{NEWLINE}{value_}{NTAB(1)}{CBRKT},{NEWLINE}{NTAB(1)}{FOLD2ENDHERE}{NEWLINE}{NEWLINE}"""
-	strToRtn_ += f"""{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN43 actions to output entries
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN48 device code list and dict
-	strToRtn_ += f"""{makeAComment("SCTN0408 device code list and dict")}"""
-	for name_, item_ in FMDO_SCTN0408_DEFDICT.items():
-		strToRtn_ += f"""{item_}  # {FMDO_SCTN0408_DEFCMNTDICT[name_]}{NEWLINE}"""
-	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
-	strToRtn1_ = ""
-	strToRtn2_ = ""
-	strToRtn1_ += f"""DEVTLIST = {OBRKT}{NEWLINE}"""
-	strToRtn2_ += f"""DEVTDICT = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}{NEWLINE}"""
-	for name_, values_ in FMDO_SCTN0408_TYPESDICT.items():
-		strToRtn1_ += f"""{NTAB(1)}{name_},  # {FMDO_SCTN0408_TYPESCMNTDICT[name_]}{NEWLINE}"""
-		strToRtn2_ += f"""{NTAB(1)}{name_}: {OBRKT}  # {FMDO_SCTN0408_TYPESCMNTDICT[name_]}{NEWLINE}{NTAB(1)}{FOLD2STARTHERE}{NEWLINE}"""
-		for thisValue_ in values_:
-			strToRtn2_ += f"""{NTAB(2)}{thisValue_}{NEWLINE}"""
-		strToRtn2_ += f"""{NTAB(1)}{CBRKT},{NEWLINE}{NTAB(1)}{FOLD2ENDHERE}{NEWLINE}{NEWLINE}"""
-	strToRtn1_ += f"""{CBRKT}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	strToRtn2_ += f"""{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{CBRCE}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	strToRtn_ += f"""{strToRtn1_}{strToRtn2_}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN48 device code list and dict
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN44 device entries
-	strToRtn_ += f"""{makeAComment("SCTN0404 device entries")}"""
-	strToRtn1_ = ""
-	strToRtn_ += f"""DEVICES = {OBRCE}  # define SCTN0404 DEVICES{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}{NEWLINE}"""
-	for name_, value_ in FMDO_SCTN0404_DEVICESDICT.items():
-		strToRtn1_ += f"""{NTAB(1)}{name_}: {OBRCE}  # {FMDO_SCTN0401_DEVICEDEFCMNTDICT[name_]}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{NEWLINE}"""
-		for name1_, value1_ in value_.items():
-			strToRtn1_ += f"""{NTAB(2)}{name1_}: {value1_}, {NEWLINE}"""
-		strToRtn1_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}{NEWLINE}"""
-	strToRtn1_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{NEWLINE}"""
-	strToRtn_ += f"""{strToRtn1_}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN44 device entries
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-	strToRtn_ += f"""{makeAComment("SCTN0405 device PROFILE BTNTYPEDICT REPEATDICT")}"""
-	strToRtn_ += f"""{makeAComment("PROFILE")}{NEWLINE}PROFILE = {OBRCE}  # device PROFILE{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
-	strToRtn1_ = f"""{makeAComment("REPEATDICT")}{NEWLINE}REPEATDICT = {OBRCE}  # device REPEATDSICT{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
-	strToRtn2_ = f"""{makeAComment("BTNTYPEDICT")}{NEWLINE}BTNTYPEDICT = {OBRCE}  # BTNTYPEDICT{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
-	strToRtn3_ = f"""{makeAComment("BTNNDXDICT")}{NEWLINE}BTNNDXDICT = {OBRCE}  # BTNNDXDICT{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}"""
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-	for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-		# 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ 2⥥ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-		BC1 = f""" {thisDEV_MYNAME_}:"""
-		MK1 = f"""{NTAB(1)}{MARK1MIDLN(BC1)}"""
-		strToRtn_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{BC1}{NEWLINE}{NEWLINE}{MK1}{NTAB(2)}{MARK2STARTLN(BC1)}"""
-		strToRtn1_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{BC1}{NEWLINE}{NEWLINE}{MK1}{NTAB(2)}{MARK2STARTLN(BC1)}"""
-		strToRtn2_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{BC1}{NEWLINE}{NEWLINE}{MK1}{NTAB(2)}{MARK2STARTLN(BC1)}"""
-		strToRtn3_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERE}{BC1}{NEWLINE}{NEWLINE}{MK1}{NTAB(2)}{MARK2STARTLN(BC1)}"""
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-		for thisBTNName1_, thisVal2_ in thisVal1_.items():
-			# 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥ 3⥥
-			BC2 = f"""{BC1}{thisBTNName1_}:"""
-			MK2 = F"""{MK1}{NTAB(2)}{MARK2MIDLN(BC2)}"""
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-			if thisBTNName1_ not in BTNSHOLDABLELIST:
-				# ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4
-				strToRtn_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRKT}{NEWLINE}{NTAB(3)}{MARK3STARTLN(f"{BC2}AX")}{thisVal2_}{NTAB(2)}{CBRKT},{NEWLINE}{NTAB(3)}{MARK3ENDLN(f"{BC2}AX")}{NEWLINE}{MK2}"""
-				strToRtn1_ += f"""{NTAB(2)}{thisBTNName1_}: {FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisBTNName1_]}{NEWLINE}"""
-				strToRtn2_ += f"""{NTAB(2)}{thisBTNName1_}: {FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisBTNName1_]}{NEWLINE}"""
-				strToRtn3_ += f"""{NTAB(2)}{thisBTNName1_}: {FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisBTNName1_]}{NEWLINE}"""
-				# ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-			elif thisBTNName1_ in BTNSHOLDABLELIST:
-				# ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4 ⥥4
-				strToRtn_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
-				strToRtn1_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
-				strToRtn2_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
-				strToRtn3_ += f"""{NTAB(2)}{thisBTNName1_}: {OBRCE}  # holdable button {thisBTNName1_}{NEWLINE}{NTAB(3)}{MARK3STARTLN(BC2)}"""
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-				# print(f"""thisDEV_MYNAME_ {thisDEV_MYNAME_}{NEWLINE}thisVal1_ {thisVal1_}{NEWLINE}thisBTNName1_ {thisBTNName1_}{NEWLINE}thisVal2_ {thisVal2_}""")
-				for thisBTNName2_, thisVal3 in thisVal2_.items():
-					# ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5 ⥥5
-					BC3 = f"""{BC2}{thisBTNName2_}:"""
-					MK3 = f"""{MK2}{NTAB(3)}{MARK3MIDLN(BC3)}"""
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
-					if thisBTNName2_ not in BTNSHOLDABLELIST:
-						# ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6 ⥥6
-						strToRtn_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRKT}{NEWLINE}{NTAB(4)}{MARK4STARTLN(BC3)}{thisVal3}{NTAB(3)}{CBRKT},{NEWLINE}{NTAB(4)}{MARK4ENDLN(BC3)}{NEWLINE}{MK3}"""
-						strToRtn1_ += f"""{NTAB(3)}{thisBTNName2_}: {FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_]}{NEWLINE}"""
-						strToRtn2_ += f"""{NTAB(3)}{thisBTNName2_}: {FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_]}{NEWLINE}"""
-						strToRtn3_ += f"""{NTAB(3)}{thisBTNName2_}: {FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_]}{NEWLINE}"""
-						# ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
-					elif thisBTNName2_ in BTNSHOLDABLELIST:
-						# 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥ 6⥥
-						strToRtn_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
-						strToRtn1_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
-						strToRtn2_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
-						strToRtn3_ += f"""{NTAB(3)}{thisBTNName2_}: {OBRCE}  # holdable buttons {thisBTNName1_}:{thisBTNName2_}{NEWLINE}{NTAB(2)}{MARK2STARTLN(BC2)}"""
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
-						# ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣
-						for thisBTNName3_, thisAX_ in thisVal3.items():
-							# 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥ 7⥥
-							strToRtn_ += f"""{NTAB(4)}{thisBTNName3_}: {OBRKT}{NEWLINE}{NTAB(5)}{MARK3STARTLN(thisAX_)}{thisAX_}{NTAB(4)}{CBRKT},{NEWLINE}{NTAB(3)}{MARK3ENDLN(thisAX_)}"""
-							strToRtn1_ += f"""{NTAB(4)}{thisBTNName3_}: {FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_][thisBTNName3_]}{NEWLINE}"""
-							strToRtn2_ += f"""{NTAB(4)}{thisBTNName3_}: {FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_][thisBTNName3_]}{NEWLINE}"""
-							strToRtn3_ += f"""{NTAB(4)}{thisBTNName3_}: {FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisBTNName1_][thisBTNName2_][thisBTNName3_]}{NEWLINE}"""
-							# ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7 ⥣7
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-					# ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣ ⥥5⥣
-						# ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣ ⥥6⥣
-						strToRtn_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}{thisDEV_MYNAME_}{NEWLINE}"""
-						strToRtn1_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}"""
-						strToRtn2_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}"""
-						strToRtn3_ += f"""{NTAB(2)}{MARK2ENDLN(BC2)}{NTAB(3)}{CBRCE},{NEWLINE}"""
-
-						# ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6 ⥣6
-					# ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5 ⥣5
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-			# ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣ ⥥3⥣
-				# ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣ ⥥4⥣
-				strToRtn_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
-				strToRtn1_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
-				strToRtn2_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
-				strToRtn3_ += f"""{NTAB(2)}{CBRCE},{NEWLINE}{NTAB(3)}{MARK3ENDLN(BC2)}{NEWLINE}{MK2}"""
-
-				# ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4 ⥣4
-			# ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3 ⥣3
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-		strToRtn_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
-		strToRtn1_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
-		strToRtn2_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
-		strToRtn3_ += f"""{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERE}{NEWLINE}"""
-
-		# ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 for thisDEV_MYNAME_, thisVal1_ in FMDO_SCTN0405_PROFDICT.items():
-	strToRtn_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{strToRtn1_}{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{strToRtn3_}{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}{strToRtn2_}{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERE}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN45 device PROFILE BTNTYPEDICT REPEATDICT
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN46 device XLATE table
-	strToRtn_ += f"""{makeAComment("SCTN0406 device XLATE table")}XLATETABLE = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERELN}"""
-	for thisDEV_MYNAME_, entries_ in FMDO_SCTN0406_XLATEDICT.items():
-		strToRtn_ += f"""{NTAB(1)}{thisDEV_MYNAME_}: {OBRCE}{NEWLINE}{NTAB(2)}{FOLD2STARTHERELN}{entries_}{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERELN}"""
-	strToRtn_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERELN}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN46 device XLATE table
-
-	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ SCTN49 DIR to BTN SIM translation
-	strToRtn_ += f"""{makeAComment("SCTN0409 DIR to BTN SIM translation")}DIR2BTN = {OBRCE}{NEWLINE}{NTAB(1)}{FOLD1STARTHERELN}"""
-	for thisDEVT_, theseItems_ in FMDO_SCTN0409_DIRTRANSDICT.items():
-		strToRtn_ += f"""{NTAB(1)}{thisDEVT_}: {OBRCE}  # {FMDO_SCTN0409_DIRTRANSCMNTDICT[thisDEVT_]}{NEWLINE}{NTAB(2)}{FOLD2STARTHERELN}{theseItems_}{NTAB(1)}{CBRCE},{NEWLINE}{NTAB(2)}{FOLD2ENDHERELN}"""
-	strToRtn_ += f"""{CBRCE}{NEWLINE}{NTAB(1)}{FOLD1ENDHERELN}{NEWLINE}{NEWLINE}"""
-	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 SCTN49 DIR to BTN SIM translation
-
-	strToRtn_ += f"""#{NEWLINE}#{NEWLINE}{makeAComment("end of managed section of DO.py")}#{NEWLINE}#{NEWLINE}{NEWLINE}{NEWLINE}"""
-
-	return strToRtn_
-	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# FM_MAKE_DO_ENDS
-
-
-# MAKESP BEGINS
+# FMSP_MAKE_BEGINS
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # makeSP
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
@@ -1489,35 +1244,37 @@ def makeSP():
 	strToRtn_ += f"""{makeAComment("SCTN600 SP defs")}#{NEWLINE}"""
 	for thisName_, item_ in FMSP_SCTN0600_DEFDICT.items():
 		strToRtn_ += f"""{thisName_} = {item_}  # {FMSP_SCTN0600_DEFCMNTDICT[thisName_]}{NEWLINE}"""
-	strToRtn_ += f"{NEWLINE}{NEWLINE}"
+	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN601 SP dicts")}#{NEWLINE}"""
 	for thisName_, items_ in FMSP_SCTN0601_DICTDICT.items():
 		strToRtn_ += f"""{makeADict(thisName_, FMSP_SCTN0601_DICTCMNTDICT[thisName_], items_)}"""
-	strToRtn_ += f"{NEWLINE}{NEWLINE}"
+	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN062 SP lists")}#{NEWLINE}"""
 	for thisName_, items_ in FMSP_SCTN0602_LISTDICT.items():
 		strToRtn_ += f"""{makeAList(thisName_, FMSP_SCTN0602_LISTCMNTDICT[thisName_], items_)}"""
-	strToRtn_ += f"{NEWLINE}{NEWLINE}"
+	strToRtn_ += f"""{NEWLINE}{NEWLINE}"""
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
 	strToRtn_ += f"""{makeAComment("SCTN603 SP tupdict")}#{NEWLINE}"""
 	for thisName_, items_ in FMSP_SCTN0603_TUPDICTDICT.items():
-		if thisName_ in FMSP_SCTN0603_TUPDICTLISTDICT:
-			strToRtn_ += f"""{makeATupDict(thisName_, items_, FMSP_SCTN0603_TUPDICTLISTDICT[thisName_])}"""
-		else:
-			strToRtn_ += f"""{makeATupDict(thisName_, items_, None)}"""
+		if (thisName_ in FMSP_SCTN0603_TUPDICTLISTDICT) and (thisName_ not in FMSP_SCTN0603_TUPDICTPARMSDICT):
+			strToRtn_ += f"""{makeASidecarTupDic(thisName_, items_, FMSP_SCTN0603_TUPDICTLISTDICT[thisName_])}"""
+		elif (thisName_ not in FMSP_SCTN0603_TUPDICTLISTDICT) and (thisName_ not in FMSP_SCTN0603_TUPDICTPARMSDICT):
+			strToRtn_ += f"""{makeANormalTupDict(thisName_, items_)}"""
+		elif (thisName_ in FMSP_SCTN0603_TUPDICTLISTDICT) and (thisName_ in FMSP_SCTN0603_TUPDICTPARMSDICT):
+			strToRtn_ += f"""{makeAFullTupDict(thisName_, items_, FMSP_SCTN0603_TUPDICTLISTDICT[thisName_], FMSP_SCTN0603_TUPDICTPARMSDICT[thisName_])}"""
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣
-	strToRtn_ += f"""{makeAWideComment("end of managed sections of SP.py")}"""
+	strToRtn_ += f"""{makeAWideComment("end of managed sections of SP.py")}{NEWLINE}{NEWLINE}"""
 	return strToRtn_
 
 	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-# MAKESP ENDS
+# FMSP_MAKE_ENDS
 
 # #*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#*#
 # parseTBGLST
@@ -1537,35 +1294,6 @@ def parseTBGLST(FDTBGLST):
 		FMCF_SCTN0203_DICTDICT, \
 		FMCF_SCTN0204_LISTCMNTDICT, \
 		FMCF_SCTN0204_LISTDICT, \
-		FMDO_SCTN0401_DEVICEDEFCMNTDICT, \
-		FMDO_SCTN0401_DEVICEDEFDICT, \
-		FMDO_SCTN0402_LDIECMNTDICT, \
-		FMDO_SCTN0402_LDIEDICT, \
-		FMDO_SCTN0402_LDIERELLIST, \
-		FMDO_SCTN0402_LDIESPCLLIST, \
-		FMDO_SCTN0403_AXDEFCMNTDICT, \
-		FMDO_SCTN0403_AXDEFDICT, \
-		FMDO_SCTN0404_DEVICESCMNTDICT, \
-		FMDO_SCTN0404_DEVICESDICT, \
-		FMDO_SCTN0405_BTNNDXDICT, \
-		FMDO_SCTN0405_BTNTYPEDICT, \
-		FMDO_SCTN0405_PROFDICT, \
-		FMDO_SCTN0405_RPTDICT, \
-		FMDO_SCTN0406_XLATECMNTDICT, \
-		FMDO_SCTN0406_XLATEDICT, \
-		FMDO_SCTN0407_BTNSCMNTDICT, \
-		FMDO_SCTN0407_BTNSDICT, \
-		FMDO_SCTN0407_BTNSHOLDABLELIST, \
-		FMDO_SCTN0408_DEFCMNTDICT, \
-		FMDO_SCTN0408_DEFDICT, \
-		FMDO_SCTN0408_TYPESCMNTDICT, \
-		FMDO_SCTN0408_TYPESDICT, \
-		FMDO_SCTN0409_DIRTRANSCMNTDICT, \
-		FMDO_SCTN0409_DIRTRANSDICT, \
-		FMDO_SCTN040A_HBIABSLIST, \
-		FMDO_SCTN040A_HBIBTNLIST, \
-		FMDO_SCTN040A_HBIKEYLIST, \
-		FMDO_SCTN040A_HBIRELLIST, \
 		FMFM_SCTN0101_AXCMNTDICT, \
 		FMFM_SCTN0101_AXDICT, \
 		FMFM_SCTN0102_VALCMNTDICT, \
@@ -1582,11 +1310,12 @@ def parseTBGLST(FDTBGLST):
 		FMFO_SCTN0302_LISTDICT, \
 		FMFO_SCTN0303_TUPDICTCMNTDICT, \
 		FMFO_SCTN0303_TUPDICTDICT, \
-		FMFO_SCTN0303_TUPDICTLIST, \
+		FMFO_SCTN0303_TUPDICTLISTDICT, \
+		FMFO_SCTN0304_EXTENSIONGROUPCMNTDICT, \
+		FMFO_SCTN0304_EXTENSIONGROUPDICT, \
 		FMFO_SCTN0304_EXTENSIONLOOKUPDICT, \
 		FMFO_SCTN0304_EXTENSIONSCMNTDICT, \
 		FMFO_SCTN0304_EXTENSIONSTYPESDICT, \
-		FMFO_SCTN0304_MEDIAFILELSTSTR, \
 		FMSP_SCTN0600_DEFCMNTDICT, \
 		FMSP_SCTN0600_DEFDICT, \
 		FMSP_SCTN0601_DICTCMNTDICT, \
@@ -1596,7 +1325,9 @@ def parseTBGLST(FDTBGLST):
 		FMSP_SCTN0603_TUPDICTCMNTDICT, \
 		FMSP_SCTN0603_TUPDICTDICT, \
 		FMSP_SCTN0603_TUPDICTLISTCMNTDICT, \
-		FMSP_SCTN0603_TUPDICTLISTDICT
+		FMSP_SCTN0603_TUPDICTLISTDICT, \
+		FMSP_SCTN0603_TUPDICTPARMSDICT, \
+		FMFM_SCTN0004_BTNSHOLDABLELIST
 	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
 
 	# 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥ 1⥥
@@ -1625,7 +1356,7 @@ def parseTBGLST(FDTBGLST):
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
 
-	# FM_PARSE_CF_BEGINS
+	# FMCF_PARSE_BEGINS
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
 		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
 		elif thisAX_ == FMAXCF_SCTN0003_LAMBDADEF:
@@ -1811,9 +1542,9 @@ def parseTBGLST(FDTBGLST):
 			FMCF_SCTN0204_LISTDICT[thisListName_] += f"{NTAB(1)}{thisVal_},  # {thisComment_}{NEWLINE}"
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# FM_PARSE_CF_ENDS
+	# FMCF_PARSE_ENDS
 
-	# FM_PARSE_FM_BEGINS
+	# FMFM_PARSE_BEGINS
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
 		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
 		elif thisAX_ == FMAXFM_SCTN0101_AXDEF:
@@ -1877,638 +1608,9 @@ def parseTBGLST(FDTBGLST):
 			FMFM_SCTN0104_LISTCMNTDICT[thisName_] = f"{thisComment_}"
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# FM_PARSE_FM_ENDS
+	# FMFM_PARSE_ENDS
 
-	# FM_DBSQLT_PARSE_BEGINS
-		elif thisAX_ == FMAXDBSQLT_SCTN70STRDEF:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisStrName_ = thisItem_[2]
-			thisStr_ = thisItem_[3]
-			FMDBSQLT_SCTN70DEFDICT[thisStrName_] = f"{DBLQT}{thisStr_}{DBLQT}"
-			FMDBSQLT_SCTN70DEFCMNTDICT[thisStrName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ == FMAXDBSQLT_SCTN70VALDEF:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisStrName_ = thisItem_[2]
-			thisVal_ = thisItem_[3]
-			FMDBSQLT_SCTN70DEFDICT[thisStrName_] = f"{thisVal_}"
-			FMDBSQLT_SCTN70DEFCMNTDICT[thisStrName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ == FMAXDBSQLT_SCTN71DICTDEF:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisDictName_ = thisItem_[2]
-			FMDBSQLT_SCTN71DICTDICT[thisDictName_] = ""
-			FMDBSQLT_SCTN71DICTCMNTDICT[thisDictName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ in [FMAXDBSQLT_SCTN71DICTSTRADD, FMAXDBSQLT_SCTN71STRDICTSTRADD]:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			thisDictName_ = thisItem_[2]
-			thisKey_ = thisItem_[3]
-			thisVal_ = thisItem_[4]
-			if thisAX_ == FMAXDBSQLT_SCTN71DICTSTRADD:
-				FMDBSQLT_SCTN71DICTDICT[thisDictName_] += f"{NTAB(1)}{thisKey_}: {DBLQT}{thisVal_}{DBLQT},  # {thisComment_}{NEWLINE}"
-			else:
-				FMDBSQLT_SCTN71DICTDICT[thisDictName_] += f"{NTAB(1)}{DBLQT}{thisKey_}{DBLQT}: {thisVal_},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ in [FMAXDBSQLT_SCTN71DICTVALADD, FMAXDBSQLT_SCTN71STRDICTVALADD]:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			thisDictName_ = thisItem_[2]
-			thisKey_ = thisItem_[3]
-			thisVal_ = thisItem_[4]
-			if thisAX_ == FMAXDBSQLT_SCTN71DICTVALADD:
-				FMDBSQLT_SCTN71DICTDICT[thisDictName_] += f"{NTAB(1)}{thisKey_}: {thisVal_},  # {thisComment_}{NEWLINE}"
-			else:
-				FMDBSQLT_SCTN71DICTDICT[thisDictName_] += f"{NTAB(1)}{DBLQT}{thisKey_}{DBLQT}: {thisVal_},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ == FMAXDBSQLT_SCTN72LISTDEF:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisListName_ = thisItem_[2]
-			FMDBSQLT_SCTN72LISTDICT[thisListName_] = ""
-			FMDBSQLT_SCTN72LISTCMNTDICT[thisListName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ in [FMAXDBSQLT_SCTN72LISTSTRADD]:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisListName_ = thisItem_[2]
-			thisVal_ = thisItem_[3]
-			FMDBSQLT_SCTN72LISTDICT[thisListName_] += f"{NTAB(1)}{DBLQT}{thisVal_}{DBLQT},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ in [FMAXDBSQLT_SCTN72LISTVALADD]:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisListName_ = thisItem_[2]
-			thisVal_ = thisItem_[3]
-			FMDBSQLT_SCTN72LISTDICT[thisListName_] += f"{NTAB(1)}{thisVal_},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ == FMAXDBSQLT_SCTN73TUPDICTDEF:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisTupDictName_ = thisItem_[2]
-			FMDBSQLT_SCTN73TUPDICTDICT[thisTupDictName_] = ""
-			FMDBSQLT_SCTN73TUPDICTCMNTDICT[thisTupDictName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ == FMAXDBSQLT_SCTN73TUPDICTSTRADD:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			thisTupDictName_ = thisItem_[2]
-			thisKey_ = thisItem_[3]
-			thisVal_ = thisItem_[4]
-			FMDBSQLT_SCTN73TUPDICTDICT[thisTupDictName_] += f"{NTAB(1)}{OPAREN}{thisKey_}, {DBLQT}{thisVal_}{DBLQT}{CPAREN},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-
-		elif thisAX_ == FMAXDBSQLT_SCTN73TUPDICTVALADD:
-			# fold here ⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥⥥
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			thisTupDictName_ = thisItem_[2]
-			thisKey_ = thisItem_[3]
-			thisVal_ = thisItem_[4]
-			FMDBSQLT_SCTN73TUPDICTDICT[thisTupDictName_] += f"{NTAB(1)}{OPAREN}{thisKey_}, {thisVal_}{CPAREN},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣⥣
-	# FM_DBSQLT_PARSE_ENDS
-
-	# FM_PARSE_DO_BEGINS
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0401_DEVICEDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisDEV_MYNAME_ = thisItem_[2]
-			FMDO_SCTN0401_DEVICEDEFDICT[thisDEV_MYNAME_] = f"{thisDEV_MYNAME_} = {DBLQT}{thisDEV_MYNAME_}{DBLQT}"
-			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisDEV_MYNAME_] = f"{thisComment_}"
-			FMDO_SCTN0404_DEVICESCMNTDICT[thisDEV_MYNAME_] = f"{thisComment_}"
-			#if thisDEV_MYNAME_ not in FMDO_SCTN0404_DEVICESDICT:
-			#	FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_] = {}
-			#FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_]["DEV_MYNAME"] = thisDEV_MYNAME_
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0401_DICTKEYDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisKey_ = thisItem_[2]
-			FMDO_SCTN0401_DEVICEDEFDICT[thisKey_] = f"{thisKey_} = {DBLQT}{thisKey_}{DBLQT}"
-			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisKey_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0401_LAMBDADEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisValName_ = thisItem_[2]
-			thisVal_ = thisItem_[3]
-			FMDO_SCTN0401_DEVICEDEFDICT[thisValName_] = f"{thisValName_} = lambda {thisVal_}"
-			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisValName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0401_STRDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisValName_ = thisItem_[2]
-			thisVal_ = thisItem_[3]
-			FMDO_SCTN0401_DEVICEDEFDICT[thisValName_] = f"{thisValName_} = {DBLQT}{thisVal_}{DBLQT}"
-			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisValName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0401_VALDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisValName_ = thisItem_[2]
-			thisVal_ = thisItem_[3]
-			FMDO_SCTN0401_DEVICEDEFDICT[thisValName_] = f"{thisValName_} = {thisVal_}"
-			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisValName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0402_LDIEABSDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisIEStr_ = thisItem_[2]
-			thisIEVAL_ = thisItem_[3]
-			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_ABS.{thisIEStr_}, {thisIEVAL_})"
-			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0402_LDIEBTNDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisIEStr_ = thisItem_[2]
-			thisIEVAL_ = thisItem_[3]
-			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_KEY.{thisIEStr_}, {thisIEVAL_})"
-			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0402_LDIEKEYDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisIEStr_ = thisItem_[2]
-			thisIEVAL_ = thisItem_[3]
-			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_KEY.{thisIEStr_}, {thisIEVAL_})"
-			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0402_LDIERELDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisIEStr_ = thisItem_[2]
-			thisIEVAL_ = thisItem_[3]
-			FMDO_SCTN0402_LDIEDICT[thisName_] = f"""lambda NUM_: IE(LD.EV_REL.{thisIEStr_}, NUM_)"""
-			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
-			FMDO_SCTN0402_LDIERELLIST.append(thisName_)
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0402_LDIESPCLDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisIEStr_ = thisItem_[2]
-			thisIEVAL_ = thisItem_[3]
-			FMDO_SCTN0402_LDIEDICT[thisName_] = f"{OPAREN}{thisIEStr_}, {thisIEVAL_}{CPAREN}"
-			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
-			FMDO_SCTN0402_LDIESPCLLIST.append(thisName_)
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0402_LDIESYNDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisIEStr_ = thisItem_[2]
-			thisIEVAL_ = thisItem_[3]
-			FMDO_SCTN0402_LDIEDICT[thisName_] = f"IE(LD.EV_SYN.{thisIEStr_}, {thisIEVAL_})"
-			FMDO_SCTN0402_LDIECMNTDICT[thisName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0403_AXDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisAXName_ = thisItem_[2]
-			FMDO_SCTN0401_DEVICEDEFDICT[thisAXName_] = f"{thisAXName_} = {DBLQT}{thisAXName_}{DBLQT}"
-			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisAXName_] = f"{thisComment_}"
-			FMDO_SCTN0403_AXDEFDICT[thisAXName_] = ""
-			FMDO_SCTN0403_AXDEFCMNTDICT[thisAXName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0403_AXVALADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisAXName_ = thisItem_[2]
-			thisAXVal_ = thisItem_[3]
-			if thisAXName_ not in FMDO_SCTN0403_AXDEFDICT:
-				FMDO_SCTN0403_AXDEFDICT[thisAXName_] = ""
-			FMDO_SCTN0403_AXDEFDICT[thisAXName_] += f"{NTAB(2)}{thisAXVal_},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0404_DEVICEENTRYSTRADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			thisDEV_MYNAME_ = thisItem_[2]
-			thisDEV_key_ = thisItem_[3]
-			thisVal_ = thisItem_[4]
-			if thisDEV_MYNAME_ not in FMDO_SCTN0404_DEVICESDICT:
-				FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_] = {}
-			FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_][thisDEV_key_] = f"{DBLQT}{thisVal_}{DBLQT},  # {thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0404_DEVICEENTRYVALADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			# print(f"thisItem {thisItem_}")
-			thisDEV_MYNAME_ = thisItem_[2]
-			thisDEV_key_ = thisItem_[3]
-			thisVal_ = thisItem_[4]
-			if thisDEV_MYNAME_ not in FMDO_SCTN0404_DEVICESDICT:
-				FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_] = {}
-			FMDO_SCTN0404_DEVICESDICT[thisDEV_MYNAME_][thisDEV_key_] = f"{thisVal_},  # {thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0405_HOLDABLEADD1:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 9:
-				doErrorItem("not 9 items", thisItem_)
-				continue
-			thisDEV_MYNAME_ = thisItem_[2]
-			thisBtnType_ = thisItem_[3]
-			thisRepeat_ = thisItem_[4]
-			thisHOLDABLE_ = thisItem_[5]
-			thisNOTHOLDABLE_ = thisItem_[6]
-			thisAX_ = thisItem_[7]
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_PROFDICT:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE_ not in FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE_] = {}
-			if thisNOTHOLDABLE_ not in FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE_]:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE_][thisNOTHOLDABLE_] = ""
-			FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE_][thisNOTHOLDABLE_] += f"{NTAB(4)}{thisAX_},  # {thisComment_}{NEWLINE}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_RPTDICT:
-				FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE_ not in FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisHOLDABLE_] = {}
-			FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisHOLDABLE_][thisNOTHOLDABLE_] = f"{thisRepeat_},  # {thisComment_}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_BTNTYPEDICT:
-				FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE_ not in FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisHOLDABLE_] = {}
-			FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisHOLDABLE_][thisNOTHOLDABLE_] = f"{thisBtnType_},  # {thisComment_}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_BTNNDXDICT:
-				FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE_ not in FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE_] = {}
-			FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE_][thisNOTHOLDABLE_] = f"0,  # {thisComment_}"
-
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0405_HOLDABLEADD2:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 10:
-				doErrorItem("not 10 items", thisItem_)
-				continue
-			thisDEV_MYNAME_ = thisItem_[2]
-			thisBtnType_ = thisItem_[3]
-			thisRepeat_ = thisItem_[4]
-			thisHOLDABLE1_ = thisItem_[5]
-			thisHOLDABLE2_ = thisItem_[6]
-			thisNOTHOLDABLE_ = thisItem_[7]
-			thisAX_ = thisItem_[8]
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_PROFDICT:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE1_ not in FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE1_] = {}
-			if thisHOLDABLE2_ not in FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE1_]:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_] = {}
-			if thisNOTHOLDABLE_ not in FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_]:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_][thisNOTHOLDABLE_] = ""
-			FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_][thisNOTHOLDABLE_] += f"{NTAB(5)}{thisAX_},  # {thisComment_}{NEWLINE}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_RPTDICT:
-				FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE1_ not in FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisHOLDABLE1_] = {}
-			if thisHOLDABLE2_ not in FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisHOLDABLE1_]:
-				FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_] = {}
-			FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_][thisNOTHOLDABLE_] = f"{thisRepeat_},  # {thisComment_}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_BTNTYPEDICT:
-				FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE1_ not in FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisHOLDABLE1_] = {}
-			if thisHOLDABLE2_ not in FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisHOLDABLE1_]:
-				FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_] = {}
-			FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_][thisNOTHOLDABLE_] = f"{thisBtnType_},  # {thisComment_}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_BTNNDXDICT:
-				FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_] = {}
-			if thisHOLDABLE1_ not in FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE1_] = {}
-			if thisHOLDABLE2_ not in FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE1_]:
-				FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_] = {}
-			FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisHOLDABLE1_][thisHOLDABLE2_][thisNOTHOLDABLE_] = f"0,  # {thisComment_}"
-
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0405_NOTHOLDABLEADD1:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 8:
-				doErrorItem("not 8 items", thisItem_)
-				continue
-			thisDEV_MYNAME_ = thisItem_[2]
-			thisBtnType_ = thisItem_[3]
-			thisRepeat_ = thisItem_[4]
-			thisNOTHOLDABLE_ = thisItem_[5]
-			thisAX_ = thisItem_[6]
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_PROFDICT:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_] = {}
-			if thisNOTHOLDABLE_ not in FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_]:
-				FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisNOTHOLDABLE_] = ""
-			FMDO_SCTN0405_PROFDICT[thisDEV_MYNAME_][thisNOTHOLDABLE_] += f"{NTAB(3)}{thisAX_},  # {thisComment_}{NEWLINE}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_RPTDICT:
-				FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_] = {}
-			FMDO_SCTN0405_RPTDICT[thisDEV_MYNAME_][thisNOTHOLDABLE_] = f"{thisRepeat_},  # {thisComment_}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_BTNTYPEDICT:
-				FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_] = {}
-			FMDO_SCTN0405_BTNTYPEDICT[thisDEV_MYNAME_][thisNOTHOLDABLE_] = f"{thisBtnType_},  # {thisComment_}"
-
-			if thisDEV_MYNAME_ not in FMDO_SCTN0405_BTNNDXDICT:
-				FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_] = {}
-			FMDO_SCTN0405_BTNNDXDICT[thisDEV_MYNAME_][thisNOTHOLDABLE_] = f"0,  # {thisComment_}"
-
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0406_XLATEADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			thisDEV_MYNAME_ = thisItem_[2]
-			thisDEV_BTN = thisItem_[3]
-			thisDEV_COMMON = thisItem_[4]
-			if thisDEV_MYNAME_ not in FMDO_SCTN0406_XLATEDICT:
-				FMDO_SCTN0406_XLATEDICT[thisDEV_MYNAME_] = ""
-			FMDO_SCTN0406_XLATEDICT[thisDEV_MYNAME_] += f"{NTAB(2)}{thisDEV_BTN}: {thisDEV_COMMON},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0407_BTNSDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisBTNName_ = thisItem_[2]
-			thisHOLDABLE_ = thisItem_[3]
-			FMDO_SCTN0401_DEVICEDEFDICT[thisBTNName_] = f"{thisBTNName_} = {DBLQT}{thisBTNName_}{DBLQT}"
-			FMDO_SCTN0401_DEVICEDEFCMNTDICT[thisBTNName_] = f"{thisComment_}"
-			FMDO_SCTN0407_BTNSDICT[thisBTNName_] = f"{thisHOLDABLE_}"
-			if thisHOLDABLE_ == "BTNTYPE_HOLDABLE":
-				BTNSHOLDABLELIST.append(f"{thisBTNName_}")
-			FMDO_SCTN0407_BTNSCMNTDICT[thisBTNName_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0408_EVTYPEDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisDEVT_ = thisItem_[2]
-			FMDO_SCTN0408_DEFDICT[thisName_] = f"{thisDEVT_} = {DBLQT}{thisDEVT_}{DBLQT}"
-			FMDO_SCTN0408_DEFCMNTDICT[thisName_] = f"{thisComment_}"
-			if thisDEVT_ not in FMDO_SCTN0408_TYPESDICT:
-				FMDO_SCTN0408_TYPESDICT[thisDEVT_] = []
-			FMDO_SCTN0408_TYPESCMNTDICT[thisDEVT_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0408_EVTYPELST:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 5:
-				doErrorItem("not 5 items", thisItem_)
-				continue
-			thisDEVT_ = thisItem_[2]
-			thisDEVTCD_ = thisItem_[3]
-			if thisDEVT_ not in FMDO_SCTN0408_TYPESDICT:
-				FMDO_SCTN0408_TYPESDICT[thisDEVT_] = []
-			FMDO_SCTN0408_TYPESDICT[thisDEVT_].append(f"{thisDEVTCD_},  # {thisComment_}")
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0409_DIRTRANSDEVDEF:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisDEVT_ = thisItem_[2]
-			if thisDEVT_ not in FMDO_SCTN0409_DIRTRANSDICT:
-				FMDO_SCTN0409_DIRTRANSDICT[thisDEVT_] = ""
-			FMDO_SCTN0409_DIRTRANSCMNTDICT[thisDEVT_] = f"{thisComment_}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN0409_DIRTRANSVALADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 6:
-				doErrorItem("not 6 items", thisItem_)
-				continue
-			thisDEVT_ = thisItem_[2]
-			thisKey_ = thisItem_[3]
-			thisVal_ = thisItem_[4]
-			if thisDEVT_ not in FMDO_SCTN0409_DIRTRANSDICT:
-				FMDO_SCTN0409_DIRTRANSDICT[thisDEVT_] = ""
-			FMDO_SCTN0409_DIRTRANSDICT[thisDEVT_] += f"{NTAB(2)}{thisKey_}: {thisVal_},  # {thisComment_}{NEWLINE}"
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN040A_HBIABSADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisHBIVal_ = thisItem_[2]
-			FMDO_SCTN040A_HBIABSLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN040A_HBIBTNADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisHBIVal_ = thisItem_[2]
-			FMDO_SCTN040A_HBIBTNLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN040A_HBIKEYADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisHBIVal_ = thisItem_[2]
-			FMDO_SCTN040A_HBIKEYLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-
-	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
-		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXDO_SCTN040A_HBIRELADD:
-			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-			if thisItemLen_ != 4:
-				doErrorItem("not 4 items", thisItem_)
-				continue
-			thisHBIVal_ = thisItem_[2]
-			FMDO_SCTN040A_HBIRELLIST.append(f"{thisHBIVal_}{CPAREN}  # {thisComment_}")
-			continue
-			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# FM_DO_PARSE_ENDS
-
-	# FM_PARSE_FO_BEGINS
+	# FMFO_PARSE_BEGINS
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
 		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
 		elif thisAX_ == FMAXFO_SCTN0300_STRDEF:
@@ -2547,7 +1649,7 @@ def parseTBGLST(FDTBGLST):
 			thisDictName_ = thisItem_[2]
 			if thisDictName_ not in FMFO_SCTN0301_DICTDICT:
 				FMFO_SCTN0301_DICTDICT[thisDictName_] = ""
-			FMFO_SCTN0301_DICTCMNTDICT[thisValName_] = thisComment_
+			FMFO_SCTN0301_DICTCMNTDICT[thisDictName_] = thisComment_
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
 
@@ -2563,7 +1665,7 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[4]
 			if thisDictName_ not in FMFO_SCTN0301_DICTDICT:
 				FMFO_SCTN0301_DICTDICT[thisDictName_] = ""
-			FMFO_SCTN0301_DICTDICT[thisDictName_] += f"""{NTAB(1)}{thisKey_}: {DBLQT}{thisVal_}{DBLQT},  # {thisComment_}"""
+			FMFO_SCTN0301_DICTDICT[thisDictName_] += f"""{NTAB(1)}{thisKey_}: {DBLQT}{thisVal_}{DBLQT},  # {thisComment_}{NEWLINE}"""
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
 
@@ -2579,7 +1681,39 @@ def parseTBGLST(FDTBGLST):
 			thisVal_ = thisItem_[4]
 			if thisDictName_ not in FMFO_SCTN0301_DICTDICT:
 				FMFO_SCTN0301_DICTDICT[thisDictName_] = ""
-			FMFO_SCTN0301_DICTDICT[thisDictName_] += f"""{NTAB(1)}{thisKey_}: {thisVal_},  # {thisComment_}"""
+			FMFO_SCTN0301_DICTDICT[thisDictName_] += f"""{NTAB(1)}{thisKey_}: {thisVal_},  # {thisComment_}{NEWLINE}"""
+			continue
+			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+
+	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
+		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+		elif thisAX_ == FMAXFO_SCTN0301_STRDICTSTRADD:
+			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			if thisItemLen_ != 6:
+				doErrorItem("not 6 items", thisItem_)
+				continue
+			thisDictName_ = thisItem_[2]
+			thisKey_ = thisItem_[3]
+			thisVal_ = thisItem_[4]
+			if thisDictName_ not in FMFO_SCTN0301_DICTDICT:
+				FMFO_SCTN0301_DICTDICT[thisDictName_] = ""
+			FMFO_SCTN0301_DICTDICT[thisDictName_] += f"""{NTAB(1)}{DBLQT}{thisKey_}{DBLQT}: {DBLQT}{thisVal_}{DBLQT},  # {thisComment_}{NEWLINE}"""
+			continue
+			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+
+	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
+		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+		elif thisAX_ == FMAXFO_SCTN0301_STRDICTVALADD:
+			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			if thisItemLen_ != 6:
+				doErrorItem("not 6 items", thisItem_)
+				continue
+			thisDictName_ = thisItem_[2]
+			thisKey_ = thisItem_[3]
+			thisVal_ = thisItem_[4]
+			if thisDictName_ not in FMFO_SCTN0301_DICTDICT:
+				FMFO_SCTN0301_DICTDICT[thisDictName_] = ""
+			FMFO_SCTN0301_DICTDICT[thisDictName_] += f"""{NTAB(1)}{DBLQT}{thisKey_}{DBLQT}: {thisVal_},  # {thisComment_}{NEWLINE}"""
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
 
@@ -2635,9 +1769,11 @@ def parseTBGLST(FDTBGLST):
 			if thisItemLen_ != 4:
 				doErrorItem("not 4 items", thisItem_)
 				continue
-			thisDictName_ = thisItem_[2]
-			if thisDictName_ not in FMFO_SCTN0303_TUPDICTDICT:
-				FMFO_SCTN0303_TUPDICTDICT[thisDictName_] = ""
+			thisTupDictName_ = thisItem_[2]
+			if thisTupDictName_ not in FMFO_SCTN0303_TUPDICTDICT:
+				FMFO_SCTN0303_TUPDICTDICT[thisTupDictName_] = ""
+			if thisTupDictName_ not in FMFO_SCTN0303_TUPDICTLISTDICT:
+				FMFO_SCTN0303_TUPDICTLISTDICT[thisTupDictName_] = ""
 			FMFO_SCTN0303_TUPDICTCMNTDICT[thisValName_] = thisComment_
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
@@ -2649,12 +1785,16 @@ def parseTBGLST(FDTBGLST):
 			if thisItemLen_ != 6:
 				doErrorItem("not 6 items", thisItem_)
 				continue
-			thisDictName_ = thisItem_[2]
+			thisTupDictName_ = thisItem_[2]
 			thisKey_ = thisItem_[3]
 			thisVal_ = thisItem_[4]
-			if thisDictName_ not in FMFO_SCTN0303_TUPDICTDICT:
-				FMFO_SCTN0303_TUPDICTDICT[thisDictName_] = ""
-			FMFO_SCTN0303_TUPDICTDICT[thisDictName_] += f"""{NTAB(1)}{OPAREN}{thisKey_}, {DBLQT}{thisVal_}{DBLQT}{CPAREN},  # {thisComment_}{NEWLINE}"""
+			if thisTupDictName_ not in FMFO_SCTN0303_TUPDICTDICT:
+				FMFO_SCTN0303_TUPDICTDICT[thisTupDictName_] = ""
+			if thisTupDictName_ not in FMFO_SCTN0303_TUPDICTLISTDICT:
+				FMFO_SCTN0303_TUPDICTLISTDICT[thisTupDictName_] = {}
+			if thisKey_ not in FMFO_SCTN0303_TUPDICTLISTDICT[thisTupDictName_]:
+				FMFO_SCTN0303_TUPDICTLISTDICT[thisTupDictName_] = []
+			FMFO_SCTN0303_TUPDICTDICT[thisTupDictName_] += f"""{NTAB(1)}{OPAREN}{thisKey_}, {DBLQT}{thisVal_}{DBLQT}{CPAREN},  # {thisComment_}{NEWLINE}"""
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
 
@@ -2665,12 +1805,14 @@ def parseTBGLST(FDTBGLST):
 			if thisItemLen_ != 6:
 				doErrorItem("not 6 items", thisItem_)
 				continue
-			thisDictName_ = thisItem_[2]
+			thisTupDictName_ = thisItem_[2]
 			thisKey_ = thisItem_[3]
 			thisVal_ = thisItem_[4]
-			if thisDictName_ not in FMFO_SCTN0303_TUPDICTDICT:
-				FMFO_SCTN0303_TUPDICTDICT[thisDictName_] = ""
-			FMFO_SCTN0303_TUPDICTDICT[thisDictName_] += f"""{NTAB(1)}{OPAREN}{thisKey_}, {thisVal_}{CPAREN},  # {thisComment_}{NEWLINE}"""
+			if thisTupDictName_ not in FMFO_SCTN0303_TUPDICTDICT:
+				FMFO_SCTN0303_TUPDICTDICT[thisTupDictName_] = ""
+			if thisTupDictName_ not in FMFO_SCTN0303_TUPDICTLISTDICT[thisTupDictName_]:
+				FMFO_SCTN0303_TUPDICTLISTDICT[thisTupDictName_] = ""
+			FMFO_SCTN0303_TUPDICTDICT[thisTupDictName_] += f"""{NTAB(1)}{OPAREN}{thisKey_}, {thisVal_}{CPAREN},  # {thisComment_}{NEWLINE}"""
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
 
@@ -2683,31 +1825,56 @@ def parseTBGLST(FDTBGLST):
 				continue
 			thisExtensionType_ = thisItem_[2]
 			thisExtension_ = thisItem_[3]
+			thisExtensionL_ = thisExtension_.lower()
+			thisExtensionU_ = thisExtension_.upper()
 			if thisExtensionType_ not in FMFO_SCTN0304_EXTENSIONSTYPESDICT:
 				FMFO_SCTN0304_EXTENSIONSTYPESDICT[thisExtensionType_] = ""
-			FMFO_SCTN0304_EXTENSIONSTYPESDICT[thisExtensionType_] += f"""{NTAB(2)}{DBLQT}{thisExtension_.lower()}{DBLQT},  # {thisComment_}{NEWLINE}{NTAB(2)}{DBLQT}{thisExtension_.upper()}{DBLQT},{NEWLINE}"""
+			if thisExtensionL_ not in FMFO_SCTN0304_EXTENSIONLOOKUPDICT:
+				FMFO_SCTN0304_EXTENSIONLOOKUPDICT[thisExtensionL_] = f"""{NTAB(1)}{DBLQT}{thisExtensionL_}{DBLQT}: {thisExtensionType_},  # {thisComment_}{NEWLINE}"""
+				FMFO_SCTN0304_EXTENSIONLOOKUPDICT[thisExtensionU_] = f"""{NTAB(1)}{DBLQT}{thisExtensionU_}{DBLQT}: {thisExtensionType_},  # {thisComment_}{NEWLINE}"""
+			FMFO_SCTN0304_EXTENSIONSTYPESDICT[thisExtensionType_] += f"""{NTAB(2)}{DBLQT}{thisExtensionL_}{DBLQT},  # {thisComment_}{NEWLINE}"""
+			FMFO_SCTN0304_EXTENSIONSTYPESDICT[thisExtensionType_] += f"""{NTAB(2)}{DBLQT}{thisExtensionU_}{DBLQT},  # {thisComment_}{NEWLINE}"""
+			FMFO_SCTN0304_EXTENSIONSCMNTDICT[thisExtensionL_] = f"""{thisComment_}"""
+			FMFO_SCTN0304_EXTENSIONSCMNTDICT[thisExtensionU_] = f"""{thisComment_}"""
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
 
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
 		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
-		elif thisAX_ == FMAXFO_SCTN0304_EXTENSIONTYPEDEF:
+		elif thisAX_ == FMAXFO_SCTN0304_EXTENSIONGROUPDEF:
 			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
 			if thisItemLen_ != 5:
 				doErrorItem("not 5 items", thisItem_)
 				continue
-			thisExtensionType_ = thisItem_[2]
-			thisMediaBool_ = thisItem_[3]
-			if thisExtensionType_ not in FMFO_SCTN0304_EXTENSIONSTYPESDICT:
-				FMFO_SCTN0304_EXTENSIONSTYPESDICT[thisExtensionType_] = ""
-			FMFO_SCTN0304_EXTENSIONSCMNTDICT[thisExtensionType_] = thisComment_
-			if thisMediaBool_ == "True":
-				FMFO_SCTN0304_MEDIAFILELSTSTR += f"""{NTAB(1)}{thisExtensionType_},  # {thisComment_}{NEWLINE}"""
+			thisGroupName_ = thisItem_[2]
+			thisGroupVal_ = thisItem_[3]
+			FMFO_SCTN0300_VALDICT[thisGroupName_] = f"""{thisGroupVal_}"""
+			FMFO_SCTN0300_VALCMNTDICT[thisGroupName_] = f"""{thisComment_}"""
 			continue
 			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# FM_PARSE_FO_ENDS
+	# FMFO_PARSE_ENDS
 
-	# FM_PARSE_SP_BEGINS
+	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
+		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+		elif thisAX_ == FMAXFO_SCTN0304_EXTENSIONTYPEDEF:
+			# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
+			if thisItemLen_ != 6:
+				doErrorItem("not 6 items", thisItem_)
+				continue
+			thisExtensionType_ = thisItem_[2]
+			thisExtensionTypeFlag_ = thisItem_[3]
+			thisGroupFlag_ = thisItem_[4]
+			if thisExtensionType_ not in FMFO_SCTN0304_EXTENSIONGROUPDICT:
+				FMFO_SCTN0304_EXTENSIONGROUPDICT[thisExtensionType_] = f"""{thisGroupFlag_}"""
+			FMFO_SCTN0304_EXTENSIONSCMNTDICT[thisExtensionType_] = f"""{thisComment_}"""
+			FMFO_SCTN0300_VALDICT[thisExtensionType_] = f"""{thisExtensionTypeFlag_}"""
+			FMFO_SCTN0300_VALCMNTDICT[thisExtensionType_] = f"""{thisComment_}"""
+			FMFO_SCTN0300_VALCMNTDICT[thisGroupFlag_] = f"""{thisComment_}"""
+			continue
+			# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+	# FMFO_PARSE_ENDS
+
+	# FMSP_PARSE_BEGINS
 	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
 		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
 		elif thisAX_ == FMAXSP_SCTN0600_STRDEF:
@@ -2905,7 +2072,35 @@ def parseTBGLST(FDTBGLST):
 			FMSP_SCTN0603_TUPDICTDICT[thisTupDictName_] += f"{NTAB(1)}{OPAREN}{thisKey_}, {thisVal_}{CPAREN},  # {thisComment_}{NEWLINE}"
 			continue
 			# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
-	# FM_PARSE_SP_ENDS
+	# FMSP_PARSE_ENDS
+
+	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
+		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+		elif thisAX_ == FMAXSP_SCTN0603_TUPDICTPARMSADD:
+			# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+			if thisItemLen_ != 6:
+				doErrorItem("not 6 items", thisItem_)
+				continue
+			thisTupDictName_ = thisItem_[2]
+			thisSubName_ = thisItem_[3]
+			thisSubStr_ = thisItem_[4]
+			thisSubTup_ = (thisSubName_, thisSubStr_)
+			FMSP_SCTN0603_TUPDICTPARMSDICT[thisTupDictName_].append(thisSubTup_)
+			continue
+			# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+
+	# ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ ⥥1⥣ for thisItem_ in TBGLST:
+		# ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ ⥥2⥣ if thisAX_ …
+		elif thisAX_ == FMAXSP_SCTN0603_TUPDICTPARMSDEF:
+			# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
+			if thisItemLen_ != 4:
+				doErrorItem("not 4 items", thisItem_)
+				continue
+			thisTupDictName_ = thisItem_[2]
+			FMSP_SCTN0603_TUPDICTPARMSDICT[thisTupDictName_] = []
+			continue
+			# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
+	# FMSP_PARSE_ENDS
 
 		# ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2 ⥣2
 	# ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1 ⥣1
@@ -2919,7 +2114,7 @@ def parseTBGLST(FDTBGLST):
 def __main__():
 	# fold here ⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1⥥1
 
-	# FM_MAIN_FM_BEGINS
+	# FMFM_MAIN_BEGINS
 	# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
 	with open(TBGLST_NAME, "tw") as FDOut:
 		FDOut.write(f"TBGLST = {OBRKT}{NEWLINE}{NTAB(1)}{FOLD1STARTHERE}{NEWLINE}")
@@ -2930,35 +2125,31 @@ def __main__():
 		strToWrt_ = makeFM()
 		FDOut.writelines(strToWrt_)
 	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# FM_MAIN_FM_ENDS
+	# FMFM_MAIN_ENDS
 
-	# FM_MAIN_CF_BEGINS
+	# FMCF_MAIN_BEGINS
 	# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
 	with open(CF_NAME, "tw") as FDOut:
 		strToWrt_ = makeCF()
 		FDOut.writelines(strToWrt_)
 	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# FM_MAIN_CF_ENDS
+	# FMCF_MAIN_ENDS
 
-	# FM_MAIN_DO_BEGINS
+	# FMFO_MAINBEGINS
 	# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
-	with open(DO_NAME, "tw") as FDOut:
-		strToWrt_ = makeDO()
-		FDOut.writelines(strToWrt_)
-	with open(DOHBI_NAME, "tw") as FDOut:
-		strToWrt_ = makeDOHBI()
-		FDOut.writelines(strToWrt_)
-	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
-	# FM_MAIN_DO_ENDS
-
-	# FM_MAIN_FO_BEGINS
 	with open(FO_NAME, "tw") as FDOut:
 		strToWrt_ = makeFO()
 		FDOut.writelines(strToWrt_)
+	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+	# FMFO_MAIN_ENDS
 
+	# FMSP_MAIN_BEGINS
+	# fold here ⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2⥥2
 	with open(SP_NAME, "tw") as FDOut:
 		strToWrt_ = makeSP()
 		FDOut.writelines(strToWrt_)
+	# fold here ⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2⥣2
+	# FMSP_MAIN_ENDS
 
 	# fold here ⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1⥣1
 
